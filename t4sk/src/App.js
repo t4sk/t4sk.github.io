@@ -101,6 +101,21 @@ function decodeRawTx(text) {
   }
 }
 
+function groupBy(n, xs) {
+  return xs.reduce((z, x, i) => {
+    if (i % n  == 0) {
+      return [[x], ...z]
+    } else {
+      z[0].push(x)
+      return z
+    }
+  }, []).reverse()
+}
+
+function swapEndian(hexStr) {
+  return groupBy(2, hexStr.split("")).map(xs => xs.join("")).reverse().join("")
+}
+
 const Row = ({title, subtitle, children}) => (
   <div style={{display: "flex", flexDirection: "column"}}>
     <div style={{
@@ -257,7 +272,22 @@ class App extends Component {
                       title="txid"
                       subtitle="32 bytes"
                     >
-                      {input.txId}
+                      <div style={{
+                        display: "flex",
+                        flexDirection: "column",
+                      }}>
+                        <span>{input.txId}</span>
+                        <span
+                          style={{
+                            fontSize: 15,
+                            fontWeight: "normal",
+                            color: "grey"
+                          }}
+                        >
+                          (Big Endian)
+                        </span>
+                        <span>{swapEndian(input.txId)}</span>
+                      </div>
                     </Row>
                     <Row
                       title="vout"
