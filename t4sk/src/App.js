@@ -52,16 +52,30 @@ const P2PKH_RAW_TX = "0100000001893a4dcefe943a472110185a0df6ef26296525f0a9c65979
 // # locktime (4 bytes, hex, little-endian)
 // 00000000
 
+function decodeVarInt(rawTx) {
+    const hex = rawTx.splice(0, 2).join("")
+    switch (hex) {
+      case "fd":
+        return rawTx.splice(0, 4).join("")
+      case "fe":
+        return rawTx.splice(0, 8).join("")
+      case "ff":
+        return rawTx.splice(0, 16).join("")
+      default:
+        return hex
+    }
+}
+
 function decodeRawTx(text) {
   const rawTx = text.slice().split("")
   const version = rawTx.splice(0, 8).join("")
-  const inputCount = rawTx.splice(0, 2).join("")
+  const inputCount = decodeVarInt(rawTx)
 
   let inputs = []
   for (let i = 0; i < parseInt(inputCount, 16); i++) {
     const txId = rawTx.splice(0, 64).join("")
     const vout = rawTx.splice(0, 8).join("")
-    const scriptSigSize = rawTx.splice(0, 2).join("")
+    const scriptSigSize = decodeVarInt(rawTx)
     const scriptSig = rawTx.splice(0, 2 * parseInt(scriptSigSize, 16)).join("")
     const sequence = rawTx.splice(0, 8).join("")
 
@@ -74,12 +88,12 @@ function decodeRawTx(text) {
     })
   }
 
-  const outputCount = rawTx.splice(0, 2).join("")
+  const outputCount = decodeVarInt(rawTx)
 
   let outputs = []
   for (let i = 0; i < parseInt(outputCount, 16); i++) {
     const value = rawTx.splice(0, 16).join("")
-    const scriptPubKeySize = rawTx.splice(0, 2).join("")
+    const scriptPubKeySize = decodeVarInt(rawTx)
     const scriptPubKey = rawTx.splice(0, 2 * parseInt(scriptPubKeySize, 16)).join("")
 
     outputs.push({
