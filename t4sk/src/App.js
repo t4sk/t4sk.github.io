@@ -65,13 +65,10 @@ function decodeVarInt(rawTx) {
     }
 }
 
-function decodeRawTx(text) {
-  const rawTx = text.slice().split("")
-  const version = rawTx.splice(0, 8).join("")
-  const inputCount = decodeVarInt(rawTx)
-
+function decodeInputs(numInput, rawTx) {
   let inputs = []
-  for (let i = 0; i < parseInt(inputCount, 16); i++) {
+
+  for (let i = 0; i < numInput; i++) {
     const txId = rawTx.splice(0, 64).join("")
     const vout = rawTx.splice(0, 8).join("")
     const scriptSigSize = decodeVarInt(rawTx)
@@ -87,10 +84,12 @@ function decodeRawTx(text) {
     })
   }
 
-  const outputCount = decodeVarInt(rawTx)
+  return inputs
+}
 
+function decodeOutputs(numOutput, rawTx) {
   let outputs = []
-  for (let i = 0; i < parseInt(outputCount, 16); i++) {
+  for (let i = 0; i < numOutput; i++) {
     const value = rawTx.splice(0, 16).join("")
     const scriptPubKeySize = decodeVarInt(rawTx)
     const scriptPubKey = rawTx.splice(0, 2 * parseInt(scriptPubKeySize, 16)).join("")
@@ -100,6 +99,46 @@ function decodeRawTx(text) {
       scriptPubKeySize,
       scriptPubKey
     })
+  }
+
+  return outputs
+}
+
+function decodeRawTx(text) {
+  const rawTx = text.slice().split("")
+  const version = rawTx.splice(0, 8).join("")
+
+  let inputCount = decodeVarInt(rawTx)
+  let inputs = []
+  let outputCount = ""
+  let outputs = []
+
+  if (parseInt(inputCount, 16) == 0) {
+    const flag = rawTx.splice(0, 2).join("")
+    if (parseInt(flag, 16) == 1) {
+      inputCount = decodeVarInt(rawTx)
+      inputs = decodeInputs(parseInt(inputCount, 16), rawTx)
+
+      outputCount = decodeVarInt(rawTx)
+      outputs = decodeOutputs(parseInt(outputCount, 16), rawTx)
+
+      for (let i = 0; i < inputs.length; i ++) {
+        let stackCount = decodeVarInt(rawTx)
+        let witness = []
+        for (let j = 0; j < parseInt(stackCount, 16); j++) {
+          let stackItemSize= decodeVarInt(rawTx)
+          witness.push(rawTx.splice(0, 2 * parseInt(stackItemSize, 16)))
+        }
+
+        inputs[i].witness = witness
+      }
+    }
+  }
+  else {
+    inputs = decodeInputs(parseInt(inputCount, 16), rawTx)
+
+    outputCount = decodeVarInt(rawTx)
+    outputs = decodeOutputs(parseInt(outputCount, 16), rawTx)
   }
 
   const locktime = rawTx.slice(0, 8).join("")
@@ -153,7 +192,6 @@ const Row = ({title, subtitle, children}) => (
     {children}
   </div>
 )
-
 
 const EXAMPLES = [{
   title: "P2PKH",
@@ -224,8 +262,8 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      rawTx: P2PKH_RAW_TX,
-      ...decodeRawTx(P2PKH_RAW_TX)
+      rawTx: P2WPKH_RAW_TX,
+      ...decodeRawTx(P2WPKH_RAW_TX)
     }
   }
 
@@ -335,6 +373,25 @@ class App extends Component {
                         {input.scriptSig}
                       </div>
                     </Row>
+                    {!!input.witness && (
+                      <Row
+                        title="witness"
+                      >
+                        <ul>
+                        {input.witness.map((w, i) => (
+                          <li
+                            key={i}
+                            style={{
+                              maxWidth: 600,
+                              wordWrap: "break-word"
+                            }}
+                          >
+                            {w}
+                          </li>
+                        ))}
+                        </ul>
+                      </Row>
+                    )}
                     <Row
                       title="sequence"
                       subtitle="4 bytes"
