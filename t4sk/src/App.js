@@ -4,8 +4,7 @@ import './App.css';
 // p2pkh
 const P2PKH_RAW_TX = "0100000001893a4dcefe943a472110185a0df6ef26296525f0a9c65979b4843a1c253e871a000000006b483045022100b50d5f3aeb4ae622f84c5094eda8b5af365259722d14944da5d0419b4abdddd4022037b0471ece3834cecb331731598379a80320fe85f863d1972301f75222287628012103234e4bff961481082757ae63b952f4bddbce0d36b529a52bb8bc0f33b556476affffffff02404b4c00000000001976a91495cd25978ee574b6826e66c0bad2ce0688a118a088ac60a4ab9a000000001976a914bdc0c9a9ffc22453b7470baddcc8079f2b628b5388ac00000000"
 
-
-// const RAW_TX =  "0100000000010115e180dc28a2327e687facc33f10f2a20da717e5548406f7ae8b4c811072f8560100000000ffffffff0100b4f505000000001976a9141d7cd6c75c2e86f4cbf98eaed221b30bd9a0b92888ac02483045022100df7b7e5cda14ddf91290e02ea10786e03eb11ee36ec02dd862fe9a326bbcb7fd02203f5b4496b667e6e281cc654a2da9e4f08660c620a1051337fa8965f727eb19190121038262a6c6cec93c2d3ecd6c6072efea86d02ff8e3328bbd0242b20af3425990ac00000000"
+const P2WPKH_RAW_TX =  "0100000000010115e180dc28a2327e687facc33f10f2a20da717e5548406f7ae8b4c811072f8560100000000ffffffff0100b4f505000000001976a9141d7cd6c75c2e86f4cbf98eaed221b30bd9a0b92888ac02483045022100df7b7e5cda14ddf91290e02ea10786e03eb11ee36ec02dd862fe9a326bbcb7fd02203f5b4496b667e6e281cc654a2da9e4f08660c620a1051337fa8965f727eb19190121038262a6c6cec93c2d3ecd6c6072efea86d02ff8e3328bbd0242b20af3425990ac00000000"
 
 // # version (4 byte, hex, little-endian)
 // 01000000
@@ -155,27 +154,38 @@ const Row = ({title, subtitle, children}) => (
   </div>
 )
 
+
+const EXAMPLES = [{
+  title: "P2PKH",
+  rawTx: P2PKH_RAW_TX,
+}, {
+  title: "P2WPKH",
+  rawTx: P2WPKH_RAW_TX,
+}]
+
 const Examples = ({onClick}) => (
   <ul>
-    <li>
-      <span style={{
-        color: "rgb(55, 61, 66)",
-        fontSize: 15,
-        fontWeight: "bold",
-        marginRight: 10,
-      }}>
-        P2PKH
-      </span>
-      <a
-        href="#"
-        onClick={e => {
-          e.preventDefault()
-          onClick(P2PKH_RAW_TX)
-        }}
-      >
-        {P2PKH_RAW_TX.substring(0, 70)}...
-      </a>
-    </li>
+    {EXAMPLES.map(({title, rawTx}, i) => (
+      <li key={i}>
+        <span style={{
+          color: "rgb(55, 61, 66)",
+          fontSize: 15,
+          fontWeight: "bold",
+          marginRight: 10,
+        }}>
+          {title}
+        </span>
+        <a
+          href="#"
+          onClick={e => {
+            e.preventDefault()
+            onClick(rawTx)
+          }}
+        >
+          {rawTx.substring(0, 70)}...
+        </a>
+      </li>
+    ))}
   </ul>
 )
 
