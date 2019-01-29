@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Users/tasuku-nakamura/go/src/github.com/solanasystems/energy-logs/energy-logs-ui/src/index.css"],"names":[],"mappings":"AAAA,KACE,SAAU,AACV,UAAW,AACX,sBAAwB,CACzB","file":"main.e9de3074.chunk.css","sourcesContent":["body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n"]}
