@@ -8,7 +8,7 @@ import "./App.css"
 
 export function App(props) {
   return (
-    <div>
+    <div className="App">
       <Header />
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>

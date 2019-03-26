@@ -4,10 +4,13 @@ import Nav from "react-bootstrap/Nav"
 
 export function Header(prop) {
   return (
-    <Navbar expand="md">
+    <Navbar expand="md" fixed>
       <Navbar.Brand href="/">SMART CONTRACT PROGRAMMER</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav>
+          <Nav.Link href="/blog">Blog</Nav.Link>
+        </Nav>
         <Nav>
           <Nav.Link href="/about">About</Nav.Link>
         </Nav>
