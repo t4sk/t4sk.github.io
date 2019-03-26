@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it renders 1`] = `
-<div
-  className="App"
-/>
+<div>
+  <Header />
+  <BrowserRouter
+    basename=""
+  >
+    <Switch>
+      <Route
+        component={[Function]}
+        path="/about"
+      />
+      <Route
+        component={[Function]}
+      />
+    </Switch>
+  </BrowserRouter>
+  <Fotter />
+</div>
 `;

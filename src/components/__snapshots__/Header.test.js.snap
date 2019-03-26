@@ -1,7 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it renders 1`] = `
-<div>
-  Header
-</div>
+<Bootstrap(undefined)
+  expand="md"
+>
+  <NavbarBrand
+    href="/"
+  >
+    SMART CONTRACT PROGRAMMER
+  </NavbarBrand>
+  <NavbarToggle
+    aria-controls="basic-navbar-nav"
+    as="button"
+    label="Toggle navigation"
+  />
+  <NavbarCollapse
+    className="justify-content-end"
+    id="basic-navbar-nav"
+  >
+    <Nav
+      as="div"
+      fill={false}
+      justify={false}
+    >
+      <NavLink
+        as={[Function]}
+        disabled={false}
+        href="/about"
+      >
+        About
+      </NavLink>
+    </Nav>
+  </NavbarCollapse>
+</Bootstrap(undefined)>
 `;
