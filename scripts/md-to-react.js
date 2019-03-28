@@ -19,13 +19,13 @@ async function main() {
     .replace(/<br>/g, "<br/>")
 
   const template = (await readFile(
-    path.join(__dirname, "index.js.mustache")
+    path.join(__dirname, "index.html.js.mustache")
   )).toString()
 
   const reactComponent = mustache.render(template, { html })
 
-  console.log(`Writing file to ${path.join(dir, "index.js")}`)
-  writeFile(path.join(dir, "index.js"), reactComponent)
+  console.log(`Writing file to ${path.join(dir, "index.html.js")}`)
+  writeFile(path.join(dir, "index.html.js"), reactComponent)
 }
 
 main()
