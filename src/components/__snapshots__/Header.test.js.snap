@@ -3,10 +3,20 @@
 exports[`it renders 1`] = `
 <Bootstrap(undefined)
   expand="md"
+  fixed={true}
 >
   <NavbarBrand
+    className="Header-brand"
     href="/"
   >
+    <div
+      className="Header-brand-img"
+    >
+      <Bootstrap(Image)
+        fluid={true}
+        src="Logo.svg"
+      />
+    </div>
     SMART CONTRACT PROGRAMMER
   </NavbarBrand>
   <NavbarToggle
@@ -26,9 +36,38 @@ exports[`it renders 1`] = `
       <NavLink
         as={[Function]}
         disabled={false}
+        href="/blog"
+      >
+        Blog
+      </NavLink>
+    </Nav>
+    <Nav
+      as="div"
+      fill={false}
+      justify={false}
+    >
+      <NavLink
+        as={[Function]}
+        disabled={false}
         href="/about"
       >
         About
+      </NavLink>
+    </Nav>
+    <Nav
+      as="div"
+      fill={false}
+      justify={false}
+    >
+      <NavLink
+        as={[Function]}
+        disabled={false}
+        href="/languages"
+      >
+        <LangaugeSVG />
+        <span>
+          Languages
+        </span>
       </NavLink>
     </Nav>
   </NavbarCollapse>

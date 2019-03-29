@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav"
 import Image from "react-bootstrap/Image"
 import "./Header.css"
 import Logo from "./Logo.svg"
+import LanguageSVG from "./LanguageSVG"
 
 export function Header(prop) {
   return (
@@ -21,6 +22,12 @@ export function Header(prop) {
         </Nav>
         <Nav>
           <Nav.Link href="/about">About</Nav.Link>
+        </Nav>
+        <Nav>
+          <Nav.Link href="/languages">
+            <LanguageSVG />
+            <span>Languages</span>
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
