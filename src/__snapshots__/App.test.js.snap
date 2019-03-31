@@ -11,6 +11,10 @@ exports[`it renders 1`] = `
     />
     <Route
       component={[Function]}
+      path="/blog"
+    />
+    <Route
+      component={[Function]}
     />
   </Switch>
 </BrowserRouter>

@@ -1,13 +1,9 @@
 import React from "react"
 import { shallow } from "enzyme"
-import Languages from "./index"
-
-const props = {
-  lang: "en",
-}
+import Blog from "./index"
 
 test("it renders", () => {
-  const component = shallow(<Languages {...props} />)
+  const component = shallow(<Blog />)
 
   expect(component).toMatchSnapshot()
 })

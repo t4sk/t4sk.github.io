@@ -5,7 +5,7 @@ import SEO from "../../components/SEO"
 
 export function Languages(prop) {
   return (
-    <Layout>
+    <Layout lang="en">
       <SEO title="Languages | Smart Contract Programmer" />
       <ul>
         <li>

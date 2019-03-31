@@ -13,8 +13,10 @@ exports[`it renders 1`] = `
     }
     lang="en"
     meta={Array []}
-    title="About | Smart Contract Programmer"
+    title="Blog | Smart Contract Programmer"
   />
-  <_default />
+  <div>
+    blog
+  </div>
 </Layout>
 `;

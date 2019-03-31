@@ -6,10 +6,10 @@ import Header from "./Header"
 import Footer from "./Footer"
 
 export function Layout(props) {
-  const { children } = props
+  const { children, lang } = props
   return (
     <div className="Layout">
-      <Header />
+      <Header lang={lang} />
       <Container>{children}</Container>
       <Footer />
     </div>
@@ -17,6 +17,7 @@ export function Layout(props) {
 }
 
 Layout.propTypes = {
+  lang: PropTypes.oneOf(["en", "jp"]).isRequired,
   children: PropTypes.node.isRequired,
 }
 

@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import Image from "react-bootstrap/Image"
@@ -6,10 +7,12 @@ import "./Header.css"
 import Logo from "./Logo.svg"
 import LanguageSVG from "./LanguageSVG"
 
-export function Header(prop) {
+export function Header(props) {
+  const { lang } = props
+
   return (
     <Navbar expand="md" fixed>
-      <Navbar.Brand href="/" className="Header-brand">
+      <Navbar.Brand href={`/${lang}`} className="Header-brand">
         <div className="Header-brand-img">
           <Image src={Logo} fluid />
         </div>
@@ -18,10 +21,10 @@ export function Header(prop) {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav>
-          <Nav.Link href="/blog">Blog</Nav.Link>
+          <Nav.Link href={`/${lang}/blog`}>Blog</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href={`/${lang}/about`}>About</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link href="/languages">
@@ -32,6 +35,10 @@ export function Header(prop) {
       </Navbar.Collapse>
     </Navbar>
   )
+}
+
+Header.propTypes = {
+  lang: PropTypes.oneOf(["en", "jp"]).isRequired,
 }
 
 export default Header
