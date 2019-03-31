@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it renders 1`] = `
-<Layout>
+<Layout
+  lang="en"
+>
   <SEO
     description="Learn how to program smart contracts."
     keywords={
@@ -15,8 +17,21 @@ exports[`it renders 1`] = `
     meta={Array []}
     title="Languages | Smart Contract Programmer"
   />
-  <div>
-    Languages
-  </div>
+  <ul>
+    <li>
+      <a
+        href="/en"
+      >
+        English
+      </a>
+    </li>
+    <li>
+      <a
+        href="/jp"
+      >
+        Japanese - 日本語
+      </a>
+    </li>
+  </ul>
 </Layout>
 `;

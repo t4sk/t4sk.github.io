@@ -7,6 +7,7 @@ import Footer from "./Footer"
 
 export function Layout(props) {
   const { children, lang } = props
+
   return (
     <div className="Layout">
       <Header lang={lang} />

@@ -7,14 +7,26 @@ exports[`it renders 1`] = `
   <Switch>
     <Route
       component={[Function]}
-      path="/about"
+      path="/languages"
     />
     <Route
       component={[Function]}
-      path="/blog"
+      path="/en/about"
     />
     <Route
       component={[Function]}
+      path="/jp/about"
+    />
+    <Route
+      component={[Function]}
+      path="/en"
+    />
+    <Route
+      component={[Function]}
+      path="/jp"
+    />
+    <Redirect
+      to="/en"
     />
   </Switch>
 </BrowserRouter>
