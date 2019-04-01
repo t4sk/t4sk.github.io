@@ -10,8 +10,10 @@ export function Layout(props) {
 
   return (
     <div className="Layout">
-      <Header lang={lang} />
-      <Container>{children}</Container>
+      <Container>
+        <Header lang={lang} />
+        {children}
+      </Container>
       <Footer />
     </div>
   )
