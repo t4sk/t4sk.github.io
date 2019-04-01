@@ -9,15 +9,28 @@ import Home from "./pages/Home"
 import Blog from "./pages/Blog"
 import About from "./pages/About"
 import Languages from "./pages/Languages"
+import Posts from "./pages/Blog/posts"
 
+function createPostRoutes(Posts) {
+  return Posts.map((post, i) => {
+    return (
+      <Route
+        key={`${post.lang}-${i}`}
+        path={`/${post.lang}/blog/${post.date}`}
+        component={post.Component}
+      />
+    )
+  })
+}
+
+// TODO not found
 export function App(props) {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/languages" component={Languages} />
-        {/* TODO en post imports */}
+        {createPostRoutes(Posts)}
         <Route path="/en/blog" component={Blog.En} />
-        {/* TODO hp post imports */}
         <Route path="/jp/blog" component={Blog.Jp} />
         <Route path="/en/about" component={About.En} />
         <Route path="/jp/about" component={About.Jp} />
