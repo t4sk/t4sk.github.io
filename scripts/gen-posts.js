@@ -10,6 +10,7 @@ const util = require("util")
 const readdir = util.promisify(fs.readdir)
 const readFile = util.promisify(fs.readFile)
 const writeFile = util.promisify(fs.writeFile)
+const mustache = require("mustache")
 const moment = require("moment")
 
 const POSTS_PATH = path.join(__dirname, "../src/pages/Blog/posts")
@@ -36,8 +37,8 @@ async function getPosts() {
         lang,
         date,
         title,
-        // relative path from App.js
-        path: `./pages/Blog/posts/${dir}`,
+        // relative to Blog
+        path: `./posts/${dir}/index.js`,
       }
     })
     .sort(byDate)
@@ -46,12 +47,15 @@ async function getPosts() {
 async function main() {
   const posts = await getPosts()
 
-  console.log(`Saving file to ${path.join(POSTS_PATH, "../posts.json")}`)
+  console.log(`Saving file to ${path.join(POSTS_PATH, "../posts.js")}`)
 
-  writeFile(
-    path.join(POSTS_PATH, "../posts.json"),
-    JSON.stringify(posts, null, 2)
-  )
+  const template = (await readFile(
+    path.join(__dirname, "./posts.js.mustache")
+  )).toString()
+
+  const js = mustache.render(template, { posts })
+
+  writeFile(path.join(POSTS_PATH, "../posts.js"), js)
 }
 
 main()

@@ -1,0 +1,12 @@
+const Posts = [
+  {{#posts}}
+    {
+      lang: "{{& lang}}",
+      date: "{{& date}}",
+      title: "{{& title}}",
+      component: require("{{& path}}").default,
+    },
+  {{/posts}}
+]
+
+export default Posts
