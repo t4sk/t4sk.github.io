@@ -1,0 +1,10 @@
+.Blog-list {
+  list-style: none;
+}
+.Blog-list li {
+  line-height: 1.75em;
+}
+.Blog-list .Blog-date {
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 7px;
+}
