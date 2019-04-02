@@ -12,7 +12,7 @@ export function Layout(props) {
     <div className="Layout">
       <Container>
         <Header lang={lang} />
-        {children}
+        <Container>{children}</Container>
       </Container>
       <Footer />
     </div>
