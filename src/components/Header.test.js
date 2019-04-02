@@ -4,6 +4,9 @@ import Header from "./Header"
 
 const props = {
   lang: "en",
+  location: {
+    pathname: "/en",
+  },
 }
 
 test("en", () => {

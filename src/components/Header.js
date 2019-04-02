@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { withRouter } from "react-router-dom"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import Image from "react-bootstrap/Image"
@@ -10,6 +11,17 @@ import Logo from "./Logo.svg"
 
 export function Header(props) {
   const { lang } = props
+
+  function onClickLang(e, lang) {
+    const { location, history } = props
+
+    // split url into root, lang, rest of path
+    const [, , ...rest] = location.pathname.split("/")
+
+    const path = ["", lang, ...rest].join("/")
+
+    window.location.assign(path)
+  }
 
   return (
     <Navbar expand="md" fixed>
@@ -32,9 +44,9 @@ export function Header(props) {
             {translate(LANG, lang, "Contact")}
           </Nav.Link>
           {lang == "en" ? (
-            <Nav.Link href="/jp">日本語</Nav.Link>
+            <Nav.Link onClick={e => onClickLang(e, "jp")}>Japanese</Nav.Link>
           ) : (
-            <Nav.Link href="/en">English</Nav.Link>
+            <Nav.Link onClick={e => onClickLang(e, "en")}>English</Nav.Link>
           )}
         </Nav>
       </Navbar.Collapse>
@@ -44,6 +56,9 @@ export function Header(props) {
 
 Header.propTypes = {
   lang: PropTypes.oneOf(["en", "jp"]).isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
 }
 
-export default Header
+export default withRouter(Header)
