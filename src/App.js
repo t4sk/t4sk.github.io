@@ -7,8 +7,7 @@ import {
 } from "react-router-dom"
 import Home from "./pages/Home"
 import Blog from "./pages/Blog"
-import About from "./pages/About"
-import Languages from "./pages/Languages"
+import Contact from "./pages/Contact"
 import Posts from "./pages/Blog/posts"
 
 function createPostRoutes(Posts) {
@@ -28,12 +27,12 @@ export function App(props) {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route path="/languages" component={Languages} />
         {createPostRoutes(Posts)}
         <Route path="/en/blog" component={Blog.En} />
         <Route path="/jp/blog" component={Blog.Jp} />
-        <Route path="/en/about" component={About.En} />
-        <Route path="/jp/about" component={About.Jp} />
+        {/* TODO single component for both lang ? */}
+        <Route path="/en/contact" component={Contact.En} />
+        <Route path="/jp/contact" component={Contact.Jp} />
         <Route path="/en" component={Home.En} />
         <Route path="/jp" component={Home.Jp} />
         <Redirect to="/en" />
