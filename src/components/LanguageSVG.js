@@ -1,5 +1,6 @@
 import React from "react"
 
+// TODO remove
 export default function LangaugeSVG() {
   return (
     <svg

@@ -25,7 +25,7 @@ export function Header(props) {
 
   return (
     <Navbar expand="md" fixed>
-      <Navbar.Brand href={`/${lang}`} className="Header-brand">
+      <Navbar.Brand href="/" className="Header-brand">
         <div className="Header-brand-img">
           <Image src={Logo} />
         </div>

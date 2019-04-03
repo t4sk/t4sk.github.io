@@ -36,7 +36,7 @@ exports[`jp 1`] = `
         "ethereum",
       ]
     }
-    lang="en"
+    lang="jp"
     meta={Array []}
     title="Smart Contract Programmer"
   />

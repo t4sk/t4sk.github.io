@@ -8,13 +8,16 @@ import {
 import Home from "./pages/Home"
 import Blog from "./pages/Blog"
 import Contact from "./pages/Contact"
-import Posts from "./pages/Blog/posts"
+// TODO switch to posts.js
+import Posts from "./pages/Blog/posts-bk"
+import NotFound from "./pages/NotFound"
 
-function createPostRoutes(Posts) {
-  return Posts.map((post, i) => {
+function createPostRoutes(posts) {
+  return posts.map((post, i) => {
     return (
       <Route
         key={`${post.lang}-${i}`}
+        exact
         path={`/${post.lang}/blog/${post.date}`}
         component={post.Component}
       />
@@ -28,14 +31,15 @@ export function App(props) {
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         {createPostRoutes(Posts)}
-        <Route path="/en/blog" component={Blog.En} />
-        <Route path="/jp/blog" component={Blog.Jp} />
-        {/* TODO single component for both lang ? */}
-        <Route path="/en/contact" component={Contact.En} />
-        <Route path="/jp/contact" component={Contact.Jp} />
-        <Route path="/en" component={Home.En} />
-        <Route path="/jp" component={Home.Jp} />
-        <Redirect to="/en" />
+        <Route exact path="/en/blog" component={Blog.En} />
+        <Route exact path="/jp/blog" component={Blog.Jp} />
+        {/* TODO ? render={props => <Contact {...props} lang="en" />}*/}
+        <Route exact path="/en/contact" component={Contact.En} />
+        <Route exact path="/jp/contact" component={Contact.Jp} />
+        <Route exact path="/en" component={Home.En} />
+        <Route exact path="/jp" component={Home.Jp} />
+        <Redirect exact from="/" to="/en" />
+        <Route component={NotFound} />
       </Switch>
     </Router>
   )

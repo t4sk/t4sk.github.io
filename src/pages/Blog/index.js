@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import "./index.css"
+
+// TODO switch to posts.js
 import Posts from "./posts-bk"
 
 export function groupByYear(posts) {
@@ -36,6 +38,8 @@ function Base(props) {
   const { lang } = props
 
   const { years, byYear } = groupByYear(Posts.filter(post => post.lang == lang))
+
+  // tab to filter by lang
 
   return (
     <Layout lang={lang}>
