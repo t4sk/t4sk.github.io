@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import "./index.css"
@@ -22,6 +23,10 @@ function Base(props) {
       <div>smartcontractprogrammer@gmail.com</div>
     </Layout>
   )
+}
+
+Base.propTypes = {
+  lang: PropTypes.oneOf(["en", "jp"]).isRequired,
 }
 
 const Contact = {
