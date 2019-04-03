@@ -8,7 +8,7 @@ import LANG from "./index.lang"
 
 const EMAIL = "smartcontractprogrammer@gmail.com"
 
-function Base(props) {
+function Contact(props) {
   const { lang, children } = props
 
   const title = `${translate(
@@ -25,13 +25,8 @@ function Base(props) {
   )
 }
 
-Base.propTypes = {
+Contact.propTypes = {
   lang: PropTypes.oneOf(["en", "jp"]).isRequired,
-}
-
-const Contact = {
-  En: props => Base({ ...props, lang: "en" }),
-  Jp: props => Base({ ...props, lang: "jp" }),
 }
 
 export default Contact

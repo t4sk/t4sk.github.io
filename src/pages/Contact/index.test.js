@@ -7,13 +7,13 @@ const props = {
 }
 
 test("en", () => {
-  const component = shallow(<Contact.En {...props} />)
+  const component = shallow(<Contact {...props} />)
 
   expect(component).toMatchSnapshot()
 })
 
 test("jp", () => {
-  const component = shallow(<Contact.Jp {...props} lang="jp" />)
+  const component = shallow(<Contact {...props} lang="jp" />)
 
   expect(component).toMatchSnapshot()
 })

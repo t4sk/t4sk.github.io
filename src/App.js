@@ -33,9 +33,16 @@ export function App(props) {
         {createPostRoutes(Posts)}
         <Route exact path="/en/blog" component={Blog.En} />
         <Route exact path="/jp/blog" component={Blog.Jp} />
-        {/* TODO ? render={props => <Contact {...props} lang="en" />}*/}
-        <Route exact path="/en/contact" component={Contact.En} />
-        <Route exact path="/jp/contact" component={Contact.Jp} />
+        <Route
+          exact
+          path="/en/contact"
+          render={props => <Contact {...props} lang="en" />}
+        />
+        <Route
+          exact
+          path="/jp/contact"
+          render={props => <Contact {...props} lang="jp" />}
+        />
         <Route exact path="/en" component={Home.En} />
         <Route exact path="/jp" component={Home.Jp} />
         <Redirect exact from="/" to="/en" />
