@@ -25,7 +25,8 @@ function createPostRoutes(posts) {
   })
 }
 
-// TODO not found
+// TODO footer
+
 export function App(props) {
   return (
     <Router basename={process.env.PUBLIC_URL}>

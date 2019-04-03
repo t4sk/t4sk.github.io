@@ -17,237 +17,105 @@ exports[`en 1`] = `
     meta={Array []}
     title="Blog | Smart Contract Programmer"
   />
-  <div
-    key="0"
+  <ForwardRef
+    defaultActiveKey="en"
+    id="uncontrolled-tab-example"
   >
-    <h3>
-      2019
-    </h3>
-    <ul
-      className="Blog-list"
+    <Tab
+      eventKey="en"
+      title="English"
     >
-      <li
-        key="0"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2019-01-03
-          </div>
-          <a
-            href="/en/blog/2019-01-03"
-          >
-            Introduction to Ethereum Payment Channels Video
-          </a>
-        </div>
-      </li>
-      <li
-        key="1"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2019-01-02
-          </div>
-          <a
-            href="/en/blog/2019-01-02"
-          >
-            Implementing Harberger Tax Deeds
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div
-    key="1"
-  >
-    <h3>
-      2018
-    </h3>
-    <ul
-      className="Blog-list"
+      <PostsByYear
+        posts={
+          Array [
+            Object {
+              "component": [Function],
+              "date": "2019-01-03",
+              "lang": "en",
+              "title": "Introduction to Ethereum Payment Channels Video",
+            },
+            Object {
+              "component": [Function],
+              "date": "2019-01-02",
+              "lang": "en",
+              "title": "Implementing Harberger Tax Deeds",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-10-11",
+              "lang": "en",
+              "title": "Writing a Dollar Auction Contract",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-10-10",
+              "lang": "en",
+              "title": "Writing a Penny Auction Contract",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-10-01",
+              "lang": "en",
+              "title": "Contracts Calling Arbitrary Functions",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-01-12",
+              "lang": "en",
+              "title": "Writing an ERC20 Token Contract",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-01-02",
+              "lang": "en",
+              "title": "What is an Ethereum Token?",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-01-01",
+              "lang": "en",
+              "title": "Logging and Watching Solidity Events",
+            },
+            Object {
+              "component": [Function],
+              "date": "2017-12-23",
+              "lang": "en",
+              "title": "How Ethereum Transactions Work",
+            },
+            Object {
+              "component": [Function],
+              "date": "2017-12-22",
+              "lang": "en",
+              "title": "Checking the Sender in a Smart Contract",
+            },
+            Object {
+              "component": [Function],
+              "date": "2017-12-12",
+              "lang": "en",
+              "title": "Testing and Deploying Smart Contracts with Remix",
+            },
+          ]
+        }
+      />
+    </Tab>
+    <Tab
+      eventKey="jp"
+      title="Japanese"
     >
-      <li
-        key="0"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2018-10-11
-          </div>
-          <a
-            href="/en/blog/2018-10-11"
-          >
-            Writing a Dollar Auction Contract
-          </a>
-        </div>
-      </li>
-      <li
-        key="1"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2018-10-10
-          </div>
-          <a
-            href="/en/blog/2018-10-10"
-          >
-            Writing a Penny Auction Contract
-          </a>
-        </div>
-      </li>
-      <li
-        key="2"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2018-10-01
-          </div>
-          <a
-            href="/en/blog/2018-10-01"
-          >
-            Contracts Calling Arbitrary Functions
-          </a>
-        </div>
-      </li>
-      <li
-        key="3"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2018-01-12
-          </div>
-          <a
-            href="/en/blog/2018-01-12"
-          >
-            Writing an ERC20 Token Contract
-          </a>
-        </div>
-      </li>
-      <li
-        key="4"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2018-01-02
-          </div>
-          <a
-            href="/en/blog/2018-01-02"
-          >
-            What is an Ethereum Token?
-          </a>
-        </div>
-      </li>
-      <li
-        key="5"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2018-01-01
-          </div>
-          <a
-            href="/en/blog/2018-01-01"
-          >
-            Logging and Watching Solidity Events
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div
-    key="2"
-  >
-    <h3>
-      2017
-    </h3>
-    <ul
-      className="Blog-list"
-    >
-      <li
-        key="0"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2017-12-23
-          </div>
-          <a
-            href="/en/blog/2017-12-23"
-          >
-            How Ethereum Transactions Work
-          </a>
-        </div>
-      </li>
-      <li
-        key="1"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2017-12-22
-          </div>
-          <a
-            href="/en/blog/2017-12-22"
-          >
-            Checking the Sender in a Smart Contract
-          </a>
-        </div>
-      </li>
-      <li
-        key="2"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2017-12-12
-          </div>
-          <a
-            href="/en/blog/2017-12-12"
-          >
-            Testing and Deploying Smart Contracts with Remix
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
+      <PostsByYear
+        posts={
+          Array [
+            Object {
+              "component": [Function],
+              "date": "2018-03-10",
+              "lang": "jp",
+              "title": "qwer",
+            },
+          ]
+        }
+      />
+    </Tab>
+  </ForwardRef>
 </Layout>
 `;
 
@@ -266,36 +134,106 @@ exports[`jp 1`] = `
     }
     lang="jp"
     meta={Array []}
-    title="Blog | Smart Contract Programmer"
+    title="ブログ | Smart Contract Programmer"
   />
-  <div
-    key="0"
+  <ForwardRef
+    defaultActiveKey="jp"
+    id="uncontrolled-tab-example"
   >
-    <h3>
-      2018
-    </h3>
-    <ul
-      className="Blog-list"
+    <Tab
+      eventKey="en"
+      title="English"
     >
-      <li
-        key="0"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="Blog-date"
-          >
-            2018-03-10
-          </div>
-          <a
-            href="/jp/blog/2018-03-10"
-          >
-            qwer
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
+      <PostsByYear
+        posts={
+          Array [
+            Object {
+              "component": [Function],
+              "date": "2019-01-03",
+              "lang": "en",
+              "title": "Introduction to Ethereum Payment Channels Video",
+            },
+            Object {
+              "component": [Function],
+              "date": "2019-01-02",
+              "lang": "en",
+              "title": "Implementing Harberger Tax Deeds",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-10-11",
+              "lang": "en",
+              "title": "Writing a Dollar Auction Contract",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-10-10",
+              "lang": "en",
+              "title": "Writing a Penny Auction Contract",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-10-01",
+              "lang": "en",
+              "title": "Contracts Calling Arbitrary Functions",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-01-12",
+              "lang": "en",
+              "title": "Writing an ERC20 Token Contract",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-01-02",
+              "lang": "en",
+              "title": "What is an Ethereum Token?",
+            },
+            Object {
+              "component": [Function],
+              "date": "2018-01-01",
+              "lang": "en",
+              "title": "Logging and Watching Solidity Events",
+            },
+            Object {
+              "component": [Function],
+              "date": "2017-12-23",
+              "lang": "en",
+              "title": "How Ethereum Transactions Work",
+            },
+            Object {
+              "component": [Function],
+              "date": "2017-12-22",
+              "lang": "en",
+              "title": "Checking the Sender in a Smart Contract",
+            },
+            Object {
+              "component": [Function],
+              "date": "2017-12-12",
+              "lang": "en",
+              "title": "Testing and Deploying Smart Contracts with Remix",
+            },
+          ]
+        }
+      />
+    </Tab>
+    <Tab
+      eventKey="jp"
+      title="Japanese"
+    >
+      <PostsByYear
+        posts={
+          Array [
+            Object {
+              "component": [Function],
+              "date": "2018-03-10",
+              "lang": "jp",
+              "title": "qwer",
+            },
+          ]
+        }
+      />
+    </Tab>
+  </ForwardRef>
 </Layout>
 `;
