@@ -2,8 +2,18 @@ import React from "react"
 import { shallow } from "enzyme"
 import Blog, { groupByYear } from "./index"
 
-test("it renders", () => {
-  const component = shallow(<Blog />)
+const props = {
+  lang: "en",
+}
+
+test("en", () => {
+  const component = shallow(<Blog lang="en" />)
+
+  expect(component).toMatchSnapshot()
+})
+
+test("jp", () => {
+  const component = shallow(<Blog lang="jp" />)
 
   expect(component).toMatchSnapshot()
 })

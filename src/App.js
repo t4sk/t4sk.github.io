@@ -31,8 +31,16 @@ export function App(props) {
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         {createPostRoutes(Posts)}
-        <Route exact path="/en/blog" component={Blog.En} />
-        <Route exact path="/jp/blog" component={Blog.Jp} />
+        <Route
+          exact
+          path="/en/blog"
+          render={props => <Blog {...props} lang="en" />}
+        />
+        <Route
+          exact
+          path="/jp/blog"
+          render={props => <Blog {...props} lang="jp" />}
+        />
         <Route
           exact
           path="/en/contact"

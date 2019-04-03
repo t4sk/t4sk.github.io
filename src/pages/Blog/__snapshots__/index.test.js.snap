@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it renders 1`] = `
-<Layout>
+exports[`en 1`] = `
+<Layout
+  lang="en"
+>
   <SEO
     description="Learn how to program smart contracts."
     keywords={
@@ -15,8 +17,285 @@ exports[`it renders 1`] = `
     meta={Array []}
     title="Blog | Smart Contract Programmer"
   />
-  <div>
-    blog
+  <div
+    key="0"
+  >
+    <h3>
+      2019
+    </h3>
+    <ul
+      className="Blog-list"
+    >
+      <li
+        key="0"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2019-01-03
+          </div>
+          <a
+            href="/en/blog/2019-01-03"
+          >
+            Introduction to Ethereum Payment Channels Video
+          </a>
+        </div>
+      </li>
+      <li
+        key="1"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2019-01-02
+          </div>
+          <a
+            href="/en/blog/2019-01-02"
+          >
+            Implementing Harberger Tax Deeds
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div
+    key="1"
+  >
+    <h3>
+      2018
+    </h3>
+    <ul
+      className="Blog-list"
+    >
+      <li
+        key="0"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2018-10-11
+          </div>
+          <a
+            href="/en/blog/2018-10-11"
+          >
+            Writing a Dollar Auction Contract
+          </a>
+        </div>
+      </li>
+      <li
+        key="1"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2018-10-10
+          </div>
+          <a
+            href="/en/blog/2018-10-10"
+          >
+            Writing a Penny Auction Contract
+          </a>
+        </div>
+      </li>
+      <li
+        key="2"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2018-10-01
+          </div>
+          <a
+            href="/en/blog/2018-10-01"
+          >
+            Contracts Calling Arbitrary Functions
+          </a>
+        </div>
+      </li>
+      <li
+        key="3"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2018-01-12
+          </div>
+          <a
+            href="/en/blog/2018-01-12"
+          >
+            Writing an ERC20 Token Contract
+          </a>
+        </div>
+      </li>
+      <li
+        key="4"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2018-01-02
+          </div>
+          <a
+            href="/en/blog/2018-01-02"
+          >
+            What is an Ethereum Token?
+          </a>
+        </div>
+      </li>
+      <li
+        key="5"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2018-01-01
+          </div>
+          <a
+            href="/en/blog/2018-01-01"
+          >
+            Logging and Watching Solidity Events
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div
+    key="2"
+  >
+    <h3>
+      2017
+    </h3>
+    <ul
+      className="Blog-list"
+    >
+      <li
+        key="0"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2017-12-23
+          </div>
+          <a
+            href="/en/blog/2017-12-23"
+          >
+            How Ethereum Transactions Work
+          </a>
+        </div>
+      </li>
+      <li
+        key="1"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2017-12-22
+          </div>
+          <a
+            href="/en/blog/2017-12-22"
+          >
+            Checking the Sender in a Smart Contract
+          </a>
+        </div>
+      </li>
+      <li
+        key="2"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2017-12-12
+          </div>
+          <a
+            href="/en/blog/2017-12-12"
+          >
+            Testing and Deploying Smart Contracts with Remix
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</Layout>
+`;
+
+exports[`jp 1`] = `
+<Layout
+  lang="jp"
+>
+  <SEO
+    description="Learn how to program smart contracts."
+    keywords={
+      Array [
+        "smart contract",
+        "solidity",
+        "ethereum",
+      ]
+    }
+    lang="jp"
+    meta={Array []}
+    title="Blog | Smart Contract Programmer"
+  />
+  <div
+    key="0"
+  >
+    <h3>
+      2018
+    </h3>
+    <ul
+      className="Blog-list"
+    >
+      <li
+        key="0"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="Blog-date"
+          >
+            2018-03-10
+          </div>
+          <a
+            href="/jp/blog/2018-03-10"
+          >
+            qwer
+          </a>
+        </div>
+      </li>
+    </ul>
   </div>
 </Layout>
 `;

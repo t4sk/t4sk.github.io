@@ -66,14 +66,14 @@ exports[`it renders 1`] = `
       path="/jp/blog/2018-03-10"
     />
     <Route
-      component={[Function]}
       exact={true}
       path="/en/blog"
+      render={[Function]}
     />
     <Route
-      component={[Function]}
       exact={true}
       path="/jp/blog"
+      render={[Function]}
     />
     <Route
       exact={true}

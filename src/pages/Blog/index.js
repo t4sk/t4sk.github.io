@@ -34,7 +34,7 @@ export function groupByYear(posts) {
   }
 }
 
-function Base(props) {
+function Blog(props) {
   const { lang } = props
 
   const { years, byYear } = groupByYear(Posts.filter(post => post.lang == lang))
@@ -63,13 +63,8 @@ function Base(props) {
   )
 }
 
-Base.propTypes = {
+Blog.propTypes = {
   lang: PropTypes.oneOf(["en", "jp"]).isRequired,
-}
-
-const Blog = {
-  En: props => Base({ ...props, lang: "en" }),
-  Jp: props => Base({ ...props, lang: "jp" }),
 }
 
 export default Blog
