@@ -7,13 +7,13 @@ const props = {
 }
 
 test("en", () => {
-  const component = shallow(<Home.En {...props} />)
+  const component = shallow(<Home {...props} />)
 
   expect(component).toMatchSnapshot()
 })
 
 test("jp", () => {
-  const component = shallow(<Home.Jp {...props} lang="jp" />)
+  const component = shallow(<Home {...props} lang="jp" />)
 
   expect(component).toMatchSnapshot()
 })

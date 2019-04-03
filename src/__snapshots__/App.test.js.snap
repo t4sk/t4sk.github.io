@@ -86,14 +86,14 @@ exports[`it renders 1`] = `
       render={[Function]}
     />
     <Route
-      component={[Function]}
       exact={true}
       path="/en"
+      render={[Function]}
     />
     <Route
-      component={[Function]}
       exact={true}
       path="/jp"
+      render={[Function]}
     />
     <Redirect
       exact={true}

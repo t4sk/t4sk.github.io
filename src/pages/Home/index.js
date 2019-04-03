@@ -1,9 +1,10 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 
 // TODO list most recent posts (both eng and jp)
-function Base(props) {
+function Home(props) {
   const { lang } = props
 
   return (
@@ -14,9 +15,8 @@ function Base(props) {
   )
 }
 
-const Home = {
-  En: props => Base({ ...props, lang: "en" }),
-  Jp: props => Base({ ...props, lang: "jp" }),
+Home.propTypes = {
+  lang: PropTypes.oneOf(["en", "jp"]).isRequired,
 }
 
 export default Home

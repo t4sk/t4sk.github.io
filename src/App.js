@@ -43,8 +43,16 @@ export function App(props) {
           path="/jp/contact"
           render={props => <Contact {...props} lang="jp" />}
         />
-        <Route exact path="/en" component={Home.En} />
-        <Route exact path="/jp" component={Home.Jp} />
+        <Route
+          exact
+          path="/en"
+          render={props => <Home {...props} lang="en" />}
+        />
+        <Route
+          exact
+          path="/jp"
+          render={props => <Home {...props} lang="jp" />}
+        />
         <Redirect exact from="/" to="/en" />
         <Route component={NotFound} />
       </Switch>
