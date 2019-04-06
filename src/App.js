@@ -7,7 +7,7 @@ import {
 } from "react-router-dom"
 import Home from "./pages/Home"
 import Blog from "./pages/Blog"
-import Contact from "./pages/Contact"
+import About from "./pages/About"
 import Posts from "./pages/Blog/posts"
 import NotFound from "./pages/NotFound"
 
@@ -41,13 +41,13 @@ export function App(props) {
         />
         <Route
           exact
-          path="/en/contact"
-          render={props => <Contact {...props} lang="en" />}
+          path="/en/about"
+          render={props => <About {...props} lang="en" />}
         />
         <Route
           exact
-          path="/jp/contact"
-          render={props => <Contact {...props} lang="jp" />}
+          path="/jp/about"
+          render={props => <About {...props} lang="jp" />}
         />
         <Route
           exact

@@ -12,6 +12,7 @@ export function Fotter(prop) {
             className="Footer-github"
             href="https://github.com/t4sk"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={GitHubSVG} alt="GitHub" />
             <span className="Footer-github-text">GitHub</span>

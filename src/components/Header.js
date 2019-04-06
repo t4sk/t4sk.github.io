@@ -34,8 +34,8 @@ export function Header(props) {
           <Menu.Item as="a" href={`/${lang}/blog`}>
             {translate(LANG, lang, "Blog")}
           </Menu.Item>
-          <Menu.Item as="a" href={`/${lang}/contact`}>
-            {translate(LANG, lang, "Contact")}
+          <Menu.Item as="a" href={`/${lang}/about`}>
+            {translate(LANG, lang, "About")}
           </Menu.Item>
 
           {lang == "en" ? (

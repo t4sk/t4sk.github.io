@@ -1,11 +1,11 @@
 const LANG = {
   en: {
     Blog: "Blog",
-    Contact: "Contact",
+    About: "About",
   },
   jp: {
     Blog: "ブログ",
-    Contact: "お問い合わせ",
+    About: "概要",
   },
 }
 

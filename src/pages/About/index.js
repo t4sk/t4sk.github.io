@@ -6,14 +6,10 @@ import "./index.css"
 import translate from "../../translate"
 import LANG from "./index.lang"
 
-function Contact(props) {
+function About(props) {
   const { lang } = props
 
-  const title = `${translate(
-    LANG,
-    lang,
-    "Contact"
-  )} | Smart Contract Programmer`
+  const title = `${translate(LANG, lang, "About")} | Smart Contract Programmer`
   return (
     <Layout lang={lang}>
       <SEO title={title} lang={lang} />
@@ -23,8 +19,8 @@ function Contact(props) {
   )
 }
 
-Contact.propTypes = {
+About.propTypes = {
   lang: PropTypes.oneOf(["en", "jp"]).isRequired,
 }
 
-export default Contact
+export default About
