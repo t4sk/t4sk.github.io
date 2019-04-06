@@ -1,6 +1,23 @@
 .Footer {
   background-color: #20232a;
   color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.Footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.Footer-github {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+.Footer-github:hover {
+  color: white;
+}
+.Footer-github-text {
+  margin-left: 10px;
 }
