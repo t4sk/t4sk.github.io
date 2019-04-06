@@ -1,31 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "854efb55fecb2ce33e35",
-    "url": "/static/css/main.334d8e81.chunk.css"
+    "revision": "f9a5a64458e2f538170c",
+    "url": "/static/css/main.7641a791.chunk.css"
   },
   {
-    "revision": "854efb55fecb2ce33e35",
-    "url": "/static/js/main.4228607d.chunk.js"
+    "revision": "f9a5a64458e2f538170c",
+    "url": "/static/js/main.d56b7c18.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "c3c4e921e19ba9750424",
+    "revision": "66037a1718f74f746858",
     "url": "/static/css/2.ab533247.chunk.css"
   },
   {
-    "revision": "c3c4e921e19ba9750424",
-    "url": "/static/js/2.a4e47908.chunk.js"
+    "revision": "66037a1718f74f746858",
+    "url": "/static/js/2.5c433aa0.chunk.js"
   },
   {
     "revision": "5b23e9ddd5ededcba263f3810b320f1b",
     "url": "/static/media/Logo.5b23e9dd.svg"
-  },
-  {
-    "revision": "04b97721c21d0ba11fd52d6f9aaff88f",
-    "url": "/static/media/GitHubSVG.04b97721.svg"
   },
   {
     "revision": "cd6c777f1945164224dee082abaea03a",
@@ -92,7 +88,11 @@ self.__precacheManifest = [
     "url": "/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "f9201d9ba36ec7dde669fa2f6e176e51",
+    "revision": "04b97721c21d0ba11fd52d6f9aaff88f",
+    "url": "/static/media/GitHubSVG.04b97721.svg"
+  },
+  {
+    "revision": "9d7d2c6743d5ac8f8c8a9a071ed715d1",
     "url": "/index.html"
   }
 ];
