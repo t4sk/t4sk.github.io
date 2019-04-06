@@ -6,8 +6,6 @@ import "./index.css"
 import translate from "../../translate"
 import LANG from "./index.lang"
 
-const EMAIL = "smartcontractprogrammer@gmail.com"
-
 function Contact(props) {
   const { lang, children } = props
 
