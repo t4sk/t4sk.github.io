@@ -7,7 +7,7 @@ import translate from "../../translate"
 import LANG from "./index.lang"
 
 function Contact(props) {
-  const { lang, children } = props
+  const { lang } = props
 
   const title = `${translate(
     LANG,
