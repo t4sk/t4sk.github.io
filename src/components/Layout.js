@@ -11,7 +11,9 @@ export function Layout(props) {
   return (
     <div className="Layout">
       <Header lang={lang} />
-      <Container>{children}</Container>
+      <Container>
+        <div className="Layout-main">{children}</div>
+      </Container>
       <Footer />
     </div>
   )
