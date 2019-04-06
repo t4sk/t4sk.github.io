@@ -1,17 +1,15 @@
 import React from "react"
 import moment from "moment"
 import PropTypes from "prop-types"
-import Nav from "react-bootstrap/Nav"
-import Tabs from "react-bootstrap/Tabs"
-import Tab from "react-bootstrap/Tab"
+import { Tab } from "semantic-ui-react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import "./index.css"
 import LANG from "./index.lang"
 import translate from "../../translate"
 
-// TODO switch to posts.js
-import Posts from "./posts-bk"
+// import Posts from "./posts-bk"
+import Posts from "./posts"
 
 export function groupByYear(posts) {
   const grouped = posts.reduce((grouped, post) => {
@@ -50,7 +48,7 @@ function PostsByYear(props) {
       <ul className="Blog-list">
         {byYear[year].map((post, j) => (
           <li key={j}>
-            <div className="row">
+            <div className="Blog-post">
               <div className="Blog-date">{post.date}</div>
               <a href={`/${post.lang}/blog/${post.date}`}>{post.title}</a>
             </div>
@@ -61,6 +59,26 @@ function PostsByYear(props) {
   ))
 }
 
+const panes = [
+  {
+    menuItem: "English",
+    render: () => (
+      <PostsByYear posts={Posts.filter(post => post.lang == "en")} />
+    ),
+  },
+  {
+    menuItem: "Japanese",
+    render: () => (
+      <PostsByYear posts={Posts.filter(post => post.lang == "jp")} />
+    ),
+  },
+]
+
+const ACTIVE_INDEX = {
+  en: 0,
+  jp: 1,
+}
+
 function Blog(props) {
   const { lang } = props
 
@@ -69,14 +87,11 @@ function Blog(props) {
   return (
     <Layout lang={lang}>
       <SEO title={title} lang={lang} />
-      <Tabs defaultActiveKey={lang} id="uncontrolled-tab-example">
-        <Tab eventKey="en" title="English">
-          <PostsByYear posts={Posts.filter(post => post.lang == "en")} />
-        </Tab>
-        <Tab eventKey="jp" title="Japanese">
-          <PostsByYear posts={Posts.filter(post => post.lang == "jp")} />
-        </Tab>
-      </Tabs>
+      <Tab
+        menu={{ secondary: true }}
+        defaultActiveIndex={ACTIVE_INDEX[lang]}
+        panes={panes}
+      />
     </Layout>
   )
 }

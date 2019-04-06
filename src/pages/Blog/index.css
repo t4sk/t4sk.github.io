@@ -4,6 +4,10 @@
 .Blog-list {
   list-style: none;
 }
+.Blog-post {
+  display: flex;
+  flex-direction: row;
+}
 .Blog-list li {
   line-height: 1.75em;
 }
