@@ -1,9 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { withRouter } from "react-router-dom"
-import Navbar from "react-bootstrap/Navbar"
-import Nav from "react-bootstrap/Nav"
-import Image from "react-bootstrap/Image"
+import { Menu, Container } from "semantic-ui-react"
 import "./Header.css"
 import translate from "../translate"
 import LANG from "./Header.lang"
@@ -12,45 +10,46 @@ import Logo from "./Logo.svg"
 export function Header(props) {
   const { lang } = props
 
-  function onClickLang(e, lang) {
-    const { location, history } = props
+  function getPath(lang) {
+    const { location } = props
 
     // split url into root, lang, rest of path
     const [, , ...rest] = location.pathname.split("/")
 
-    const path = ["", lang, ...rest].join("/")
-
-    window.location.assign(path)
+    return ["", lang, ...rest].join("/")
   }
 
+  const enPath = getPath("en")
+  const jpPath = getPath("jp")
+
   return (
-    <Navbar expand="md" fixed>
-      <Navbar.Brand href="/" className="Header-brand">
-        <div className="Header-brand-img">
-          <Image src={Logo} />
-        </div>
-        SMART CONTRACT PROGRAMMER
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse
-        id="responsive-navbar-nav"
-        className="justify-content-end"
-      >
-        <Nav>
-          <Nav.Link href={`/${lang}/blog`}>
+    <Menu stackable borderless fluid>
+      <Container>
+        <Menu.Item header as="a" href="/">
+          <img src={Logo} alt="logo" />
+          <span className="Header-logo-text">SMART CONTRACT PROGRAMMER</span>
+        </Menu.Item>
+
+        <Menu.Menu position="right">
+          <Menu.Item as="a" href={`/${lang}/blog`}>
             {translate(LANG, lang, "Blog")}
-          </Nav.Link>
-          <Nav.Link href={`/${lang}/contact`}>
+          </Menu.Item>
+          <Menu.Item as="a" href={`/${lang}/contact`}>
             {translate(LANG, lang, "Contact")}
-          </Nav.Link>
+          </Menu.Item>
+
           {lang == "en" ? (
-            <Nav.Link onClick={e => onClickLang(e, "jp")}>Japanese</Nav.Link>
+            <Menu.Item as="a" href={jpPath}>
+              Japanese
+            </Menu.Item>
           ) : (
-            <Nav.Link onClick={e => onClickLang(e, "en")}>English</Nav.Link>
+            <Menu.Item as="a" href={enPath}>
+              English
+            </Menu.Item>
           )}
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+        </Menu.Menu>
+      </Container>
+    </Menu>
   )
 }
 
