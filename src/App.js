@@ -8,8 +8,7 @@ import {
 import Home from "./pages/Home"
 import Blog from "./pages/Blog"
 import Contact from "./pages/Contact"
-// TODO switch to posts.js
-import Posts from "./pages/Blog/posts-bk"
+import Posts from "./pages/Blog/posts"
 import NotFound from "./pages/NotFound"
 
 function createPostRoutes(posts) {
@@ -24,8 +23,6 @@ function createPostRoutes(posts) {
     )
   })
 }
-
-// TODO footer
 
 export function App(props) {
   return (
