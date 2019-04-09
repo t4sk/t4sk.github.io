@@ -1,7 +1,7 @@
 import React from "react"
 import moment from "moment"
 import PropTypes from "prop-types"
-import { Tab } from "semantic-ui-react"
+import { Tab, Segment } from "semantic-ui-react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import "./index.css"
@@ -87,11 +87,13 @@ function Blog(props) {
   return (
     <Layout lang={lang}>
       <SEO title={title} lang={lang} />
-      <Tab
-        menu={{ secondary: true }}
-        defaultActiveIndex={ACTIVE_INDEX[lang]}
-        panes={panes}
-      />
+      <Segment>
+        <Tab
+          menu={{ secondary: true }}
+          defaultActiveIndex={ACTIVE_INDEX[lang]}
+          panes={panes}
+        />
+      </Segment>
     </Layout>
   )
 }
