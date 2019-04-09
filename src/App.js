@@ -18,7 +18,7 @@ function createPostRoutes(posts) {
         key={`${post.lang}-${i}`}
         exact
         path={`/${post.lang}/blog/${post.date}`}
-        component={post.Component}
+        component={post.component}
       />
     )
   })

@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Container from "react-bootstrap/Container"
+import { Container } from "semantic-ui-react"
 import "./Layout.css"
 import Header from "./Header"
 import Footer from "./Footer"

@@ -1,3 +1,8 @@
+```shell
+# create react component from md
+npm run md-to-react src/pages/Blog/posts/en_2019-04-06
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
