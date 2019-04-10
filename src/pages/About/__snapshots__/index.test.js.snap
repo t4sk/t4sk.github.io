@@ -15,7 +15,7 @@ exports[`en 1`] = `
     }
     lang="en"
     meta={Array []}
-    title="Contact | Smart Contract Programmer"
+    title="About | Smart Contract Programmer"
   />
   <h3>
     Contact
@@ -41,7 +41,7 @@ exports[`jp 1`] = `
     }
     lang="jp"
     meta={Array []}
-    title="お問い合わせ | Smart Contract Programmer"
+    title="概要 | Smart Contract Programmer"
   />
   <h3>
     お問い合わせ

@@ -6,6 +6,12 @@ exports[`it renders 1`] = `
 >
   <Switch>
     <Route
+      component={[Function]}
+      exact={true}
+      key="en-0"
+      path="/en/blog/2019-04-11"
+    />
+    <Route
       exact={true}
       path="/en/blog"
       render={[Function]}
@@ -17,12 +23,12 @@ exports[`it renders 1`] = `
     />
     <Route
       exact={true}
-      path="/en/contact"
+      path="/en/about"
       render={[Function]}
     />
     <Route
       exact={true}
-      path="/jp/contact"
+      path="/jp/about"
       render={[Function]}
     />
     <Route

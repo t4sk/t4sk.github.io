@@ -17,105 +17,35 @@ exports[`en 1`] = `
     meta={Array []}
     title="Blog | Smart Contract Programmer"
   />
-  <ForwardRef
-    defaultActiveKey="en"
-    id="uncontrolled-tab-example"
-  >
+  <Segment>
     <Tab
-      eventKey="en"
-      title="English"
-    >
-      <PostsByYear
-        posts={
-          Array [
-            Object {
-              "component": [Function],
-              "date": "2019-01-03",
-              "lang": "en",
-              "title": "Introduction to Ethereum Payment Channels Video",
-            },
-            Object {
-              "component": [Function],
-              "date": "2019-01-02",
-              "lang": "en",
-              "title": "Implementing Harberger Tax Deeds",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-10-11",
-              "lang": "en",
-              "title": "Writing a Dollar Auction Contract",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-10-10",
-              "lang": "en",
-              "title": "Writing a Penny Auction Contract",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-10-01",
-              "lang": "en",
-              "title": "Contracts Calling Arbitrary Functions",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-01-12",
-              "lang": "en",
-              "title": "Writing an ERC20 Token Contract",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-01-02",
-              "lang": "en",
-              "title": "What is an Ethereum Token?",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-01-01",
-              "lang": "en",
-              "title": "Logging and Watching Solidity Events",
-            },
-            Object {
-              "component": [Function],
-              "date": "2017-12-23",
-              "lang": "en",
-              "title": "How Ethereum Transactions Work",
-            },
-            Object {
-              "component": [Function],
-              "date": "2017-12-22",
-              "lang": "en",
-              "title": "Checking the Sender in a Smart Contract",
-            },
-            Object {
-              "component": [Function],
-              "date": "2017-12-12",
-              "lang": "en",
-              "title": "Testing and Deploying Smart Contracts with Remix",
-            },
-          ]
+      defaultActiveIndex={0}
+      grid={
+        Object {
+          "paneWidth": 12,
+          "tabWidth": 4,
         }
-      />
-    </Tab>
-    <Tab
-      eventKey="jp"
-      title="Japanese"
-    >
-      <PostsByYear
-        posts={
-          Array [
-            Object {
-              "component": [Function],
-              "date": "2018-03-10",
-              "lang": "jp",
-              "title": "qwer",
-            },
-          ]
+      }
+      menu={
+        Object {
+          "secondary": true,
         }
-      />
-    </Tab>
-  </ForwardRef>
+      }
+      panes={
+        Array [
+          Object {
+            "menuItem": "English",
+            "render": [Function],
+          },
+          Object {
+            "menuItem": "Japanese",
+            "render": [Function],
+          },
+        ]
+      }
+      renderActiveOnly={true}
+    />
+  </Segment>
 </Layout>
 `;
 
@@ -136,104 +66,34 @@ exports[`jp 1`] = `
     meta={Array []}
     title="ブログ | Smart Contract Programmer"
   />
-  <ForwardRef
-    defaultActiveKey="jp"
-    id="uncontrolled-tab-example"
-  >
+  <Segment>
     <Tab
-      eventKey="en"
-      title="English"
-    >
-      <PostsByYear
-        posts={
-          Array [
-            Object {
-              "component": [Function],
-              "date": "2019-01-03",
-              "lang": "en",
-              "title": "Introduction to Ethereum Payment Channels Video",
-            },
-            Object {
-              "component": [Function],
-              "date": "2019-01-02",
-              "lang": "en",
-              "title": "Implementing Harberger Tax Deeds",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-10-11",
-              "lang": "en",
-              "title": "Writing a Dollar Auction Contract",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-10-10",
-              "lang": "en",
-              "title": "Writing a Penny Auction Contract",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-10-01",
-              "lang": "en",
-              "title": "Contracts Calling Arbitrary Functions",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-01-12",
-              "lang": "en",
-              "title": "Writing an ERC20 Token Contract",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-01-02",
-              "lang": "en",
-              "title": "What is an Ethereum Token?",
-            },
-            Object {
-              "component": [Function],
-              "date": "2018-01-01",
-              "lang": "en",
-              "title": "Logging and Watching Solidity Events",
-            },
-            Object {
-              "component": [Function],
-              "date": "2017-12-23",
-              "lang": "en",
-              "title": "How Ethereum Transactions Work",
-            },
-            Object {
-              "component": [Function],
-              "date": "2017-12-22",
-              "lang": "en",
-              "title": "Checking the Sender in a Smart Contract",
-            },
-            Object {
-              "component": [Function],
-              "date": "2017-12-12",
-              "lang": "en",
-              "title": "Testing and Deploying Smart Contracts with Remix",
-            },
-          ]
+      defaultActiveIndex={1}
+      grid={
+        Object {
+          "paneWidth": 12,
+          "tabWidth": 4,
         }
-      />
-    </Tab>
-    <Tab
-      eventKey="jp"
-      title="Japanese"
-    >
-      <PostsByYear
-        posts={
-          Array [
-            Object {
-              "component": [Function],
-              "date": "2018-03-10",
-              "lang": "jp",
-              "title": "qwer",
-            },
-          ]
+      }
+      menu={
+        Object {
+          "secondary": true,
         }
-      />
-    </Tab>
-  </ForwardRef>
+      }
+      panes={
+        Array [
+          Object {
+            "menuItem": "English",
+            "render": [Function],
+          },
+          Object {
+            "menuItem": "Japanese",
+            "render": [Function],
+          },
+        ]
+      }
+      renderActiveOnly={true}
+    />
+  </Segment>
 </Layout>
 `;

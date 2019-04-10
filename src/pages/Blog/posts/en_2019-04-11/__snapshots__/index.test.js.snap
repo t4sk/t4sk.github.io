@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`en 1`] = `
+<PostLayout
+  lang="en"
+  title="Solidity by Example - Part 0 - Setting Up MetaMask"
+>
+  <_default />
+</PostLayout>
+`;

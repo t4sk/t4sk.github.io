@@ -17,9 +17,6 @@ exports[`en 1`] = `
     meta={Array []}
     title="Smart Contract Programmer"
   />
-  <div>
-    en
-  </div>
 </Layout>
 `;
 
@@ -40,8 +37,5 @@ exports[`jp 1`] = `
     meta={Array []}
     title="Smart Contract Programmer"
   />
-  <div>
-    jp
-  </div>
 </Layout>
 `;
