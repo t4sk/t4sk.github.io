@@ -8,8 +8,7 @@ import "./index.css"
 import LANG from "./index.lang"
 import translate from "../../translate"
 
-// import Posts from "./posts-bk"
-import Posts from "./posts"
+import Posts from "./Posts"
 
 export function groupByYear(posts) {
   const grouped = posts.reduce((grouped, post) => {
