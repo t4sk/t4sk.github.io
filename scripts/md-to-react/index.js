@@ -7,7 +7,7 @@ const readFile = util.promisify(fs.readFile)
 const writeFile = util.promisify(fs.writeFile)
 const mustache = require("mustache")
 const marked = require("marked")
-const metadata = require("./metadata")
+const metadata = require("../metadata")
 
 const renderer = new marked.Renderer()
 

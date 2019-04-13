@@ -1,0 +1,18 @@
+import React from "react"
+
+{{#posts}}
+import {{& component}} from "{{& path}}"
+{{/posts}}
+
+const Posts = [
+  {{#posts}}
+    {
+      lang: "{{& lang}}",
+      date: "{{& date}}",
+      title: "{{& title}}",
+      component: {{& component}},
+    },
+  {{/posts}}
+]
+
+export default Posts
