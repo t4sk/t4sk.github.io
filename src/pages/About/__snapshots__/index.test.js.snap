@@ -17,16 +17,18 @@ exports[`en 1`] = `
     meta={Array []}
     title="About | Smart Contract Programmer"
   />
-  <h3>
-    Contact
-  </h3>
-  <div>
-    smartcontractprogrammer
-    <span>
-      @
-    </span>
-    gmail.com
-  </div>
+  <Segment>
+    <h3>
+      Contact
+    </h3>
+    <div>
+      smartcontractprogrammer
+      <span>
+        @
+      </span>
+      gmail.com
+    </div>
+  </Segment>
 </Layout>
 `;
 
@@ -47,15 +49,17 @@ exports[`jp 1`] = `
     meta={Array []}
     title="概要 | Smart Contract Programmer"
   />
-  <h3>
-    お問い合わせ
-  </h3>
-  <div>
-    smartcontractprogrammer
-    <span>
-      @
-    </span>
-    gmail.com
-  </div>
+  <Segment>
+    <h3>
+      お問い合わせ
+    </h3>
+    <div>
+      smartcontractprogrammer
+      <span>
+        @
+      </span>
+      gmail.com
+    </div>
+  </Segment>
 </Layout>
 `;

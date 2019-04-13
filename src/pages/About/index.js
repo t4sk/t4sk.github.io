@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Segment } from "semantic-ui-react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import "./index.css"
@@ -13,10 +14,12 @@ function About(props) {
   return (
     <Layout lang={lang}>
       <SEO title={title} lang={lang} />
-      <h3>{translate(LANG, lang, "Contact")}</h3>
-      <div>
-        smartcontractprogrammer<span>@</span>gmail.com
-      </div>
+      <Segment>
+        <h3>{translate(LANG, lang, "Contact")}</h3>
+        <div>
+          smartcontractprogrammer<span>@</span>gmail.com
+        </div>
+      </Segment>
     </Layout>
   )
 }
