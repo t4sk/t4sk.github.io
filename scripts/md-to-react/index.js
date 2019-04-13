@@ -16,6 +16,18 @@ renderer.image = function(src, _, alt) {
   return `<Image src={images["${src}"]} alt="${alt}"/>`
 }
 
+// open external links in new tab
+renderer.link = function(href, title, text) {
+  const re = new RegExp("^(http|https)://", "i")
+  const match = re.test(href)
+
+  if (re.test(href)) {
+    return `<a href="${href}" target="__blank" rel="noopener noreferrer">${text}</a>`
+  }
+
+  return `<a href="${href}">${text}</a>`
+}
+
 // convert index.md to index.js
 async function main() {
   const args = process.argv.slice(2)
