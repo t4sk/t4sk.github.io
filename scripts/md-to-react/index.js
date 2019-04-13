@@ -44,6 +44,13 @@ async function main() {
 
   console.log(`Writing file to ${path.join(dir, "index.js")}`)
   writeFile(path.join(dir, "index.js"), reactComponent)
+
+  const reactTest = (await readFile(
+    path.join(__dirname, "index.test.js.mustache")
+  )).toString()
+
+  console.log(`Writing test file to ${path.join(dir, "index.test.js")}`)
+  writeFile(path.join(dir, "index.test.js"), reactTest)
 }
 
 main()
