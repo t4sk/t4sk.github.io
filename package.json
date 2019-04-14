@@ -16,14 +16,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "npm run gen-posts",
     "build": "react-scripts build",
     "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && npm test",
     "deploy": "gh-pages -b master -d build",
-    "md-to-react": "node ./scripts/md-to-react.js",
-    "gen-posts": "node ./scripts/gen-posts.js"
+    "md-to-react": "node ./scripts/md-to-react/index.js",
+    "gen-posts": "node ./scripts/gen-posts/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"

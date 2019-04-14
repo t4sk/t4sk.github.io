@@ -7,9 +7,9 @@ function Image(props) {
   const { src, alt } = props
 
   return (
-    <span className="Image">
-      <SemanticImage src={src} alt={alt} bordered />
-    </span>
+    <div className="Image">
+      <SemanticImage src={src} alt={alt} />
+    </div>
   )
 }
 

@@ -8,27 +8,24 @@ import {
 import Home from "./pages/Home"
 import Blog from "./pages/Blog"
 import About from "./pages/About"
-import Posts from "./pages/Blog/posts"
+import Posts from "./pages/Blog/Posts"
 import NotFound from "./pages/NotFound"
 
-function createPostRoutes(posts) {
-  return posts.map((post, i) => {
-    return (
-      <Route
-        key={`${post.lang}-${i}`}
-        exact
-        path={`/${post.lang}/blog/${post.date}`}
-        component={post.component}
-      />
-    )
-  })
-}
+const postRoutes = Posts.map((post, i) => (
+  <Route
+    key={i}
+    exact
+    path={`/${post.lang}/blog/${post.date}`}
+    component={post.component}
+  />
+))
 
 export function App(props) {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        {createPostRoutes(Posts)}
+        {postRoutes}
+
         <Route
           exact
           path="/en/blog"
