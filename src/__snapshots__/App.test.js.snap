@@ -12,6 +12,12 @@ exports[`it renders 1`] = `
       path="/en/blog/2019-04-11"
     />
     <Route
+      component={[Function]}
+      exact={true}
+      key="1"
+      path="/jp/blog/2019-04-11"
+    />
+    <Route
       exact={true}
       path="/en/blog"
       render={[Function]}
