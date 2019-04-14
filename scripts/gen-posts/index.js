@@ -7,6 +7,7 @@ const readFile = util.promisify(fs.readFile)
 const writeFile = util.promisify(fs.writeFile)
 const mustache = require("mustache")
 const moment = require("moment")
+const chalk = require("chalk")
 const metadata = require("../metadata")
 
 const POSTS_PATH = path.join(__dirname, "../../src/pages/Blog/posts")
@@ -32,11 +33,11 @@ async function getPosts() {
       // check lang and date matches
       assert(
         lang == meta.lang,
-        `lang mismatch file: ${lang} metadata: ${meta.lang}`
+        chalk.bgRed(`lang mismatch file: ${lang} metadata: ${meta.lang}`)
       )
       assert(
         date == meta.date,
-        `date mismatch file: ${date} metadata: ${meta.date}`
+        chalk.bgRed(`date mismatch file: ${date} metadata: ${meta.date}`)
       )
 
       return {
