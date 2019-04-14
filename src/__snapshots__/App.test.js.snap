@@ -8,7 +8,7 @@ exports[`it renders 1`] = `
     <Route
       component={[Function]}
       exact={true}
-      key="en-0"
+      key="0"
       path="/en/blog/2019-04-11"
     />
     <Route
