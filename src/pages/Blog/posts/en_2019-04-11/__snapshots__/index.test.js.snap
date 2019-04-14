@@ -37,9 +37,9 @@ exports[`it renders 1`] = `
     .
   </p>
   <h2
-    id="setting-up-metamas"
+    id="setting-up-metamask"
   >
-    Setting up MetaMas
+    Setting up MetaMask
   </h2>
   <hr />
   <p>

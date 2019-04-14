@@ -10,7 +10,7 @@ where we learn how to program smart contracts using [Solidity](https://solidity.
 Interacting with smart contracts on the Ethereum blockchain costs Ether
 so we need a wallet. Let's install [MetaMask](https://metamask.io).
 
-## Setting up MetaMas
+## Setting up MetaMask
 
 ---
 

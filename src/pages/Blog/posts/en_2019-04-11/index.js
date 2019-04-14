@@ -39,7 +39,7 @@ export default function () {
 where we learn how to program smart contracts using <a href="https://solidity.readthedocs.io" target="__blank" rel="noopener noreferrer">Solidity</a>.</p>
 <p>Interacting with smart contracts on the Ethereum blockchain costs Ether
 so we need a wallet. Let&#39;s install <a href="https://metamask.io" target="__blank" rel="noopener noreferrer">MetaMask</a>.</p>
-<h2 id="setting-up-metamas">Setting up MetaMas</h2>
+<h2 id="setting-up-metamask">Setting up MetaMask</h2>
 <hr/>
 <p>First install <a href="https://metamask.io" target="__blank" rel="noopener noreferrer">MetaMask</a>. You
 should see something like this.</p>
