@@ -14,12 +14,10 @@ function About(props) {
   return (
     <Layout lang={lang}>
       <SEO title={title} lang={lang} />
-      <Segment>
-        <h3>{translate(LANG, lang, "Contact")}</h3>
-        <div>
-          smartcontractprogrammer<span>@</span>gmail.com
-        </div>
-      </Segment>
+      <h1>{translate(LANG, lang, "About")}</h1>
+      <div>
+        smartcontractprogrammer<span>@</span>gmail.com
+      </div>
     </Layout>
   )
 }
