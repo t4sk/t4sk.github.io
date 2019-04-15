@@ -5,7 +5,6 @@ import { Menu, Container } from "semantic-ui-react"
 import "./Header.css"
 import translate from "../translate"
 import LANG from "./Header.lang"
-import Logo from "./Logo.svg"
 
 export function Header(props) {
   const { lang } = props
@@ -23,11 +22,10 @@ export function Header(props) {
   const jpPath = getPath("jp")
 
   return (
-    <Menu stackable borderless fluid>
+    <Menu borderless fluid text>
       <Container>
         <Menu.Item header as="a" href="/">
-          <img src={Logo} alt="logo" />
-          <span className="Header-logo-text">SMART CONTRACT PROGRAMMER</span>
+          SMART CONTRACT PROGRAMMER
         </Menu.Item>
 
         <Menu.Menu position="right">
