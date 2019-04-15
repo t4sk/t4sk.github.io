@@ -7,24 +7,7 @@ exports[`it renders 1`] = `
   <Container>
     <div
       className="Footer-row"
-    >
-      <a
-        className="Footer-github"
-        href="https://github.com/t4sk"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <img
-          alt="GitHub"
-          src="GitHubSVG.svg"
-        />
-        <span
-          className="Footer-github-text"
-        >
-          GitHub
-        </span>
-      </a>
-    </div>
+    />
   </Container>
 </footer>
 `;

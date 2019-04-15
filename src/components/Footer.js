@@ -8,6 +8,7 @@ export function Fotter(prop) {
     <footer className="Footer">
       <Container>
         <div className="Footer-row">
+          {/*}
           <a
             className="Footer-github"
             href="https://github.com/t4sk"
@@ -17,6 +18,7 @@ export function Fotter(prop) {
             <img src={GitHubSVG} alt="GitHub" />
             <span className="Footer-github-text">GitHub</span>
           </a>
+          */}
         </div>
       </Container>
     </footer>
