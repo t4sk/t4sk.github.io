@@ -16,7 +16,7 @@ function About(props) {
       <SEO title={title} lang={lang} />
       <h1>{translate(LANG, lang, "About")}</h1>
       <div>
-        smartcontractprogrammer<span>@</span>gmail.com
+        contact<span>@</span>smartcontractprogrammer.com
       </div>
     </Layout>
   )
