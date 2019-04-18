@@ -4,6 +4,7 @@ import GitHubSVG from "./GitHubSVG.svg"
 import "./Footer.css"
 
 export function Fotter(prop) {
+  // TODO link to top
   return (
     <footer className="Footer">
       <Container>

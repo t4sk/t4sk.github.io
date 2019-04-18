@@ -11,17 +11,15 @@ function PostLayout(props) {
   return (
     <Layout lang={lang}>
       <SEO title={`${title} | Smart Contract Programmer`} lang={lang} />
-      <Segment>
-        <div className="PostLayout">
-          <h1>{title}</h1>
-          <p>
-            <em>{date}</em>
-          </p>
-          <hr />
+      <div className="PostLayout">
+        <h1>{title}</h1>
+        <p>
+          <em>{date}</em>
+        </p>
+        <hr />
 
-          {children}
-        </div>
-      </Segment>
+        {children}
+      </div>
     </Layout>
   )
 }
