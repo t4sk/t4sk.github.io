@@ -1,13 +1,12 @@
 import React from "react"
 import moment from "moment"
 import PropTypes from "prop-types"
-import { Tab, Segment } from "semantic-ui-react"
+import { Segment } from "semantic-ui-react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import "./index.css"
 import LANG from "./index.lang"
 import translate from "../../translate"
-
 import Posts from "./Posts"
 
 export function groupByYear(posts) {
@@ -58,26 +57,6 @@ function PostsByYear(props) {
   ))
 }
 
-const panes = [
-  {
-    menuItem: "English",
-    render: () => (
-      <PostsByYear posts={Posts.filter(post => post.lang == "en")} />
-    ),
-  },
-  {
-    menuItem: "Japanese",
-    render: () => (
-      <PostsByYear posts={Posts.filter(post => post.lang == "jp")} />
-    ),
-  },
-]
-
-const ACTIVE_INDEX = {
-  en: 0,
-  jp: 1,
-}
-
 function Blog(props) {
   const { lang } = props
 
@@ -86,13 +65,7 @@ function Blog(props) {
   return (
     <Layout lang={lang}>
       <SEO title={title} lang={lang} />
-      <Segment>
-        <Tab
-          menu={{ secondary: true }}
-          defaultActiveIndex={ACTIVE_INDEX[lang]}
-          panes={panes}
-        />
-      </Segment>
+      <PostsByYear posts={Posts.filter(post => post.lang == lang)} />
     </Layout>
   )
 }
