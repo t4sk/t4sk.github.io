@@ -1,6 +1,6 @@
 import React from "react"
 import { shallow } from "enzyme"
-import Header from "./Header"
+import Nav from "./Nav"
 
 const props = {
   lang: "en",
@@ -10,13 +10,13 @@ const props = {
 }
 
 test("en", () => {
-  const component = shallow(<Header {...props} />)
+  const component = shallow(<Nav {...props} />)
 
   expect(component).toMatchSnapshot()
 })
 
 test("jp", () => {
-  const component = shallow(<Header {...props} />)
+  const component = shallow(<Nav {...props} />)
 
   expect(component).toMatchSnapshot()
 })

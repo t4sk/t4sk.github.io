@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Container } from "semantic-ui-react"
 import "./Layout.css"
-import Header from "./Header"
+import Nav from "./Nav"
 import Footer from "./Footer"
 
 export function Layout(props) {
@@ -10,7 +10,7 @@ export function Layout(props) {
 
   return (
     <div className="Layout">
-      <Header lang={lang} />
+      <Nav lang={lang} />
       <div style={{ padding: 50 }} />
       <Container>
         <div className="Layout-main">{children}</div>

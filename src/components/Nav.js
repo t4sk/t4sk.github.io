@@ -3,11 +3,11 @@ import PropTypes from "prop-types"
 import { withRouter } from "react-router-dom"
 import { Menu, Container } from "semantic-ui-react"
 import Logo from "./Logo.svg"
-import "./Header.css"
+import "./Nav.css"
 import translate from "../translate"
-import LANG from "./Header.lang"
+import LANG from "./Nav.lang"
 
-export function Header(props) {
+export function Nav(props) {
   const { lang } = props
 
   function getPath(lang) {
@@ -58,11 +58,11 @@ export function Header(props) {
   )
 }
 
-Header.propTypes = {
+Nav.propTypes = {
   lang: PropTypes.oneOf(["en", "jp"]).isRequired,
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
 }
 
-export default withRouter(Header)
+export default withRouter(Nav)
