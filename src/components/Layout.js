@@ -11,6 +11,7 @@ export function Layout(props) {
   return (
     <div className="Layout">
       <Header lang={lang} />
+      <div style={{ padding: 50 }} />
       <Container>
         <div className="Layout-main">{children}</div>
       </Container>
