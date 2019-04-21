@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<h1
+  className="Header"
+>
+  Header Goes Here
+</h1>
+`;

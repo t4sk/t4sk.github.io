@@ -17,9 +17,9 @@ exports[`en 1`] = `
     meta={Array []}
     title="About | Smart Contract Programmer"
   />
-  <h1>
+  <Header>
     About
-  </h1>
+  </Header>
   <div>
     contact
     <span>
@@ -62,9 +62,9 @@ exports[`jp 1`] = `
     meta={Array []}
     title="概要 | Smart Contract Programmer"
   />
-  <h1>
+  <Header>
     概要
-  </h1>
+  </Header>
   <div>
     contact
     <span>
