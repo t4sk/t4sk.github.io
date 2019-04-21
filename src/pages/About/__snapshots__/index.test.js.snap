@@ -27,6 +27,21 @@ exports[`en 1`] = `
     </span>
     smartcontractprogrammer.com
   </div>
+  <a
+    href="https://twitter.com/ProgrammerSmart"
+    rel="noopener noreferrer"
+    target="__blank"
+  >
+    Twitter
+  </a>
+  <br />
+  <a
+    href="https://github.com/t4sk"
+    rel="noopener noreferrer"
+    target="__blank"
+  >
+    GitHub
+  </a>
 </Layout>
 `;
 
@@ -57,5 +72,20 @@ exports[`jp 1`] = `
     </span>
     smartcontractprogrammer.com
   </div>
+  <a
+    href="https://twitter.com/ProgrammerSmart"
+    rel="noopener noreferrer"
+    target="__blank"
+  >
+    Twitter
+  </a>
+  <br />
+  <a
+    href="https://github.com/t4sk"
+    rel="noopener noreferrer"
+    target="__blank"
+  >
+    GitHub
+  </a>
 </Layout>
 `;

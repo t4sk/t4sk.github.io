@@ -18,6 +18,21 @@ function About(props) {
       <div>
         contact<span>@</span>smartcontractprogrammer.com
       </div>
+      <a
+        href="https://twitter.com/ProgrammerSmart"
+        target="__blank"
+        rel="noopener noreferrer"
+      >
+        Twitter
+      </a>
+      <br />
+      <a
+        href="https://github.com/t4sk"
+        target="__blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
     </Layout>
   )
 }
