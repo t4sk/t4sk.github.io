@@ -7,17 +7,16 @@
 .Footer-row {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
-.Footer-github {
+.Footer-col {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: white;
+  flex-direction: column;
 }
-.Footer-github:hover {
+.Footer-link {
   color: white;
+  line-height: 2;
 }
-.Footer-github-text {
-  margin-left: 10px;
+.Footer-link:hover {
+  color: white;
 }

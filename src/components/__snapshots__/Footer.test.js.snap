@@ -7,7 +7,39 @@ exports[`it renders 1`] = `
   <Container>
     <div
       className="Footer-row"
-    />
+    >
+      <div
+        className="Footer-col"
+      />
+      <div
+        className="Footer-col"
+      >
+        <a
+          className="Footer-link"
+          href="https://twitter.com/ProgrammerSmart"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Twitter
+        </a>
+        <a
+          className="Footer-link"
+          href="https://github.com/t4sk"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        <a
+          className="Footer-link"
+          href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          YouTube
+        </a>
+      </div>
+    </div>
   </Container>
 </footer>
 `;
