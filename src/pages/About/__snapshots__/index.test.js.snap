@@ -21,11 +21,11 @@ exports[`en 1`] = `
     About
   </h1>
   <div>
-    smartcontractprogrammer
+    contact
     <span>
       @
     </span>
-    gmail.com
+    smartcontractprogrammer.com
   </div>
 </Layout>
 `;
@@ -51,11 +51,11 @@ exports[`jp 1`] = `
     概要
   </h1>
   <div>
-    smartcontractprogrammer
+    contact
     <span>
       @
     </span>
-    gmail.com
+    smartcontractprogrammer.com
   </div>
 </Layout>
 `;

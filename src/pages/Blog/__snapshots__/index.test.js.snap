@@ -17,35 +17,18 @@ exports[`en 1`] = `
     meta={Array []}
     title="Blog | Smart Contract Programmer"
   />
-  <Segment>
-    <Tab
-      defaultActiveIndex={0}
-      grid={
+  <PostsByYear
+    posts={
+      Array [
         Object {
-          "paneWidth": 12,
-          "tabWidth": 4,
-        }
-      }
-      menu={
-        Object {
-          "secondary": true,
-        }
-      }
-      panes={
-        Array [
-          Object {
-            "menuItem": "English",
-            "render": [Function],
-          },
-          Object {
-            "menuItem": "Japanese",
-            "render": [Function],
-          },
-        ]
-      }
-      renderActiveOnly={true}
-    />
-  </Segment>
+          "component": [Function],
+          "date": "2019-04-11",
+          "lang": "en",
+          "title": "Solidity by Example - Part 0 - Setting Up MetaMask",
+        },
+      ]
+    }
+  />
 </Layout>
 `;
 
@@ -66,34 +49,17 @@ exports[`jp 1`] = `
     meta={Array []}
     title="ブログ | Smart Contract Programmer"
   />
-  <Segment>
-    <Tab
-      defaultActiveIndex={1}
-      grid={
+  <PostsByYear
+    posts={
+      Array [
         Object {
-          "paneWidth": 12,
-          "tabWidth": 4,
-        }
-      }
-      menu={
-        Object {
-          "secondary": true,
-        }
-      }
-      panes={
-        Array [
-          Object {
-            "menuItem": "English",
-            "render": [Function],
-          },
-          Object {
-            "menuItem": "Japanese",
-            "render": [Function],
-          },
-        ]
-      }
-      renderActiveOnly={true}
-    />
-  </Segment>
+          "component": [Function],
+          "date": "2019-04-11",
+          "lang": "jp",
+          "title": "Solidity 入門 - パート 0 - MetaMaskの設定",
+        },
+      ]
+    }
+  />
 </Layout>
 `;
