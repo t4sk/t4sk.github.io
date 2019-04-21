@@ -42,13 +42,18 @@ function PostsByYear(props) {
 
   return years.map((year, i) => (
     <div className="Blog-posts-by-year" key={i}>
-      <h3>{year}</h3>
+      <h1 style={{ fontSize: 40, fontWeight: 700 }}>{year}</h1>
       <ul className="Blog-list">
         {byYear[year].map((post, j) => (
           <li key={j}>
             <div className="Blog-post">
+              <a
+                href={`/${post.lang}/blog/${post.date}`}
+                className="Blog-title"
+              >
+                {post.title}
+              </a>
               <div className="Blog-date">{post.date}</div>
-              <a href={`/${post.lang}/blog/${post.date}`}>{post.title}</a>
             </div>
           </li>
         ))}

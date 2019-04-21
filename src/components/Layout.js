@@ -15,6 +15,7 @@ export function Layout(props) {
       <Container>
         <div className="Layout-main">{children}</div>
       </Container>
+      <div style={{ padding: 50 }} />
       <Footer />
     </div>
   )
