@@ -12,4 +12,5 @@ npm run md-to-react src/pages/Blog/posts/en_2019-04-06
 ```shell
 # make sure to login with GNOME on xorg
 sudo dnf install simplescreenrecorder
+sudo dnf install openshot
 ```
