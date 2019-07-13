@@ -1,18 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Container } from "semantic-ui-react"
-import "./Layout.css"
+import styles from "./Layout.module.css"
 import Nav from "./Nav"
 
 export function Layout(props) {
-  const { children, lang } = props
+  const { children } = props
 
   return (
-    <div className="Layout">
-      <Nav lang={lang} />
-      <div style={{ padding: 50 }} />
+    <div className={styles.Layout}>
+      <Nav />
+      <div style={{ paddingBottom: 40 }} />
       <Container>
-        <div className="Layout-main">{children}</div>
+        <div className={styles.main}>{children}</div>
       </Container>
       <div style={{ padding: 50 }} />
     </div>
@@ -20,7 +20,6 @@ export function Layout(props) {
 }
 
 Layout.propTypes = {
-  lang: PropTypes.oneOf(["en", "jp"]).isRequired,
   children: PropTypes.node.isRequired,
 }
 
