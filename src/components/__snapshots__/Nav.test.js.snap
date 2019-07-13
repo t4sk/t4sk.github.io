@@ -1,13 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`en 1`] = `
-<Route>
-  <Component />
-</Route>
-`;
-
-exports[`jp 1`] = `
-<Route>
-  <Component />
-</Route>
+exports[`it renders 1`] = `
+<Menu
+  borderless={true}
+  fixed="top"
+  fluid={true}
+  size="large"
+  style={Object {}}
+>
+  <Container>
+    <MenuItem
+      as="a"
+      header={true}
+      href="/"
+    >
+      Smart Contract Programmer
+    </MenuItem>
+    <MenuMenu
+      position="right"
+    >
+      <MenuItem
+        as="a"
+        href="/about"
+      >
+        About
+      </MenuItem>
+    </MenuMenu>
+  </Container>
+</Menu>
 `;

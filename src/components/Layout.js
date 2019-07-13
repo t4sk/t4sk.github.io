@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { Container } from "semantic-ui-react"
 import "./Layout.css"
 import Nav from "./Nav"
-import Footer from "./Footer"
 
 export function Layout(props) {
   const { children, lang } = props
@@ -16,7 +15,6 @@ export function Layout(props) {
         <div className="Layout-main">{children}</div>
       </Container>
       <div style={{ padding: 50 }} />
-      <Footer />
     </div>
   )
 }

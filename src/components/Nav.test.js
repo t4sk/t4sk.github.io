@@ -2,20 +2,9 @@ import React from "react"
 import { shallow } from "enzyme"
 import Nav from "./Nav"
 
-const props = {
-  lang: "en",
-  location: {
-    pathname: "/en",
-  },
-}
+const props = {}
 
-test("en", () => {
-  const component = shallow(<Nav {...props} />)
-
-  expect(component).toMatchSnapshot()
-})
-
-test("jp", () => {
+test("it renders", () => {
   const component = shallow(<Nav {...props} />)
 
   expect(component).toMatchSnapshot()
