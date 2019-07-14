@@ -9,13 +9,13 @@ import {
   Icon,
   Container,
 } from "semantic-ui-react"
-import Layout from "../../components/Layout"
+import PageLayout from "../../components/PageLayout"
 import SEO from "../../components/SEO"
 
 function Home(props) {
   const mobile = false
   return (
-    <Layout>
+    <PageLayout>
       <SEO title="Smart Contract Programmer" />
       <Segment
         inverted
@@ -38,7 +38,7 @@ function Home(props) {
           <p>a blog for developers about smart contracts</p>
         </Container>
       </Segment>
-    </Layout>
+    </PageLayout>
   )
 }
 
