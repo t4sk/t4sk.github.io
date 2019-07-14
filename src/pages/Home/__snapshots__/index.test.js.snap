@@ -31,7 +31,7 @@ exports[`it renders 1`] = `
     >
       <Header
         as="h1"
-        content="Learn Smart Contracts"
+        content="Learn Smart Contract Programming"
         inverted={true}
         style={
           Object {

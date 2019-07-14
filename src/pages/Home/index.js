@@ -26,7 +26,7 @@ function Home(props) {
         <Container text>
           <Header
             as="h1"
-            content="Learn Smart Contracts"
+            content="Learn Smart Contract Programming"
             inverted
             style={{
               fontSize: "2.5em",
