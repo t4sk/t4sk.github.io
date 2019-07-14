@@ -1,67 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a0d984d373ebf147fbddc3211f50d47",
+    "revision": "ae1ebc97798301eadac71dbba5578646",
     "url": "/index.html"
   },
   {
-    "revision": "acdc0497fe8310a19c9c",
+    "revision": "a1e792272c010fd15128",
     "url": "/static/css/2.6031401c.chunk.css"
   },
   {
-    "revision": "dcd1f5f1ba15aa781b4f",
-    "url": "/static/css/main.e7162db7.chunk.css"
+    "revision": "880b0421afa82ee9eada",
+    "url": "/static/css/main.acf29fc2.chunk.css"
   },
   {
-    "revision": "acdc0497fe8310a19c9c",
-    "url": "/static/js/2.98b6c7f2.chunk.js"
+    "revision": "a1e792272c010fd15128",
+    "url": "/static/js/2.552706c4.chunk.js"
   },
   {
-    "revision": "dcd1f5f1ba15aa781b4f",
-    "url": "/static/js/main.1da2c706.chunk.js"
+    "revision": "880b0421afa82ee9eada",
+    "url": "/static/js/main.2c72d912.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
-  },
-  {
-    "revision": "86dc5c9167b00165d1dfccdcb37ed99a",
-    "url": "/static/media/10_get_ether.86dc5c91.png"
-  },
-  {
-    "revision": "5b89e6b3b0525ec10273bb375fb5de58",
-    "url": "/static/media/12_faucet.5b89e6b3.png"
-  },
-  {
-    "revision": "2f608097f198c0984a6f7032290418a5",
-    "url": "/static/media/13_balance.2f608097.png"
-  },
-  {
-    "revision": "e3f69ae13727b1c36b29a3580a8798ce",
-    "url": "/static/media/1_welcome.e3f69ae1.png"
-  },
-  {
-    "revision": "558cbbfcb6b234f413cddbba81cf9849",
-    "url": "/static/media/2_meta_mask_icon.558cbbfc.png"
-  },
-  {
-    "revision": "2a668c3c6b2e849d6c45fafc5785033d",
-    "url": "/static/media/3_create_wallet.2a668c3c.png"
-  },
-  {
-    "revision": "97e841e6799e4bad6e2536af305b7bd1",
-    "url": "/static/media/5_seed.97e841e6.png"
-  },
-  {
-    "revision": "0b182c07f417d869ae3d4bb99b98dc76",
-    "url": "/static/media/7_account.0b182c07.png"
-  },
-  {
-    "revision": "dbddb0ffdfc97fc6d0f650561c323395",
-    "url": "/static/media/8_ropsten.dbddb0ff.png"
-  },
-  {
-    "revision": "92e2814127cc185f4cc7f8d21eb494a9",
-    "url": "/static/media/9_deposit.92e28141.png"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
