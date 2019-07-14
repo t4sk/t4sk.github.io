@@ -6,6 +6,9 @@
   max-width: 400px;
   justify-content: space-between;
 }
+.profile {
+  max-width: 150px;
+}
 .headerTexts {
   display: flex;
   flex-direction: column;
@@ -14,7 +17,4 @@
 }
 .headerText {
   margin: 0;
-}
-.subHeaderText {
-  color: #7a7a7a;
 }
