@@ -6,12 +6,12 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.NotFound-header {
+.header {
   font-weight: 700;
   font-size: 6rem;
   color: #20232a;
 }
-.NotFound-sub-header {
+.subHeader {
   font-size: 2rem;
   color: #aaa;
 }

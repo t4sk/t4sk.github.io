@@ -1,44 +1,21 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Layout from "../../components/Layout"
+import PageLayout from "../../components/PageLayout"
 import SEO from "../../components/SEO"
-import "./index.css"
-import translate from "../../translate"
-import LANG from "./index.lang"
+import styles from "./index.module.css"
 
 function NotFound(props) {
-  function getLang(props) {
-    const { location } = props
-
-    const [, lang] = location.pathname.split("/")
-
-    return lang == "jp" ? "jp" : "en"
-  }
-
-  const lang = getLang(props)
-  const title = `${translate(
-    LANG,
-    lang,
-    "Not Found"
-  )} | Smart Contract Programmer`
-
   return (
-    <Layout lang={lang}>
-      <SEO title={title} lang="en" />
-      <div className="NotFound">
-        <h1 className="NotFound-header">404</h1>
-        <div className="NotFound-sub-header">
-          {translate(LANG, lang, "Not Found")}
-        </div>
+    <PageLayout>
+      <SEO title="Not Found | Smart Contract Programmer" />
+      <div className={styles.NotFound}>
+        <h1 className={styles.header}>404</h1>
+        <div className={styles.subHeader}>Not Found</div>
       </div>
-    </Layout>
+    </PageLayout>
   )
 }
 
-NotFound.propTypes = {
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }),
-}
+NotFound.propTypes = {}
 
 export default NotFound
