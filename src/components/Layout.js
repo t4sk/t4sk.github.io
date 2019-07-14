@@ -11,9 +11,7 @@ export function Layout(props) {
     <div className={styles.Layout}>
       <Nav />
       <div style={{ paddingBottom: 40 }} />
-      <Container>
-        <div className={styles.main}>{children}</div>
-      </Container>
+      <div className={styles.main}>{children}</div>
       <div style={{ padding: 50 }} />
     </div>
   )
