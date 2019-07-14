@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`en 1`] = `
-<Layout
-  lang="en"
->
+exports[`it renders 1`] = `
+<Layout>
   <SEO
     description="Learn how to program smart contracts."
     keywords={
@@ -17,25 +15,36 @@ exports[`en 1`] = `
     meta={Array []}
     title="Smart Contract Programmer"
   />
-</Layout>
-`;
-
-exports[`jp 1`] = `
-<Layout
-  lang="jp"
->
-  <SEO
-    description="Learn how to program smart contracts."
-    keywords={
-      Array [
-        "smart contract",
-        "solidity",
-        "ethereum",
-      ]
+  <Segment
+    inverted={true}
+    style={
+      Object {
+        "minHeight": 150,
+        "padding": "1em 0em",
+      }
     }
-    lang="jp"
-    meta={Array []}
-    title="Smart Contract Programmer"
-  />
+    textAlign="center"
+    vertical={true}
+  >
+    <Container
+      text={true}
+    >
+      <Header
+        as="h1"
+        content="Learn Smart Contracts"
+        inverted={true}
+        style={
+          Object {
+            "fontSize": "2.5em",
+            "marginBottom": 0,
+            "marginTop": "1.0em",
+          }
+        }
+      />
+      <p>
+        a blog for developers about smart contracts
+      </p>
+    </Container>
+  </Segment>
 </Layout>
 `;
