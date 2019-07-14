@@ -19,6 +19,7 @@ exports[`it renders 1`] = `
     inverted={true}
     style={
       Object {
+        "backgroundColor": "#20232a",
         "minHeight": 150,
         "padding": "1em 0em",
       }

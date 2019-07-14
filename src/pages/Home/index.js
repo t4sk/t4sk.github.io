@@ -20,7 +20,11 @@ function Home(props) {
       <Segment
         inverted
         textAlign="center"
-        style={{ minHeight: 150, padding: "1em 0em" }}
+        style={{
+          minHeight: 150,
+          padding: "1em 0em",
+          backgroundColor: "#20232a",
+        }}
         vertical
       >
         <Container text>
