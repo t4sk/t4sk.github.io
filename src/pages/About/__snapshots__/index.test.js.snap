@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`en 1`] = `
-<Layout
-  lang="en"
->
+exports[`it renders 1`] = `
+<PageLayout>
   <SEO
     description="Learn how to program smart contracts."
     keywords={
@@ -17,75 +15,62 @@ exports[`en 1`] = `
     meta={Array []}
     title="About | Smart Contract Programmer"
   />
-  <Header>
-    About
-  </Header>
-  <div>
-    contact
-    <span>
-      @
-    </span>
-    smartcontractprogrammer.com
-  </div>
-  <a
-    href="https://twitter.com/ProgrammerSmart"
-    rel="noopener noreferrer"
-    target="__blank"
-  >
-    Twitter
-  </a>
-  <br />
-  <a
-    href="https://github.com/t4sk"
-    rel="noopener noreferrer"
-    target="__blank"
-  >
-    GitHub
-  </a>
-</Layout>
-`;
-
-exports[`jp 1`] = `
-<Layout
-  lang="jp"
->
-  <SEO
-    description="Learn how to program smart contracts."
-    keywords={
-      Array [
-        "smart contract",
-        "solidity",
-        "ethereum",
-      ]
-    }
-    lang="jp"
-    meta={Array []}
-    title="概要 | Smart Contract Programmer"
-  />
-  <Header>
-    概要
-  </Header>
-  <div>
-    contact
-    <span>
-      @
-    </span>
-    smartcontractprogrammer.com
-  </div>
-  <a
-    href="https://twitter.com/ProgrammerSmart"
-    rel="noopener noreferrer"
-    target="__blank"
-  >
-    Twitter
-  </a>
-  <br />
-  <a
-    href="https://github.com/t4sk"
-    rel="noopener noreferrer"
-    target="__blank"
-  >
-    GitHub
-  </a>
-</Layout>
+  <MainLayout>
+    <div
+      className="header"
+    >
+      <div
+        style={
+          Object {
+            "maxWidth": 150,
+          }
+        }
+      >
+        <Image
+          as="img"
+          circular={true}
+          fluid={true}
+          src="profile.jpeg"
+          ui={true}
+        />
+      </div>
+      <div
+        className="headerTexts"
+      >
+        <h1
+          className="headerText"
+        >
+          Tasuku Nakamura
+        </h1>
+        <div
+          className="subHeaderText"
+        >
+          Coder | Author | Entrepreneur
+        </div>
+      </div>
+    </div>
+    <div>
+      contact
+      <span>
+        @
+      </span>
+      smartcontractprogrammer.com
+    </div>
+    <a
+      href="https://twitter.com/ProgrammerSmart"
+      rel="noopener noreferrer"
+      target="__blank"
+    >
+      Twitter
+    </a>
+    <br />
+    <a
+      href="https://github.com/t4sk"
+      rel="noopener noreferrer"
+      target="__blank"
+    >
+      GitHub
+    </a>
+  </MainLayout>
+</PageLayout>
 `;

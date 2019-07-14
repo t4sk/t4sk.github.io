@@ -1,40 +1,49 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Segment } from "semantic-ui-react"
-import Layout from "../../components/Layout"
-import Header from "../../components/Header"
+import { Container, Image } from "semantic-ui-react"
+import PageLayout from "../../components/PageLayout"
+import MainLayout from "../../components/MainLayout"
 import SEO from "../../components/SEO"
-import "./index.css"
-import translate from "../../translate"
-import LANG from "./index.lang"
+import styles from "./index.module.css"
+import profile from "./profile.jpeg"
 
 function About(props) {
-  const { lang } = props
-
-  const title = `${translate(LANG, lang, "About")} | Smart Contract Programmer`
   return (
-    <Layout lang={lang}>
-      <SEO title={title} lang={lang} />
-      <Header>{translate(LANG, lang, "About")}</Header>
-      <div>
-        contact<span>@</span>smartcontractprogrammer.com
-      </div>
-      <a
-        href="https://twitter.com/ProgrammerSmart"
-        target="__blank"
-        rel="noopener noreferrer"
-      >
-        Twitter
-      </a>
-      <br />
-      <a
-        href="https://github.com/t4sk"
-        target="__blank"
-        rel="noopener noreferrer"
-      >
-        GitHub
-      </a>
-    </Layout>
+    <PageLayout>
+      <SEO title="About | Smart Contract Programmer" />
+      <MainLayout>
+        <div className={styles.header}>
+          <div style={{ maxWidth: 150 }}>
+            <Image src={profile} circular fluid />
+          </div>
+          <div className={styles.headerTexts}>
+            <h1 className={styles.headerText}>Tasuku Nakamura</h1>
+            <div className={styles.subHeaderText}>
+              Coder | Author | Entrepreneur
+            </div>
+          </div>
+        </div>
+
+        <div>
+          contact<span>@</span>smartcontractprogrammer.com
+        </div>
+        <a
+          href="https://twitter.com/ProgrammerSmart"
+          target="__blank"
+          rel="noopener noreferrer"
+        >
+          Twitter
+        </a>
+        <br />
+        <a
+          href="https://github.com/t4sk"
+          target="__blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </MainLayout>
+    </PageLayout>
   )
 }
 
