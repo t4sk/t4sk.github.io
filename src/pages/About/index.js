@@ -19,7 +19,17 @@ function About(props) {
           <div className={styles.headerTexts}>
             <h1 className={styles.headerText}>Tasuku Nakamura</h1>
             <div>
-              <Icon name="twitter" />
+              <Icon name="youtube" color="red" />
+              <a
+                href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
+                target="__blank"
+                rel="noopener noreferrer"
+              >
+                YouTube
+              </a>
+            </div>
+            <div>
+              <Icon name="twitter" color="blue" />
               <a
                 href="https://twitter.com/ProgrammerSmart"
                 target="__blank"
@@ -40,6 +50,18 @@ function About(props) {
             </div>
           </div>
         </div>
+        {/*}
+        <p>
+          Author of{" "}
+          <a
+            href="https://github.com/t4sk"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            Solidity By Examples
+          </a>
+        </p>
+        */}
       </MainLayout>
     </PageLayout>
   )

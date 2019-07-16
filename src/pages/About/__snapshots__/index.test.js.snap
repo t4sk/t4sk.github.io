@@ -41,6 +41,21 @@ exports[`it renders 1`] = `
         <div>
           <Icon
             as="i"
+            color="red"
+            name="youtube"
+          />
+          <a
+            href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
+            rel="noopener noreferrer"
+            target="__blank"
+          >
+            YouTube
+          </a>
+        </div>
+        <div>
+          <Icon
+            as="i"
+            color="blue"
             name="twitter"
           />
           <a
