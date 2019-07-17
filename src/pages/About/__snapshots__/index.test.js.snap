@@ -43,6 +43,7 @@ exports[`it renders 1`] = `
             as="i"
             color="red"
             name="youtube"
+            size="large"
           />
           <a
             href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
@@ -57,6 +58,7 @@ exports[`it renders 1`] = `
             as="i"
             color="blue"
             name="twitter"
+            size="large"
           />
           <a
             href="https://twitter.com/ProgrammerSmart"
@@ -70,6 +72,7 @@ exports[`it renders 1`] = `
           <Icon
             as="i"
             name="github"
+            size="large"
           />
           <a
             href="https://github.com/t4sk"

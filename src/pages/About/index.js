@@ -19,7 +19,7 @@ function About(props) {
           <div className={styles.headerTexts}>
             <h1 className={styles.headerText}>Tasuku Nakamura</h1>
             <div>
-              <Icon name="youtube" color="red" />
+              <Icon name="youtube" color="red" size="large" />
               <a
                 href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
                 target="__blank"
@@ -29,7 +29,7 @@ function About(props) {
               </a>
             </div>
             <div>
-              <Icon name="twitter" color="blue" />
+              <Icon name="twitter" color="blue" size="large" />
               <a
                 href="https://twitter.com/ProgrammerSmart"
                 target="__blank"
@@ -39,7 +39,7 @@ function About(props) {
               </a>
             </div>
             <div>
-              <Icon name="github" />
+              <Icon name="github" size="large" />
               <a
                 href="https://github.com/t4sk"
                 target="__blank"
