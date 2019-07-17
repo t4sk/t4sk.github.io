@@ -21,7 +21,7 @@ exports[`it renders 1`] = `
       Object {
         "backgroundColor": "#20232a",
         "minHeight": 150,
-        "padding": "1em 0em",
+        "padding": "2em 0em",
       }
     }
     textAlign="center"
@@ -30,6 +30,26 @@ exports[`it renders 1`] = `
     <Container
       text={true}
     >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Image
+          as="img"
+          src="logo.svg"
+          style={
+            Object {
+              "height": 250,
+            }
+          }
+          ui={true}
+        />
+      </div>
       <Header
         as="h1"
         content="Learn Smart Contract Programming"
@@ -38,7 +58,7 @@ exports[`it renders 1`] = `
           Object {
             "fontSize": "2.5em",
             "marginBottom": 0,
-            "marginTop": "1.0em",
+            "marginTop": 0,
           }
         }
       />
@@ -47,5 +67,6 @@ exports[`it renders 1`] = `
       </p>
     </Container>
   </Segment>
+  foo
 </PageLayout>
 `;

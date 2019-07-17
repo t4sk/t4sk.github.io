@@ -11,6 +11,7 @@ import {
 } from "semantic-ui-react"
 import PageLayout from "../../components/PageLayout"
 import SEO from "../../components/SEO"
+import logo from "../../components/logo.svg"
 
 function Home(props) {
   const mobile = false
@@ -22,12 +23,21 @@ function Home(props) {
         textAlign="center"
         style={{
           minHeight: 150,
-          padding: "1em 0em",
+          padding: "2em 0em",
           backgroundColor: "#20232a",
         }}
         vertical
       >
         <Container text>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            <Image src={logo} style={{ height: 250 }} />
+          </div>
           <Header
             as="h1"
             content="Learn Smart Contract Programming"
@@ -36,12 +46,13 @@ function Home(props) {
               fontSize: "2.5em",
               // fontWeight: "normal",
               marginBottom: 0,
-              marginTop: "1.0em",
+              marginTop: 0,
             }}
           />
           <p>a blog for developers about smart contracts</p>
         </Container>
       </Segment>
+      foo
     </PageLayout>
   )
 }
