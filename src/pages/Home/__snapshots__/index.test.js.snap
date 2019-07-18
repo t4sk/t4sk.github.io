@@ -52,7 +52,7 @@ exports[`it renders 1`] = `
       </div>
       <Header
         as="h1"
-        content="Learn Smart Contract Programming"
+        content="Smart Contract Programming"
         inverted={true}
         style={
           Object {
