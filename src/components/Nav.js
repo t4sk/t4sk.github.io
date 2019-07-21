@@ -19,6 +19,15 @@ export function Nav(props) {
     >
       <Container>
         <Menu.Item header as="a" href="/">
+          <Image
+            src={logo}
+            style={{
+              height: 24,
+              backgroundColor: "#1b1c1d",
+              margin: 5,
+              borderRadius: 4,
+            }}
+          />
           Smart Contract Programmer
         </Menu.Item>
 

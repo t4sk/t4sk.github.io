@@ -14,6 +14,19 @@ exports[`it renders 1`] = `
       header={true}
       href="/"
     >
+      <Image
+        as="img"
+        src="logo.svg"
+        style={
+          Object {
+            "backgroundColor": "#1b1c1d",
+            "borderRadius": 4,
+            "height": 24,
+            "margin": 5,
+          }
+        }
+        ui={true}
+      />
       Smart Contract Programmer
     </MenuItem>
     <MenuMenu
