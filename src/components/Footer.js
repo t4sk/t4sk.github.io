@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Image } from "semantic-ui-react"
 import styles from "./Footer.module.css"
 import creativeCommonsLogo from "./creative-commons-logo.svg"

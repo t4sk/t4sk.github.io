@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import PageLayout from "../../components/PageLayout"
 import SEO from "../../components/SEO"
 import styles from "./index.module.css"

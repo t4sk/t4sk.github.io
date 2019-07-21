@@ -1,20 +1,10 @@
 import React from "react"
-import PropTypes from "prop-types"
-import {
-  Segment,
-  Grid,
-  Image,
-  Header,
-  Button,
-  Icon,
-  Container,
-} from "semantic-ui-react"
+import { Segment, Image, Header, Container } from "semantic-ui-react"
 import PageLayout from "../../components/PageLayout"
 import SEO from "../../components/SEO"
 import logo from "../../components/logo.svg"
 
 function Home(props) {
-  const mobile = false
   return (
     <PageLayout>
       <SEO title="Smart Contract Programmer" />

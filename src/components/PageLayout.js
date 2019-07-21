@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Container } from "semantic-ui-react"
 import styles from "./PageLayout.module.css"
 import Nav from "./Nav"
 import Footer from "./Footer"

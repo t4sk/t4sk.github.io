@@ -1,6 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { Container, Image, Icon } from "semantic-ui-react"
+import { Image, Icon } from "semantic-ui-react"
 import PageLayout from "../../components/PageLayout"
 import MainLayout from "../../components/MainLayout"
 import SEO from "../../components/SEO"

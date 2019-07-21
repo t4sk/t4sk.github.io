@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Menu, Container, Image } from "semantic-ui-react"
 import logo from "./logo.svg"
 
