@@ -11,56 +11,46 @@ function About(props) {
     <PageLayout>
       <SEO title="About | Smart Contract Programmer" />
       <MainLayout>
-        <div className={styles.header}>
-          <div className={styles.profile}>
-            <Image src={profile} circular fluid />
+        <div className={styles.Component}>
+          <Image
+            src={profile}
+            circular
+            fluid
+            style={{ width: 150, height: 150 }}
+          />
+          <h1 className={styles.header}>Tasuku Nakamura</h1>
+          <div className={styles.links}>
+            <a
+              href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="youtube" color="red" size="huge" />
+            </a>
+            <a
+              href="https://twitter.com/ProgrammerSmart"
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="twitter" color="blue" size="huge" />
+            </a>
+            <a
+              href="https://github.com/t4sk"
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="github" color="black" size="huge" />
+            </a>
           </div>
-          <div className={styles.headerTexts}>
-            <h1 className={styles.headerText}>Tasuku Nakamura</h1>
-            <div>
-              <Icon name="youtube" color="red" size="large" />
-              <a
-                href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
-                target="__blank"
-                rel="noopener noreferrer"
-              >
-                YouTube
-              </a>
-            </div>
-            <div>
-              <Icon name="twitter" color="blue" size="large" />
-              <a
-                href="https://twitter.com/ProgrammerSmart"
-                target="__blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-            </div>
-            <div>
-              <Icon name="github" size="large" />
-              <a
-                href="https://github.com/t4sk"
-                target="__blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
+          <p className={styles.intro}>
+            Hi, I am a software engineer living in Japan, specializing in smart
+            contracts. <br />
+            You can contact me at{" "}
+            <span className={styles.email}>
+              contact@smartcontractprogrammer.com
+            </span>
+          </p>
         </div>
-        {/*}
-        <p>
-          Author of{" "}
-          <a
-            href="https://github.com/t4sk"
-            target="__blank"
-            rel="noopener noreferrer"
-          >
-            Solidity By Examples
-          </a>
-        </p>
-        */}
       </MainLayout>
     </PageLayout>
   )
