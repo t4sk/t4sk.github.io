@@ -2,7 +2,7 @@
 
 8 In this video, I am going to show you how to write a basic smart contract in Solidity.
 
-9 I will show you
+84 I will show you
 
 - how to write your first smart contract
 - compile it
@@ -14,7 +14,7 @@
 
 ## Remix
 
-13
+85
 So first go to remix.ethereum.org. This is our online code editor and our
 blockchain simulator
 
@@ -68,7 +68,7 @@ We create a string variable, let's name it `greet` with our message `Hello World
 42
 At the moment this variable is only accessible inside this contract.
 
-44
+87
 We can make it accessible outside the contract by putting the keyword `public`.
 
 45
@@ -96,7 +96,7 @@ Also you will see a green check here
 
 # deploy and run
 
-65
+66
 Next we will deploy our contract onto a blockchain simulator running inside your browser,
 
 68
@@ -111,7 +111,7 @@ You can see that our contract is deployed here.
 70
 Let's check that we can get the greeting message.
 
-72
+89
 Click on the `greet` button and you can see here that we get our message.
 
 # Recap
