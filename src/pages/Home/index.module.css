@@ -1,0 +1,8 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post {
+  margin-top: 35px;
+}

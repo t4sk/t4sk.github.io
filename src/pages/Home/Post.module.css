@@ -1,0 +1,27 @@
+.component {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+.image {
+  display: flex;
+  flex: 1;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  max-width: 500px;
+  overflow-wrap: break-word;
+  color: rgb(0, 0, 0);
+}
+.date {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.54);
+}

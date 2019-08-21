@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<a
+  className="component"
+  href="https://www.youtube.com/watch?v=hMwdd664_iw"
+  target="__blank"
+>
+  <div
+    className="image"
+  >
+    <Image
+      as="img"
+      fluid={true}
+      src="https://i.ytimg.com/vi/hMwdd664_iw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZXbU3wGs1vpsnWX06BEHw9TookQ"
+      ui={true}
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="title"
+    >
+      Learn Solidity - Hello World
+    </div>
+    <div
+      className="date"
+    >
+      2019-08-20
+    </div>
+  </div>
+</a>
+`;

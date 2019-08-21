@@ -3,6 +3,18 @@ import { Segment, Image, Header, Container } from "semantic-ui-react"
 import PageLayout from "../../components/PageLayout"
 import SEO from "../../components/SEO"
 import logo from "../../components/logo.svg"
+import styles from "./index.module.css"
+import Post from "./Post"
+
+const POSTS = [
+  {
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/hMwdd664_iw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZXbU3wGs1vpsnWX06BEHw9TookQ",
+    youTubeUrl: "https://www.youtube.com/watch?v=hMwdd664_iw",
+    title: "Learn Solidity - Hello World",
+    createdAt: "2019-08-20",
+  },
+]
 
 function Home(props) {
   return (
@@ -42,7 +54,13 @@ function Home(props) {
           <p>a blog for developers about smart contracts</p>
         </Container>
       </Segment>
-      foo
+      <div className={styles.posts}>
+        {POSTS.map((post, i) => (
+          <div key={i} className={styles.post}>
+            <Post {...post} />
+          </div>
+        ))}
+      </div>
     </PageLayout>
   )
 }
