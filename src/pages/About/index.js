@@ -17,6 +17,7 @@ function About(props) {
             circular
             fluid
             style={{ width: 150, height: 150 }}
+            alt="profile"
           />
           <h1 className={styles.header}>Tasuku Nakamura</h1>
           <div className={styles.links}>

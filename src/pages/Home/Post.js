@@ -9,7 +9,7 @@ export function Post(props) {
   return (
     <a className={styles.component} href={youTubeUrl} target="__blank">
       <div className={styles.image}>
-        <Image src={thumbnailUrl} fluid />
+        <Image src={thumbnailUrl} fluid alt={title} />
       </div>
       <div className={styles.content}>
         <div className={styles.title}>{title}</div>

@@ -26,6 +26,7 @@ export function Nav(props) {
               margin: 5,
               borderRadius: 4,
             }}
+            alt="logo"
           />
           Smart Contract Programmer
         </Menu.Item>

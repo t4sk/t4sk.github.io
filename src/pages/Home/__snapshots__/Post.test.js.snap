@@ -10,6 +10,7 @@ exports[`it renders 1`] = `
     className="image"
   >
     <Image
+      alt="Learn Solidity - Hello World"
       as="img"
       fluid={true}
       src="https://i.ytimg.com/vi/hMwdd664_iw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZXbU3wGs1vpsnWX06BEHw9TookQ"

@@ -15,6 +15,7 @@ exports[`it renders 1`] = `
       href="/"
     >
       <Image
+        alt="logo"
         as="img"
         src="logo.svg"
         style={

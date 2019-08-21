@@ -6,7 +6,11 @@ import creativeCommonsLogo from "./creative-commons-logo.svg"
 export function Footer(props) {
   return (
     <div className={styles.Footer}>
-      <Image src={creativeCommonsLogo} style={{ height: 20, margin: 10 }} />
+      <Image
+        src={creativeCommonsLogo}
+        style={{ height: 20, margin: 10 }}
+        alt="license"
+      />
       <div>
         <a
           href="https://creativecommons.org/licenses/by-sa/3.0/deed.en"

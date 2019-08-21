@@ -38,7 +38,7 @@ function Home(props) {
               justifyContent: "center",
             }}
           >
-            <Image src={logo} style={{ height: 250 }} />
+            <Image src={logo} style={{ height: 250 }} alt="logo" />
           </div>
           <Header
             as="h1"

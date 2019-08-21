@@ -5,6 +5,7 @@ exports[`it renders 1`] = `
   className="Footer"
 >
   <Image
+    alt="license"
     as="img"
     src="creative-commons-logo.svg"
     style={
