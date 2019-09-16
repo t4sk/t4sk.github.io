@@ -43,14 +43,26 @@ function About(props) {
               <Icon name="github" color="black" size="huge" />
             </a>
           </div>
-          <p className={styles.intro}>
-            Hi, I am a software engineer living in Japan, specializing in smart
-            contracts. <br />
-            You can contact me at{" "}
-            <span className={styles.email}>
-              contact@smartcontractprogrammer.com
-            </span>
-          </p>
+
+          <div className={styles.intro}>
+            <p>Hi, I am a smart contract engineer living in Japan.</p>
+            <p>
+              Creator of website{" "}
+              <a
+                href="https://solidity-by-example.org/"
+                target="__blank"
+                rel="noopener noreferrer"
+              >
+                Solidity by Example
+              </a>
+            </p>
+            <p>
+              You can contact me at{" "}
+              <span className={styles.email}>
+                contact@smartcontractprogrammer.com
+              </span>
+            </p>
+          </div>
         </div>
       </MainLayout>
     </PageLayout>

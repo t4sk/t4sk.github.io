@@ -78,19 +78,33 @@ exports[`it renders 1`] = `
           />
         </a>
       </div>
-      <p
+      <div
         className="intro"
       >
-        Hi, I am a software engineer living in Japan, specializing in smart contracts. 
-        <br />
-        You can contact me at
-         
-        <span
-          className="email"
-        >
-          contact@smartcontractprogrammer.com
-        </span>
-      </p>
+        <p>
+          Hi, I am a smart contract engineer living in Japan.
+        </p>
+        <p>
+          Creator of website
+           
+          <a
+            href="https://solidity-by-example.org/"
+            rel="noopener noreferrer"
+            target="__blank"
+          >
+            Solidity by Example
+          </a>
+        </p>
+        <p>
+          You can contact me at
+           
+          <span
+            className="email"
+          >
+            contact@smartcontractprogrammer.com
+          </span>
+        </p>
+      </div>
     </div>
   </MainLayout>
 </PageLayout>
