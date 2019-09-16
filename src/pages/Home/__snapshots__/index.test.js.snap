@@ -76,6 +76,17 @@ exports[`it renders 1`] = `
       key="0"
     >
       <Post
+        createdAt="2019-09-15"
+        thumbnailUrl="https://i.ytimg.com/vi/4XQsHBJScEk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCSidkVzqzY9matqnVSmYJZNO8IAA"
+        title="Learn Solidity - State Variables"
+        youTubeUrl="https://www.youtube.com/watch?v=4XQsHBJScEk&t=5s"
+      />
+    </div>
+    <div
+      className="post"
+      key="1"
+    >
+      <Post
         createdAt="2019-08-20"
         thumbnailUrl="https://i.ytimg.com/vi/hMwdd664_iw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZXbU3wGs1vpsnWX06BEHw9TookQ"
         title="Learn Solidity - Hello World"

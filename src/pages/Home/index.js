@@ -9,6 +9,13 @@ import Post from "./Post"
 const POSTS = [
   {
     thumbnailUrl:
+      "https://i.ytimg.com/vi/4XQsHBJScEk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCSidkVzqzY9matqnVSmYJZNO8IAA",
+    youTubeUrl: "https://www.youtube.com/watch?v=4XQsHBJScEk&t=5s",
+    title: "Learn Solidity - State Variables",
+    createdAt: "2019-09-15",
+  },
+  {
+    thumbnailUrl:
       "https://i.ytimg.com/vi/hMwdd664_iw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZXbU3wGs1vpsnWX06BEHw9TookQ",
     youTubeUrl: "https://www.youtube.com/watch?v=hMwdd664_iw",
     title: "Learn Solidity - Hello World",
