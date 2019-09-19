@@ -9,26 +9,27 @@ In this video, I will explain what `Ether` is, and some common units of `Ether` 
 
 # Ether
 
-Similary to how US dollar is the currency of US, `Ether` is the currency used within Ethereum, except it's digital.
+Similary to how the currency of US is dollar, the currency used within Ethereum is `Ether`
 
 `Ether` is used to
 
-- reward miners for mining a block
+- Pay block reward
 - pay for transaction fee
 - and you can also transfer it between accounts
 
 The smallest unit of `Ether` is `wei` and one `Ether` is equal to 10^18 `wei`
 
-Here is a complete list of units and the more commonly used ones are
-`wei`, `gwei`, and `ether`
+Here is a complete list of units
 
-You can use the units `Wei`, `finney`, `szabo` and `ether` inside your Solidity contract.
+and you can use `Wei`, `szabo`, `finney`, and `ether` in Solidity
+
+but we will focus on the more commonly used ones, `wei`, and `Ether`
 
 Let's go through an example.
 
 Here we have our contract.
 
-Inside the contract there is a variable set to one `ether` and another variable set to one `wei`.
+Inside the contract there is a variable set to one `wei` and another variable set to one `ether`.
 
 Units can be only be added after literal numbers.
 
@@ -55,7 +56,7 @@ This number should be 10 ^ 18, but it's kinda tedious to count the number of zer
 
 So we will let Solidity check it for us.
 
-Over here back in our code, we have a function named `testOneEther`.
+Back in our code, we have a function named `testOneEther`.
 
 Inside this function we check that `1 ether` is equal to `10 ^ 18 wei`.
 We have already seen that a `wei` is equal to 1.
@@ -71,7 +72,7 @@ returns `true` just as we expected.
 `gwei` stands for `giga wei` and it is equal to 1 billion `wei` (10 ^ 9 wei).
 
 The most common situation where you would see the word `gwei` is when you
-submit a transaction.
+submit a transaction to the blockchain.
 For the transaction fee, you choose the `gas price` in `gwei`.
 
 `Gas` and `Gas price` are the topics of the next video, so for now, all you need to
@@ -80,7 +81,7 @@ know is that `gwei` is equal to 1 billion `wei` and you see it with transactions
 For example, visit the block explorer `etherscan.io` and click on any transaction.
 
 Scroll down, click on the transaction details, and you can see here that this
-transaction's gas price was set at 24 `gwei` (// TODO edit value of gas price)
+transaction's gas price was set at 25 `gwei` (// TODO edit value of gas price)
 
 # Conclusion
 
