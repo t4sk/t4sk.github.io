@@ -19,6 +19,13 @@ function chunk(arr, size) {
 const POSTS = [
   {
     thumbnailUrl:
+      "https://i9.ytimg.com/vi/ybPQsjssyNw/mqdefault.jpg?time=1569048800253&sqp=CJiQl-wF&rs=AOn4CLCgIck6xBl7Uuv7zh1yBqaqQW6AUA",
+    youTubeUrl: "https://www.youtube.com/watch?v=ybPQsjssyNw",
+    title: "Learn Solidity - Ether and Wei",
+    createdAt: "2019-09-21",
+  },
+  {
+    thumbnailUrl:
       "https://i.ytimg.com/vi/4XQsHBJScEk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCSidkVzqzY9matqnVSmYJZNO8IAA",
     youTubeUrl: "https://www.youtube.com/watch?v=4XQsHBJScEk&t=5s",
     title: "Learn Solidity - State Variables",
