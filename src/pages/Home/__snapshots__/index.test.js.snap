@@ -84,7 +84,7 @@ exports[`it renders 1`] = `
         >
           <Post
             createdAt="2019-09-21"
-            thumbnailUrl="https://i9.ytimg.com/vi/ybPQsjssyNw/mqdefault.jpg?time=1569048800253&sqp=CJiQl-wF&rs=AOn4CLCgIck6xBl7Uuv7zh1yBqaqQW6AUA"
+            thumbnailUrl="https://i.ytimg.com/vi/ybPQsjssyNw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBS8cUaXPkG9N9EJWSwHCchOI-NNQ"
             title="Learn Solidity - Ether and Wei"
             youTubeUrl="https://www.youtube.com/watch?v=ybPQsjssyNw"
           />

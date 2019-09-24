@@ -19,7 +19,7 @@ function chunk(arr, size) {
 const POSTS = [
   {
     thumbnailUrl:
-      "https://i9.ytimg.com/vi/ybPQsjssyNw/mqdefault.jpg?time=1569048800253&sqp=CJiQl-wF&rs=AOn4CLCgIck6xBl7Uuv7zh1yBqaqQW6AUA",
+      "https://i.ytimg.com/vi/ybPQsjssyNw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBS8cUaXPkG9N9EJWSwHCchOI-NNQ",
     youTubeUrl: "https://www.youtube.com/watch?v=ybPQsjssyNw",
     title: "Learn Solidity - Ether and Wei",
     createdAt: "2019-09-21",
