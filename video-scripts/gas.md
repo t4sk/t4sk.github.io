@@ -91,13 +91,13 @@ your account will be refunded for the unspent `gas`.
 For example
 
 I have a transaction that I am going to send.
-I am willing to use up to `3,000,000` gas for my transaction so I set the gas limit at `3,000,000`
-I am not in a hurry to get the transaction included in a block so I set the `gas price` lower than average at 20 `gwei`.
-So I send the transaction with `3,000,000 gas` x `20 gwei / gas` which is `60,000,000 gwei`
+I am willing to use up to `3,000` gas for my transaction so I set the gas limit at `3,000`
+I am not in a hurry to get the transaction included in a block so I set the `gas price` lower than average at 2 `gwei`.
+So I send the transaction with `3,000 gas` x `2 gwei / gas` which is `6,000 gwei`
 and wait.
 
-After the transaction is processed, which used `1,000,000` gas so that's `20,000,000` gwei.
-I get `40,000,000` gwei refunded to my account.
+After the transaction is processed, which used `1,000` gas so that's `2,000` gwei.
+I get `4,000` gwei refunded to my account.
 
 Let's see an example in Remix.
 
@@ -167,13 +167,6 @@ In this video we covered that
 
 ```
 transaction fee = gas used * gas price
-```
-
-or in simple terms,
-
-```
-transaction fee = amount of computation used in a transaction * price your willing to pay per computation
-                            (gas used)                                (gas price)
 ```
 
 - `gas` is a unit of computation deducted during a transaction,
