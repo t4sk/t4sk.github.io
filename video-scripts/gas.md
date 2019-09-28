@@ -3,7 +3,7 @@
 Welcome back, in the previous video I've mentioned that
 
 ```
-transaction fee = gas * gas price
+transaction fee = gas used * gas price
 ```
 
 But what are `gas` and `gas price`?
@@ -42,23 +42,13 @@ At every step of
 computation, `gas` is deducted, until either the function finishes executing or
 all the `gas` is used up, at which point the execution is aborted.
 
-Let's go through two examples. One where the function finishes executing and an
-example that does not stop.
+What is the purpose of `gas`?
 
-I send a transaction, with 3000 gas to execute this function
+The purpose of `gas` is to limit the amount of computations that a transaction can do.
 
-```
-function doSomething() public {
-  // do something (- 10 gas)
-  // do more stuff... (- 100 gas)
-  // done
-}
-```
+How does `gas` limit the amount of computations?
 
-It deducts 10 gas, does more stuff and deducts 100 gas and
-the function finish executing. At the end a total of 110 gas was used.
-
-Let's go over an example that uses up all the gas.
+Imagine I have a code that would never stop.
 I send a transaction with `1000 gas` to execute this function
 
 ```
@@ -74,8 +64,6 @@ After the second, it used 300 gas again and there's `400 gas` left.
 and 100 gas is left after the 3rd iteration
 On the 4th iteration, it uses up all remaining `100 gas` midway through the iteration
 and the function is forcefully stopped.
-
-As you can see `gas` prevents code from running forever.
 
 # what is gas price
 
@@ -178,7 +166,7 @@ There are 2 upper bounds to limit the amount of gas you can spend
 In this video we covered that
 
 ```
-transaction fee = gas * gas price
+transaction fee = gas used * gas price
 ```
 
 or in simple terms,
