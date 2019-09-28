@@ -119,10 +119,10 @@ We will set our `gas limit` to `3,000,000` and execute the function.
 
 Click on the transaction log, and scroll down. We see here next to the label `transaction cost` that
 21506 `gas` was used. So we've sent `3,000,000` gas at 1 `wei` per gas and the
-transaction used 21506 `gas`. We expect our account to be refunded for the amount
-of gas that we didn't use, so the account should be deducted by `21,506` wei.
+transaction used `21,462 gas`. We expect our account to be refunded for the amount
+of gas that we didn't use, so the account should be deducted by `21,462` wei.
 
-Click on the account to check the balance, you can verify that adding `21,506` to the current balance
+Click on the account to check the balance, you can verify that adding `21,462` to the current balance
 equals 100 ether, we were refunded for the amount of gas that was not used.
 
 # what happens if you run out of gas?
@@ -142,7 +142,7 @@ First let's see what the value of `i` is, `0`. After we call `forever`, we expec
 
 Next let's test out the function `forever`.
 
-We dont want to wait long for all `3,000,000` gas to be used.
+But first, we dont want to wait long for all `3,000,000` gas to be used.
 Instead we want our transaction to fail fast so let's decrease the `gas limit` to `30,000`
 
 Click on the function and we can see here in the transaction log, that there was an error with the transaction.
@@ -179,3 +179,21 @@ transaction fee = gas used * gas price
 - there are 2 upper bounds to limit the amount of gas you can use
   - gas limit, set by you when you send a transaction
   - block gas limit, set by the network
+
+```
+pragma solidity ^0.5.3;
+
+contract Gas {
+  function testGasRefund() public returns (uint) {
+    return tx.gasprice;
+  }
+
+  uint public i = 0;
+
+  function forever() public {
+    while(true) {
+      i += 1;
+    }
+  }
+}
+```
