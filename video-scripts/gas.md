@@ -20,7 +20,7 @@ I send a transaction to update the variable.
 
 For this transaction to be processed, there are number of operations that must be
 
-done, like copying over each byte from the input into the variable store in the smart contract.
+done, such as copying over each byte from the input into the variable store in the smart contract.
 
 The total amount of computation used to process this transaction is measured
 
@@ -80,6 +80,7 @@ And the lower `gas limit` you set, the less computation your transaction can pro
 The higher `gas price` you set, the more `Ether` you will have to spend, but your
 transaction will be processed faster.
 
+243
 And if you set the `gas price` low, you will have to pay less for your transaction,
 but you would have to wait longer for your transaction to be included in a block.
 
@@ -93,6 +94,8 @@ For example
 I have a transaction that I am going to send.
 I am willing to use up to `3,000` gas for my transaction so I set the gas limit at `3,000`
 I am not in a hurry to get the transaction included in a block so I set the `gas price` lower than average at 2 `gwei`.
+
+246
 So I send the transaction with `3,000 gas` x `2 gwei / gas` which is `6,000 gwei`
 and wait.
 
@@ -117,10 +120,12 @@ the transaction.
 
 We will set our `gas limit` to `3,000,000` and execute the function.
 
-Click on the transaction log, and scroll down. We see here next to the label `transaction cost` that
-21506 `gas` was used. So we've sent `3,000,000` gas at 1 `wei` per gas and the
-transaction used `21,462 gas`. We expect our account to be refunded for the amount
-of gas that we didn't use, so the account should be deducted by `21,462` wei.
+Click on the transaction log, and scroll down.
+
+We see here next to the label `transaction cost` that`21,462 gas` was used.
+So we've sent `3,000,000` gas at 1 `wei` per gas and the transaction used `21,462 gas`.
+We expect our account to be refunded for the amount of gas that we didn't use,
+so the account should be deducted by `21,462` wei.
 
 Click on the account to check the balance, you can verify that adding `21,462` to the current balance
 equals 100 ether, we were refunded for the amount of gas that was not used.
@@ -133,8 +138,13 @@ If your transaction runs out of gas while midway through an execution,
 the transaction will fail, and any changes to the state variables will be undone,
 but you still have to pay for the gas spent.
 
+247
 Let's see an example in Remix. Back in our contract, we have a function called `forever`.
-This function will repeatedly increment the state variable, `i` without ever stopping.
+
+248
+This function will increment the state variable, `i` without ever stopping.
+
+250
 However once all gas is consumed, this function will be aborted and the state variable `i` will be reset to the
 previous state before the transaction started.
 
@@ -179,6 +189,9 @@ transaction fee = gas used * gas price
 - there are 2 upper bounds to limit the amount of gas you can use
   - gas limit, set by you when you send a transaction
   - block gas limit, set by the network
+
+I am gonna wrap up around here.
+Thanks for watching and I will see you soon in the next video
 
 ```
 pragma solidity ^0.5.3;
