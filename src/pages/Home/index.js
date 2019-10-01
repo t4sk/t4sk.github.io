@@ -19,6 +19,13 @@ function chunk(arr, size) {
 const POSTS = [
   {
     thumbnailUrl:
+      "https://i.ytimg.com/vi/oTS9uxU6cAM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBFNU6ibn-6fR2RUzTKjSSowdAAoA",
+    youTubeUrl: "https://www.youtube.com/watch?v=oTS9uxU6cAM",
+    title: "Learn Solidity - Gas and Gas Price",
+    createdAt: "2019-09-30",
+  },
+  {
+    thumbnailUrl:
       "https://i.ytimg.com/vi/ybPQsjssyNw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBS8cUaXPkG9N9EJWSwHCchOI-NNQ",
     youTubeUrl: "https://www.youtube.com/watch?v=ybPQsjssyNw",
     title: "Learn Solidity - Ether and Wei",

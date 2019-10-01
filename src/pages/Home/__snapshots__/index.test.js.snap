@@ -83,6 +83,17 @@ exports[`it renders 1`] = `
           key="0"
         >
           <Post
+            createdAt="2019-09-30"
+            thumbnailUrl="https://i.ytimg.com/vi/oTS9uxU6cAM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBFNU6ibn-6fR2RUzTKjSSowdAAoA"
+            title="Learn Solidity - Gas and Gas Price"
+            youTubeUrl="https://www.youtube.com/watch?v=oTS9uxU6cAM"
+          />
+        </div>
+        <div
+          className="post"
+          key="1"
+        >
+          <Post
             createdAt="2019-09-21"
             thumbnailUrl="https://i.ytimg.com/vi/ybPQsjssyNw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBS8cUaXPkG9N9EJWSwHCchOI-NNQ"
             title="Learn Solidity - Ether and Wei"
@@ -91,7 +102,7 @@ exports[`it renders 1`] = `
         </div>
         <div
           className="post"
-          key="1"
+          key="2"
         >
           <Post
             createdAt="2019-09-15"
@@ -100,9 +111,14 @@ exports[`it renders 1`] = `
             youTubeUrl="https://www.youtube.com/watch?v=4XQsHBJScEk&t=5s"
           />
         </div>
+      </div>
+      <div
+        className="row"
+        key="1"
+      >
         <div
           className="post"
-          key="2"
+          key="0"
         >
           <Post
             createdAt="2019-08-20"
