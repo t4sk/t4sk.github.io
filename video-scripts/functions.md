@@ -1,17 +1,28 @@
 # Functions
 
-In programming language like Python, functions can take in data types like arrays and maps as inputs
+The syntax for declaring a function in Solidity is straight forward.
+
+```
+function myFunc(type name, type name) [visibility] returns (type, type) {
+
+}
+```
+
+function name, data type and variable name for each input, visibility (like the keyword `public`) and types of outputs to return.
+
+And we would be done with this video, if Solidity functions were just like other programming languages.
+
+In programming language like JavaScript, functions can take in data types like arrays and maps as inputs
 and also return these data types as output.
 
-However, you might be surprised and not happy to find out that, in Solidity
+However, you might be surprised and not amused to find out that, in Solidity
 public functions cannot accept certain data types as input,
 and you also cannot return certain data types as outputs.
 
-In this video, let's explore
+So In this video, let's explore
 
 - what data types you cannot use as inputs and outputs for a public function,
-- and go over data types that you shouldn't use as input
-- and data types that you shouldn't use as outputs.
+- and go over data types that you can use but you shouldn't use as input and outputs
 
 We will also go over the syntax for returning multiple outputs from a function.
 This is an useful feature when you want to aggregate multiple function outputs into a single function call.
@@ -247,6 +258,8 @@ When is this useful? Let's break this question into two parts.
 - When is it useful to return multiple outputs?
 - and when is it useful to return them with named variables?
 
+// TODO assigned
+
 ### When is it useful to return multiple outputs?
 
 So when is it useful to return multiple outputs?
@@ -266,11 +279,39 @@ Inside the function, you list the values to return inside a parentheses.
 
 When is it useful to return them named?
 
-## TODO
+It's useful when there are many values being returned.
+Naming the outputs can enhance readability of the code
 
-- named return values
-- assigned return values
-- destructuring assignment
+For example, here we have two functions returning the exact same information about a car.
+
+```
+function getCar() public returns (string, uint, uint, address) {}
+
+function getCar2() public returns (string model, uint year, uint milage, address owner) {}
+```
+
+As you can see it is easier to understand the output of the second function, with named outputs, than the first function.
+
+Another benefit of naming the outputs is that you don't have to remember the order of outputs when the function interacted with `web3`.
+
+For unnamed functions, you would have to remember the order of outputs. But when you name them,
+you have access to the values by their name.
+
+# destructuring assignment
+
+How would you assign variables to the output of a function that returns multiple values?
+
+You use destructuring assignment. It's easier to understand by example than to explain what `destructing assignment` is .
+So let's go through an example in Remix.
+
+This function receives outputs of type `uint` and `uint` and assigns them to variables `i` and `j`
+
+As you can see here, the type of variables declared, here on the left side of the equal sign,
+must be consistent with the type of values being returned from the function being called.
+
+You dont have to assign all values. If a function returns three parameters, but you dont care about the
+second output, this is how you do it. Here you are telling Solidity that, you need the first output,
+not the second, so you omit declaring the type and naming it, and you also need the 3rd output.
 
 ```
 
@@ -318,11 +359,11 @@ contract Function {
         y = 2;
     }
 
-    function destructingAssigments() public pure returns (uint) {
-        (uint x, uint y) = (1, 2);
+    function destructingAssigments() public pure returns (uint, uint, uint, uint, uint) {
+        (uint i, uint j) =  returnMultipleVals();
+
         // Values can be left out.
         (uint a, , uint b) = (4, 5, 6);
-        (uint i,) =  returnMultipleVals();
 
         return (x, y, a, b, i);
     }
