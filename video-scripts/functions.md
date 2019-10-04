@@ -27,20 +27,6 @@ So In this video, let's explore
 We will also go over the syntax for returning multiple outputs from a function.
 This is an useful feature when you want to aggregate multiple function outputs into a single function call.
 
-<!-- # basic function
-
-First let's quickly go over the syntax for writing a function.
-Here we have a function called `add`.
-The function takes two non negative integers, `i` and `j`, declared with the keyword `uint` which stands for unsigned integer.
-It adds the two integers and returns the `sum`.
-So we declare the return type as `uint` with the keywords `returns` followed by the type `uint` inside the parentheses.
-
-```
-function add(uint i, uint j) public returns (uint) {
-  return i + j;
-}
-``` -->
-
 # input data types
 
 In Solidity, you cannot pass certain data types as input for a public function
@@ -253,12 +239,43 @@ safe is write functions that have a bounded consumption of gas.
 So far, Solidity's restriction on functions does not make developers happy. But one
 good feature of Solidity, is that you can return multiple values, and as a bonus they can be named.
 
+Let's see an example in Remix.
+
+```
+function returnMany() public pure returns (uint, bool, uint) {
+    return (1, true, 2);
+}
+```
+
+You declare that a function is going to return multiple values by
+listing the types of values to return inside the parentheses after the `return` keyword in the function signature.
+
+Inside the function, you list the values to return inside a parentheses.
+So here we are declaring that this function will return 3 variables. of type `uint`, `boolean` and `uint`
+Inside the function, we return the values matching the types that we declared above
+
+Outputs can also be named like this.
+
+```
+function named() public pure returns (uint i, bool b, uint j) {
+    return (1, true, 2);
+}
+```
+
+Finally, you can explicitly assign to return variables and omit the last `return` statement, like this.
+
+```
+function assigned() public pure returns (uint i, bool b, uint j) {
+    i = 1;
+    b = true;
+    j = false;
+}
+```
+
 When is this useful? Let's break this question into two parts.
 
 - When is it useful to return multiple outputs?
 - and when is it useful to return them with named variables?
-
-// TODO assigned
 
 ### When is it useful to return multiple outputs?
 
@@ -269,11 +286,6 @@ and return all of them in a single function call.
 Let's see an example. Let's say that our contract store two integers in variables `x` and `y`
 One way to get the value of `x` and `y` is call the functions `x()` and `y()` individually. That's 2 function calls.
 Another way is to write a function that returns the two values in one function call, like the one you see here.
-
-In solidity you declare that your function is going to return multiple values by
-listing the types of values to return inside the parentheses after the `return` keyword in the function signature.
-
-Inside the function, you list the values to return inside a parentheses.
 
 ### When is it useful to return them named?
 
@@ -312,6 +324,36 @@ must be consistent with the type of values being returned from the function bein
 You dont have to assign all values. If a function returns three parameters, but you dont care about the
 second output, this is how you do it. Here you are telling Solidity that, you need the first output,
 not the second, so you omit declaring the type and naming it, and you also need the 3rd output.
+
+# In this video
+
+In this video
+
+- we went over the syntax of writing a function
+
+```
+function myFunc(type name, type name) [visibility] returns (type, type) {
+
+}
+```
+
+function name, data type and variable name for each input, visibility (like the keyword `public`) and types of outputs to return.
+
+- we tried to compile in Remix public functions with different data types as inputs and outputs,
+  In both cases, as inputs and outputs,
+  - map can be not be used
+  - multi dimensional fixed array can be used
+  - multi dimensional dynamic sized array (does not compile, but does with if the experimental feature `ABIEncoderV2` is enable)
+  - array (also compiles, but not recommended to use, unless you can put a upper bound to the array size and gas consumption)
+- We also went learned how to write functions that return multiple values.
+  - these outputs can be
+    - named
+    - or assigned
+- Finally we saw how to assign variables from a function that outputs multple values.
+
+Thanks for watching.
+
+In the next video, I plan to cover `pure` and `view` functions. Have a nice week, and see you soon.
 
 ```
 
