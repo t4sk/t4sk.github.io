@@ -41,6 +41,8 @@ Let's see what happens if we try to compile a contract with these invalid inputs
 
 ### map
 
+// TODO video
+
 ```
 function mapInput(mapping(uint => uint) memory map) public {
 }
@@ -52,6 +54,8 @@ Let's try compiling the contract.
 You will get an error like the one you see here.
 
 ### multi dimensional fixed sized array
+
+// TODO video
 
 How about multi dimensional fixed sized array?
 
@@ -66,6 +70,8 @@ It does.
 
 ### multi dimensional dynamic sized array
 
+// TODO video
+
 How about multi dimensional dynamic sized array?
 Will this compile?
 
@@ -76,6 +82,8 @@ function multiDimDynamicSizeArrayInput(uint[][] memory _arr) public {
 
 Try compiling the contract and you get an error like the one you see here.
 
+// TODO video
+
 The error message states that if you change the `pragma` to `experimental ABIEncoderV2`
 then this function is valid code.
 
@@ -83,6 +91,8 @@ Here I've done exactly that, changed the pragma inside the contract.
 But as you can see here in the warnings, you should not deploy a contract with experimental features to the mainnet,
 
 ### array
+
+// TODO video
 
 ```
 function arrayInput(address[] memory _arr) public {
@@ -96,7 +106,7 @@ It does. Great!
 
 # Should you write function that takes array of unbounded size?
 
-So we've seen public functions can take dynamic sized array as input.
+So we've seen public functions can take array as input.
 But should you write functions that take array of arbitrary size?
 
 In most case, the answer is no. The reason is simple. `Gas`.
@@ -108,6 +118,7 @@ As a developer, this is difficult to predict upfront
 and it goes against the general design goals of a smart contract to write
 smart contracts that are simple, reliable and with predictable outcomes
 
+// TOOD video
 One way to make this function more reliable is to require that the size of the array is
 less than some fixed number, which would put an upper bound to amount of gas this function can possibly use.
 
@@ -127,11 +138,10 @@ Limitations on the outputs of a public function is similar to that of inputs.
 
 Outputs of type
 
-- map does not compile
-- multi dimensional array with fixed size does compile
-- multi dimensional array with dynamic size (does not compile, but does with if the experimental feature `ABIEncoderV2` is enable)
-- array (does compiles)
+- map and
+- multi dimensional array with dynamic size do not compile
 
+// TODO video
 Let's try them out in Remix.
 
 Back in our contract, first declare some data types.
@@ -159,7 +169,7 @@ the returns an array of unbounded size. But should you?
 Again the answer is probably not. What can go wrong?
 
 Imagine there are two contract, `A` and `B`. Contract `A` has a function that returns an array of addresses.
-This function simply returns the array of addresses store in the contract.
+
 This function does not create any transaction, so you don't have to worry about gas right?
 Wrong. Why?
 Imagine contract `B` has a function that calls contract `A` to get the array of addresses and does something with it,
@@ -177,6 +187,8 @@ safe is write functions that have a bounded consumption of gas.
 
 So far, Solidity's restriction on functions does not make developers happy. But one
 useful feature of Solidity, is that you can return multiple values, and as a bonus they can be named.
+
+// TODO video
 
 Let's see an example in Remix.
 
@@ -263,72 +275,3 @@ and types of outputs to return.
 Thanks for watching.
 
 In the next video, I plan to cover `pure` and `view` functions. Have a nice week, and see you soon.
-
-```
-
-pragma solidity ^0.5.3;
-
-contract Function {
-  function mapInput(mapping(uint => uint) memory map) public {
-  }
-
-  function multiDimFixedSizeArrayInput(uint[9][9] memory _arr) public {
-  }
-
-  function multiDimDynamicSizeArrayInput(uint[][] memory _arr) public {
-  }
-
-  function arrayInput(address[] memory _arr) public {
-  }
-
-    mapping(uint => uint) map;
-    address[] arr;
-    address[9][9] arr2DFixed;
-    address[][] arr2D;
-
-    // function mapOutput() public returns (mapping(uint => uint) memory) {
-    //     return map;
-    // }
-
-        // function multiDimFixedSizeArrayOutput() public returns (address[9][9] memory) {
-        //     return arr2DFixed;
-        // }
-
-        // function multiDimDynamicSizeArrayOutput() public returns (address[][] memory) {
-        //     return arr2D;
-        // }
-
-    function arrayOutput() public returns (address[] memory) {
-        return arr;
-    }
-
-    function returnMultipleVals() public pure returns (uint, bool, uint) {
-        return (1, true, 2);
-    }
-
-    function named() public pure returns (uint x, bool b, uint y) {
-        return (1, true, 2);
-    }
-
-    function assigned() public pure returns (uint x, bool b, uint y) {
-        x = 1;
-        b = true;
-        y = 2;
-    }
-
-    function destructingAssigments() public pure returns (uint, uint, uint, uint, uint) {
-        (uint i, uint j) =  returnMultipleVals();
-
-        // Values can be left out.
-        (uint a, , uint b) = (4, 5, 6);
-
-        return (x, y, a, b, i);
-    }
-
-}
-
-```
-
-```
-
-```
