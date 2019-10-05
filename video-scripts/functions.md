@@ -41,8 +41,6 @@ Let's see what happens if we try to compile a contract with these invalid inputs
 
 ### map
 
-// TODO video
-
 ```
 function mapInput(mapping(uint => uint) memory map) public {
 }
@@ -54,8 +52,6 @@ Let's try compiling the contract.
 You will get an error like the one you see here.
 
 ### multi dimensional fixed sized array
-
-// TODO video
 
 How about multi dimensional fixed sized array?
 
@@ -70,8 +66,6 @@ It does.
 
 ### multi dimensional dynamic sized array
 
-// TODO video
-
 How about multi dimensional dynamic sized array?
 Will this compile?
 
@@ -82,8 +76,6 @@ function multiDimDynamicSizeArrayInput(uint[][] memory _arr) public {
 
 Try compiling the contract and you get an error like the one you see here.
 
-// TODO video
-
 The error message states that if you change the `pragma` to `experimental ABIEncoderV2`
 then this function is valid code.
 
@@ -91,8 +83,6 @@ Here I've done exactly that, changed the pragma inside the contract.
 But as you can see here in the warnings, you should not deploy a contract with experimental features to the mainnet,
 
 ### array
-
-// TODO video
 
 ```
 function arrayInput(address[] memory _arr) public {
@@ -118,7 +108,6 @@ As a developer, this is difficult to predict upfront
 and it goes against the general design goals of a smart contract to write
 smart contracts that are simple, reliable and with predictable outcomes
 
-// TOOD video
 One way to make this function more reliable is to require that the size of the array is
 less than some fixed number, which would put an upper bound to amount of gas this function can possibly use.
 
@@ -126,7 +115,7 @@ less than some fixed number, which would put an upper bound to amount of gas thi
 uint MAX_ARR_LENGTH = 10;
 
 function arrayInput(address[] memory _arr) public {
-  if (arr.length > MAX_ARR_LENGTH) {
+  if (_arr.length > MAX_ARR_LENGTH) {
     // throw error
   }
 }
@@ -141,7 +130,6 @@ Outputs of type
 - map and
 - multi dimensional array with dynamic size do not compile
 
-// TODO video
 Let's try them out in Remix.
 
 Back in our contract, first declare some data types.
@@ -187,8 +175,6 @@ safe is write functions that have a bounded consumption of gas.
 
 So far, Solidity's restriction on functions does not make developers happy. But one
 useful feature of Solidity, is that you can return multiple values, and as a bonus they can be named.
-
-// TODO video
 
 Let's see an example in Remix.
 
@@ -240,7 +226,7 @@ Another way is to write a function that calls `f` and `g` and returns the two va
 How would you assign variables to the output of a function that returns multiple values?
 
 You use destructuring assignment. It's easier to understand by example than to explain what `destructing assignment` is .
-So let's go through an example in Remix.
+So let's go through an example using actual code.
 
 Here we are assigning the outputs of function the `returnMultipleVals`.
 
