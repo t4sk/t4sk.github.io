@@ -19,6 +19,13 @@ function chunk(arr, size) {
 const POSTS = [
   {
     thumbnailUrl:
+      "https://i.ytimg.com/vi/71cmPaD_AnQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCcIoVXOmZYekcdlbijNKfCD7KLoA",
+    youTubeUrl: "https://www.youtube.com/watch?v=71cmPaD_AnQ",
+    title: "Learn Solidity - Functions",
+    createdAt: "2019-10-06",
+  },
+  {
+    thumbnailUrl:
       "https://i.ytimg.com/vi/oTS9uxU6cAM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBFNU6ibn-6fR2RUzTKjSSowdAAoA",
     youTubeUrl: "https://www.youtube.com/watch?v=oTS9uxU6cAM",
     title: "Learn Solidity - Gas and Gas Price",
