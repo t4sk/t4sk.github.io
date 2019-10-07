@@ -62,7 +62,7 @@ function multiDimFixedSizeArrayInput(uint[9][9] memory _arr) public {
 }
 ```
 
-It does.
+It did.
 
 ### multi dimensional dynamic sized array
 
@@ -89,7 +89,7 @@ function arrayInput(address[] memory _arr) public {
 }
 ```
 
-How about a simple one dimensional array, unfixed size?
+How about a regular one dimensional array?
 Will it compile?
 
 It does. Great!
@@ -100,16 +100,19 @@ So we've seen public functions can take array as input.
 But should you write functions that take array of arbitrary size?
 
 In most case, the answer is no. The reason is simple. `Gas`.
+
 The bigger the array is, the more gas it would use.
 The function would complete successfully for some arrays and fail for other inputs
 depending on the size of the array and how much gas is available.
 
 As a developer, this is difficult to predict upfront
-and it goes against the general design goals of a smart contract to write
+and it goes against best practices to write
 smart contracts that are simple, reliable and with predictable outcomes
 
 One way to make this function more reliable is to require that the size of the array is
-less than some fixed number, which would put an upper bound to amount of gas this function can possibly use.
+less than some fixed number.
+
+This would put an upper bound to amount of gas this function can possibly use.
 
 ```
 uint MAX_ARR_LENGTH = 10;
@@ -127,8 +130,8 @@ Limitations on the outputs of a public function is similar to that of inputs.
 
 Outputs of type
 
-- map and
-- multi dimensional array with dynamic size do not compile
+- map
+- and multi dimensional array with dynamic size do not compile
 
 Let's try them out in Remix.
 
@@ -142,17 +145,13 @@ Back in our contract, first declare some data types.
 Next, let's see if theses functions that return different data types can compile.
 
 Try compiling. You would see errors next to the function that return a `map` and also
-next to the function that returns multi dimensional dynamic sized array.
+next to the function that returns a multi dimensional array.
 
-You would also see errors messages here, below the compile button, and these errors are
-similar to the ones we saw when we tried to compile functions with invalid inputs.
+You would also see error messages here, below the compile button, and these errors are
+similar to the ones we saw with invalid inputs.
 
-Functions that return a map is not allows.
-multi dimensional array with fixed size are, but ones with dynamic size are not.
-and Solidity has no problem compiling a function that returns an array.
-
-As mentioned earlier, the question is should you? Yes you can write a function
-the returns an array of unbounded size. But should you?
+Solidity has no problem compiling a function that returns an array.
+But should you write a function the returns an array of unbounded size?
 
 Again the answer is probably not. What can go wrong?
 
@@ -164,8 +163,7 @@ Imagine contract `B` has a function that calls contract `A` to get the array of 
 like sending `Ether` to each address.
 
 Now what would happen if the array of addresses in contract `A` is huge, and contract `B` tries to get it?
-This function will fail every time, because it would use up all gas before the function can be completed.
-As long the array in contract `A` is big, the function in contract `B` will fail, and many people are unhappy that
+The function in contract `B` will fail every time, and many people are unhappy that
 they can't receive `Ether`.
 
 So to summarize, when writing smart contracts you rather be safe than sorry and one way to be
@@ -173,7 +171,7 @@ safe is write functions that have a bounded consumption of gas.
 
 # Return multiple values as output
 
-So far, Solidity's restriction on functions does not make developers happy. But one
+Solidity's limitations on public functions is inconvenient. But one
 useful feature of Solidity, is that you can return multiple values, and as a bonus they can be named.
 
 Let's see an example in Remix.
@@ -184,12 +182,12 @@ function returnMany() public pure returns (uint, bool, uint) {
 }
 ```
 
-You declare that a function is going to return multiple values by
-listing the types of values to return inside the parentheses after the `return` keyword in the function signature.
+You can declare that a function is returning multiple values by
+listing the types of values inside the parentheses after the `return` keyword
 
-Inside the function, you list the values to return inside the parentheses.
+Inside the function, you list the values to return.
 So here we are declaring that this function will return 3 variables. of type `uint`, `boolean` and `uint`
-Inside the function, we return the values matching the types that we declared above
+We return the values matching the types that we declared above
 
 Outputs can also be named like this.
 
@@ -199,7 +197,7 @@ function named() public pure returns (uint i, bool b, uint j) {
 }
 ```
 
-Finally, you can explicitly assign to return variables and omit the last `return` statement, like this.
+also you can explicitly assign to return variables and omit the last `return` statement, like this.
 
 ```
 function assigned() public pure returns (uint i, bool b, uint j) {
@@ -212,51 +210,49 @@ function assigned() public pure returns (uint i, bool b, uint j) {
 ### When is it useful to return multiple outputs?
 
 So when is it useful to return multiple outputs?
-It's useful when you want a function that aggregates multiple function outputs and values store in the smart contract
+It's useful when you want a function that collect outputs of several functions
 and return all of them in a single function call.
 
 Let's say that we have functions `f` and `g`.
-`f` returns some variable `y`
-and `g` returns some variable `z`
-One way to get the value of `y` and `z` is call the functions `f()` and `g()` individually. That's 2 function calls.
-Another way is to write a function that calls `f` and `g` and returns the two values `y` and `z` in one function call.
+
+One way to get the outputs of `f` and `g` is to call the functions individually. That's 2 function calls.
+Another way is to write a function that calls `f` and `g` and returns the two outputs in a single function call.
 
 # destructuring assignment
 
-How would you assign variables to the output of a function that returns multiple values?
+How do you assign variables to the output of a function that returns multiple values?
 
-You use destructuring assignment. It's easier to understand by example than to explain what `destructing assignment` is .
+You use destructuring assignments.
+
+It's easier to understand by example than to explain what it is .
 So let's go through an example using actual code.
 
-Here we are assigning the outputs of function the `returnMultipleVals`.
+Here we are assigning the outputs of the function `returnMultipleVals`.
 
 Notice that the type of variables declared, here on the left side,
-is consistent with the type of values being returned from the function being called.
+is consistent with the type of values being returned from the function call.
 
 You dont have to assign all values. If a function returns three parameters, but you dont care about the
-second output, this is how you do it. Here you are telling Solidity that, you need the first output,
+second output, this is how you do it.
+
+Here you are telling Solidity that, you need the first output,
 not the second, so you omit declaring the type and naming it, and you also need the 3rd output.
 
 # In this video
 
 In this video
 
-- we went over the syntax of writing a function
-
-function name, data type and variable name for each input, other declaration (like the keyword `public`, `view`, `pure`)
-and types of outputs to return.
-
-- we tried to compile in Remix public functions with different data types as inputs and outputs,
-  In both cases, as inputs and outputs,
-  - map can be not be used
-  - multi dimensional fixed array can be used
-  - multi dimensional dynamic sized array (does not compile, but does with if the experimental feature `ABIEncoderV2` is enable)
-  - array (also compiles, but not recommended to use, unless you can put a upper bound to the array size and gas consumption)
-- We also went learned how to write functions that return multiple values.
+- we tried to compile public functions with different data types as inputs and outputs,
+  In both cases
+  - map cant be used
+  - multi dimensional fixed size array can be used
+  - multi dimensional dynamic sized array (cannot)
+  - array (compiles, but be careful and you should put a upper bound to the array size)
+- We also learned how to write functions that return multiple values.
   - these outputs can be
     - named
     - or assigned
-- Finally we saw how to assign variables from a function that outputs multple values.
+- Finally we saw how to assign variables from a function that return multple values.
 
 Thanks for watching.
 
