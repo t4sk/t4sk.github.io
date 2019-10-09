@@ -13,6 +13,7 @@ Functions with the keyword `view` promises not to modify the state of the blockc
 
 What are some examples that do modify the state of the blockchain?
 
+// TODO video
 According to the Solidify documentation the following are considered to modify the state of the blockchain.
 
 - Writing to state variables.
@@ -38,6 +39,7 @@ Let's go over some examples in Remix.
 
 ##### valid
 
+// TODO video
 First let's see an example of a function declared `view` that keeps the promise not to change the state.
 
 Here we have a state variable `i` initialized to 1.
@@ -66,6 +68,7 @@ It's still 1. Great, `addToX` is a valid `view` function
 
 ##### compilation failure (state variable)
 
+// TODO video
 Can we declare a function as view but break the promise not to make any state changes, by updating the state variable?
 
 Let's give it a try.
@@ -81,6 +84,7 @@ This is a really good feature that Solidity compiler can detect code that can po
 
 ##### compilation failure (non view function)
 
+// TODO video
 Function is not a `view` function if it calls another function neither marked as `view` nor `pure`.
 
 As an example, here we have a function called `notView`. `notView`, as the name suggests, is a function not declared as `view`
@@ -99,6 +103,7 @@ In addition they also promise not to read the state.
 
 ### reading state
 
+// TODO video
 According to the Solidify documentation the following are considered reading from the state.
 
 - Reading from state variables.
@@ -119,6 +124,7 @@ and then see some examples of functions that are not `pure`.
 
 ##### Valid pure
 
+// TODO video
 First let's see an example of a function that is `pure`
 
 `add` is a function that takes two inputs `i` and `j` and returns the sum of them
@@ -134,6 +140,7 @@ As you can see here, this is valid code and it compiled.
 
 ##### Reading state
 
+// TODO video
 Next let's see an example of a function that is not `pure`.
 
 Let's try compiling a function that reads from the state variable and declare the function as `pure`
@@ -148,6 +155,7 @@ You'll see a similar error to the ones we've got when we tried to compile a inva
 
 ##### Calling non-pure
 
+// TODO video
 Similar to how a `view` function can only call other `view` or `pure` functions,
 a `pure` function can only call other `pure` function.
 
@@ -170,6 +178,7 @@ So we've just seen that a pure function can only call other pure functions.
 
 # forgot view or pure keyword
 
+// TODO video
 It's easy to forget to declare a function as `view` or `pure`. The good news is that,
 
 the Solidity compiler is smart enough to warn you that you might have forgotten to
