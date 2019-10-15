@@ -19,7 +19,7 @@ function chunk(arr, size) {
 const POSTS = [
   {
     thumbnailUrl:
-      "https://i9.ytimg.com/vi/xknoxALAL8c/mqdefault.jpg?time=1570935398993&sqp=CISkiu0F&rs=AOn4CLBIMg7RUIvWGKyDkDMbzWP0AjfgwA",
+      "https://i.ytimg.com/vi/xknoxALAL8c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLChZTh-2zMGnYu_pF0AD5XREgaB8w",
     youTubeUrl: "https://www.youtube.com/watch?v=xknoxALAL8c",
     title: "Learn Solidity - View and Pure Functions",
     createdAt: "2019-10-12",
