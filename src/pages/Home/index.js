@@ -19,6 +19,13 @@ function chunk(arr, size) {
 const POSTS = [
   {
     thumbnailUrl:
+      "https://i.ytimg.com/vi/thADMg9cKPM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZkbd-AkQwPSSQ7rIejxHSJhzU7g",
+    youTubeUrl: "https://www.youtube.com/watch?v=thADMg9cKPM",
+    title: "Learn Solidity - Function Modifiers",
+    createdAt: "2019-10-20",
+  },
+  {
+    thumbnailUrl:
       "https://i.ytimg.com/vi/xknoxALAL8c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLChZTh-2zMGnYu_pF0AD5XREgaB8w",
     youTubeUrl: "https://www.youtube.com/watch?v=xknoxALAL8c",
     title: "Learn Solidity - View and Pure Functions",
