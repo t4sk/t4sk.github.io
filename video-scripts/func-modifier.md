@@ -50,11 +50,11 @@ Examples Overview
 ```
 pragma solidity ^0.5.3;
 
-contract Modifier {
+contract FuncModifier {
     // Examples
-    // 1. Restricting write access (basic syntax and why useful?)
-    // 2. Validate inputs (inputs, multiple modifiers)
-    // 3. Reentrancy guard (reentrancy hack, before and after)
+    // 1. Restricting write access (basic syntax)
+    // 2. Validate inputs (inputs, why useful?)
+    // 3. Reentrancy guard (reentrancy hack)
 
     address public owner;
     uint public x = 10;
