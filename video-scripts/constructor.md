@@ -17,8 +17,6 @@ In this video, we're gonna go over the basic syntax for constructors.
 - constructor syntax
   - constructor is optional (contract without cons)
   - passing parameters
-  - setting msg.sender is common
-    - explain again what msg.sender is
 
 # outro
 
@@ -30,13 +28,16 @@ In this video, we're gonna go over the basic syntax for constructors.
 contract A {
     uint public x;
     uint public y;
+
     address public owner;
+    uint public createdAt;
 
     constructor(uint _x, uint _y) public {
         x = _x;
         y = _y;
 
         owner = msg.sender;
+        createdAt = block.timestamp;
     }
 }
 ```
