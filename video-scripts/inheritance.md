@@ -1,83 +1,79 @@
-- inheritance (A -> B)
-  - demo inheritted function
-  - demo function override
+- syntax for inheritance
+- simple case when a contract inherits a single parent contract (A -> B)
+- how to pass parameters to parent contract
+
+- inheritance
+  - inherited function
+  - function override (function signature must match)
 - constructor
   - demo fixed parameters
   - demo input parameters
-- in this video
 - next video
-  - multiple inheritance
+  - multiple inheritance and calling parent contracts
 
 ```
 pragma solidity ^0.5.3;
 
+// Examples
 // Inheritance
-    //- inherit functions
-    // - override
+// - inherit functions
+// - override functions
 
-// Constructor
-    // - fixed parameters
-    // - input parameters
+// Passing parameters to parent constructor
+// - fixed parameters
+// - input parameters
 
-
+// Inheritance
+// - inherit functions
 // contract A {
-//     string public name;
-
-//     constructor(string memory _name) public {
-//         name = _name;
-//     }
-
-//     function foo() public pure returns (uint) {
-//         return 1;
-//     }
-
 //     function getContractName() public view returns (string memory) {
-//         return name;
+//         return "Contract A";
 //     }
-// }
-//
-// Constructor
-// contract B is A("Contract B") {
-//     // function getContractName() public pure returns (string memory) {
-//     //     return "Contract B";
-//     // }
 // }
 
 // contract B is A {
-//     // constructor() A("Contract B") public  {
-//     //     name = "Contract B again";
-//     // }
-//     constructor(string memory _name) A(_name) public  {
+
+// }
+
+// Inheritance
+// - override
+// contract A {
+//     function getContractName() public view returns (string memory) {
+//         return "Contract A";
 //     }
 // }
 
-// Order
-    //- multiple inheritance
-    // - order
-    // - calling parent contracts
-// order
-// All function calls are virtual, which means that the most derived function is called, except when the contract name is explicitly given or the super keyword is used.
+// contract B is A {
+//     function getContractName() public view returns (string memory) {
+//         return "Contract B";
+//     }
+// }
+
+// Constructor
+// - passing fixed paremeters
 contract A {
+    string public name;
 
+    constructor(string memory _name) public {
+        name = _name;
+    }
 }
 
-contract B is A {
-
-}
-
-contract C is A {
-
-}
-
-contract D is B, C {
-    // todo calling multiple constructors
-}
-
-contract E is C, B {
-
-}
-
-// contract F is B, A {
+// contract B is A("Contract B") {
 
 // }
+
+// contract B is A {
+//     constructor() A("Contract B") public {
+
+//     }
+// }
+
+// - variable parameters
+contract B is A {
+    constructor(string memory _name) A(_name) public {
+
+    }
+}
+
 ```
