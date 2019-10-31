@@ -19,7 +19,14 @@ function chunk(arr, size) {
 const POSTS = [
   {
     thumbnailUrl:
-      "https://i9.ytimg.com/vi/HpjZZ9tASGs/mqdefault.jpg?time=1572325921476&sqp=CKiT3-0F&rs=AOn4CLAS4cMz4dQgi5BjQQ9ekZuZ-3XX0w",
+      "https://i.ytimg.com/vi/GnztHR8-1o8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBQeYOr7TI-FFZDyz06dhADsv7JXQ",
+    youTubeUrl: "https://www.youtube.com/watch?v=GnztHR8-1o8",
+    title: "Learn Solidity - Inheritance (part 1)",
+    createdAt: "2019-10-30",
+  },
+  {
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/HpjZZ9tASGs/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBmmxQO823nu0rRRnQNg9IAglG4cw",
     youTubeUrl: "https://www.youtube.com/watch?v=HpjZZ9tASGs",
     title: "Learn Solidity - Constructor",
     createdAt: "2019-10-24",
