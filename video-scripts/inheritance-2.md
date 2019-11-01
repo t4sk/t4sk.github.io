@@ -1,9 +1,9 @@
 - multiple inheritance syntax
-- shadowing?
-- multiple inheritance constructors
+- overriding
 - order
 - calling parent contracts
-- shadowing?
+  - explicit
+  - super
 
 # multiple inheritance syntax
 
@@ -43,7 +43,7 @@ contract C is A, B {
 
 ## overriding a function
 
-- demo calling functions
+- override function
 - order is important
 
 ```
@@ -95,6 +95,8 @@ contract D is C, A {
 }
 ```
 
+- order is determined by C3 linearization
+
 - Which function is called?
   - Assuming (base -> derived)
   - Another simplifying way to explain this is that when a function is called
@@ -108,6 +110,8 @@ contract D is C, A {
 contract C is A, B {
 
 }
+
+// example B does not have foo()
 
 contract C is B, A {
 
@@ -141,68 +145,107 @@ contract E is A, X {}
 contract F is C, E {}
 ```
 
+- real world is more complex, so it's best if you can avoid thinking about multiple inheritance in the first place
+- orthogonal components
+
 # calling parent contracts
+
+How about if you need to call parent functions?
+
+- detour intro to logging
+  - remind that we will go in depth in another video
+  - purpose to introduce now?
+    - debugging, trace order of functions called by looking at the logs
+
+```
+contract A {
+    event Log(string message);
+
+    // logs are recorded on the blockchain so these functions cannot be view or pure
+    // show compilation error with pure keyword
+    function foo() pure public {
+      emit Log("A.foo called");
+    }
+
+    function bar() public {
+      emit Log("A.bar called");
+    }
+}
+```
 
 All function calls are virtual, which means that the most derived function
 is called, except when the contract name is explicitly given or the
 super keyword is used.
 
-```
+Parent contracts can be called directly, or by using the keyword super.
 
+By using the keyword super, all of the immediate parent contracts will be called.
 
-```
+# demo explicit calls
 
-# inheritance part 3?
-
-# multiple inheritance constructors
-
-## demo (fixed value and passing variables)
+- show inheritance graph
 
 ```
-contract A {
-  string public name;
-
-  constructor(string memory _name) public {
-    name = _name;
-  }
+contract B is A {
+    function foo() public {
+        emit Log("B.foo called");
+        A.foo();
+    }
 }
 
-contract B {
-  string public name;
-
-  constructor(string memory _name) public {
-    name = _name;
-  }
+contract C is A {
+    function foo() public {
+        emit Log("C.foo called");
+        A.foo();
+    }
 }
 
-contract C is A, B {
-  constructor(string memory _name) A(_name) B(_name) public {
-    name = _name;
-  }
-}
-
-```
-
-# shadow
-
-# order of constructor
-
-The constructors will always be executed in the linearized order,
-regardless of the order in which their arguments are provided in the
-inheriting contract’s constructor.
-
-```
-contract A {
-
-}
-
-contract B {
-
-}
-
-contract C is A, B {
-  constructor() A() B() public {
-
-  }
+contract D is B, C {
+/   Although D inherits A, B and C, it only called C and then A.
 }
 ```
+
+# demo super
+
+```
+contract B is A {
+    function foo() public {
+        emit Log("B.foo called");
+        A.foo();
+    }
+
+    function bar() public {
+        emit Log("B.bar called");
+        super.bar();
+    }
+}
+
+contract C is A {
+    function foo() public {
+        emit Log("C.foo called");
+        A.foo();
+    }
+
+    function bar() public {
+        emit Log("C.bar called");
+        super.bar();
+    }
+}
+
+contract D is B, C {
+
+}
+```
+
+- note order of call C, B, A. super called twice but executed only once
+
+# in this video
+
+- multiple inheritance ordering is important
+  - most base like to most derived
+  - searches
+    - from right to left
+    - depth first
+- call parent contracts
+  - explicitly by parent name Parent.func()
+  - using super.func()
