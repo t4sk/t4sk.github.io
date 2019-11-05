@@ -46,6 +46,8 @@ contract C is A, B {
 - override function
 - order is important
 
+You have to list the parent contracts in the order from “most base-like” to “most derived”.
+
 ```
 contract A {
     function foo() public pure returns (string memory) {
@@ -106,7 +108,7 @@ contract D is C, A {
     - in a depth-first manner,
 
 ```
-// left to right
+// right to left
 contract C is A, B {
 
 }
@@ -132,25 +134,13 @@ contract C is A, B {}
 contract D is A, C {}
 ```
 
-- re emphasize base to derived
-
-```
-contract X {
-    function foo() public pure returns (string memory) {
-        return "X";
-    }
-}
-
-contract E is A, X {}
-contract F is C, E {}
-```
-
-- real world is more complex, so it's best if you can avoid thinking about multiple inheritance in the first place
-- orthogonal components
-
 # calling parent contracts
 
 How about if you need to call parent functions?
+
+Parent contracts can be called directly, or by using the keyword super.
+
+By using the keyword super, all of the immediate parent contracts will be called.
 
 - detour intro to logging
   - remind that we will go in depth in another video
@@ -161,9 +151,7 @@ How about if you need to call parent functions?
 contract A {
     event Log(string message);
 
-    // logs are recorded on the blockchain so these functions cannot be view or pure
-    // show compilation error with pure keyword
-    function foo() pure public {
+    function foo() public {
       emit Log("A.foo called");
     }
 
@@ -172,14 +160,6 @@ contract A {
     }
 }
 ```
-
-All function calls are virtual, which means that the most derived function
-is called, except when the contract name is explicitly given or the
-super keyword is used.
-
-Parent contracts can be called directly, or by using the keyword super.
-
-By using the keyword super, all of the immediate parent contracts will be called.
 
 # demo explicit calls
 
@@ -208,6 +188,18 @@ contract D is B, C {
 # demo super
 
 ```
+contract A {
+    event Log(string message);
+
+    function foo() public {
+        emit Log("A.foo was called");
+    }
+
+    function bar() public {
+        emit Log("A.bar called");
+    }
+}
+
 contract B is A {
     function foo() public {
         emit Log("B.foo called");
