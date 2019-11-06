@@ -136,6 +136,35 @@ contract F is X, Y {
 
 # shadow
 
-```
+Unlike functions, state variables cannot be overridden by re-declaring it in the child contract.
+
+Let's learn how to correctly override inherited state variables.
 
 ```
+pragma solidity ^0.5.11;
+
+contract A {
+    address public addr = 0x0000000000000000000000000000000000000001;
+
+    function getAddress() public view returns (address) {
+        return addr;
+    }
+}
+
+// Wrong way to override state variables
+contract B is A {
+    address public addr = 0x0000000000000000000000000000000000000002;
+}
+
+// Correct way to override state variables
+contract C is A {
+    constructor() public {
+        addr = 0x0000000000000000000000000000000000000003;
+    }
+}
+```
+
+- wrong way to override state variables
+- demo on contract B
+- withdraw pseudo code example
+- demo correct way to overide
