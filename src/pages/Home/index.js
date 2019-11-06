@@ -5,6 +5,7 @@ import SEO from "../../components/SEO"
 import logo from "../../components/logo.svg"
 import styles from "./index.module.css"
 import Post from "./Post"
+import POSTS from "./posts"
 
 function chunk(arr, size) {
   let chunks = []
@@ -15,72 +16,6 @@ function chunk(arr, size) {
 
   return chunks
 }
-
-const POSTS = [
-  {
-    thumbnailUrl:
-      "https://i.ytimg.com/vi/GnztHR8-1o8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBQeYOr7TI-FFZDyz06dhADsv7JXQ",
-    youTubeUrl: "https://www.youtube.com/watch?v=GnztHR8-1o8",
-    title: "Learn Solidity - Inheritance (part 1)",
-    createdAt: "2019-10-30",
-  },
-  {
-    thumbnailUrl:
-      "https://i.ytimg.com/vi/HpjZZ9tASGs/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBmmxQO823nu0rRRnQNg9IAglG4cw",
-    youTubeUrl: "https://www.youtube.com/watch?v=HpjZZ9tASGs",
-    title: "Learn Solidity - Constructor",
-    createdAt: "2019-10-24",
-  },
-  {
-    thumbnailUrl:
-      "https://i.ytimg.com/vi/thADMg9cKPM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZkbd-AkQwPSSQ7rIejxHSJhzU7g",
-    youTubeUrl: "https://www.youtube.com/watch?v=thADMg9cKPM",
-    title: "Learn Solidity - Function Modifiers",
-    createdAt: "2019-10-20",
-  },
-  {
-    thumbnailUrl:
-      "https://i.ytimg.com/vi/xknoxALAL8c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLChZTh-2zMGnYu_pF0AD5XREgaB8w",
-    youTubeUrl: "https://www.youtube.com/watch?v=xknoxALAL8c",
-    title: "Learn Solidity - View and Pure Functions",
-    createdAt: "2019-10-12",
-  },
-  {
-    thumbnailUrl:
-      "https://i.ytimg.com/vi/71cmPaD_AnQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCcIoVXOmZYekcdlbijNKfCD7KLoA",
-    youTubeUrl: "https://www.youtube.com/watch?v=71cmPaD_AnQ",
-    title: "Learn Solidity - Functions",
-    createdAt: "2019-10-06",
-  },
-  {
-    thumbnailUrl:
-      "https://i.ytimg.com/vi/oTS9uxU6cAM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBFNU6ibn-6fR2RUzTKjSSowdAAoA",
-    youTubeUrl: "https://www.youtube.com/watch?v=oTS9uxU6cAM",
-    title: "Learn Solidity - Gas and Gas Price",
-    createdAt: "2019-09-30",
-  },
-  {
-    thumbnailUrl:
-      "https://i.ytimg.com/vi/ybPQsjssyNw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBS8cUaXPkG9N9EJWSwHCchOI-NNQ",
-    youTubeUrl: "https://www.youtube.com/watch?v=ybPQsjssyNw",
-    title: "Learn Solidity - Ether and Wei",
-    createdAt: "2019-09-21",
-  },
-  {
-    thumbnailUrl:
-      "https://i.ytimg.com/vi/4XQsHBJScEk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCSidkVzqzY9matqnVSmYJZNO8IAA",
-    youTubeUrl: "https://www.youtube.com/watch?v=4XQsHBJScEk&t=5s",
-    title: "Learn Solidity - State Variables",
-    createdAt: "2019-09-15",
-  },
-  {
-    thumbnailUrl:
-      "https://i.ytimg.com/vi/hMwdd664_iw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZXbU3wGs1vpsnWX06BEHw9TookQ",
-    youTubeUrl: "https://www.youtube.com/watch?v=hMwdd664_iw",
-    title: "Learn Solidity - Hello World",
-    createdAt: "2019-08-20",
-  },
-]
 
 function Home(props) {
   return (
