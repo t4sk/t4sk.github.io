@@ -1,5 +1,6 @@
 - reduce editing
 - record video at 200% zoom
+- no side tab in remix
 - type and speak
 - recording single ideas in one video (derek banas)
 - edit raw video and then fix audio
@@ -32,13 +33,17 @@ contract B is X("Fixed input") {
 }
 
 contract C is X {
-    constructor() X("Another way to hard code input") public {
+    constructor()
+      X("Another way to hard code input"),
+      Y("Another way to hard code input")
+      public
+    {
 
     }
 }
 
 contract D is X {
-    constructor(string memory _name) D(_name) public {
+    constructor(string memory _name) X(_name) public {
 
     }
 }
@@ -60,7 +65,6 @@ contract B is X("Fixed input"), Y("Another fixed input") {
 }
 
 contract C is X, Y {
-    // no comma between X, Y
     constructor() X("Fixed input") Y("Another fixed input") public {
 
     }
@@ -95,6 +99,7 @@ contract X {
 
 contract Y {
     event Log(string message);
+
     string public text;
 
     constructor(string memory _text) public {
@@ -103,21 +108,12 @@ contract Y {
     }
 }
 
-contract B is X("Fixed input"), Y("Another fixed input") {
+contract E is X, Y {
 
 }
 
-contract C is X, Y {
-    // no comma between X, Y
-    constructor() X("Fixed input") Y("Another fixed input") public {
+contract F is X, Y {
 
-    }
-}
-
-contract D is X, Y {
-    constructor(string memory _name, string memory _text) X(_name) Y(_text) public {
-
-    }
 }
 
 contract E is X, Y {
@@ -168,3 +164,11 @@ contract C is A {
 - demo on contract B
 - withdraw pseudo code example
 - demo correct way to overide
+
+# in this video
+
+- how to call constructors of parent contracts
+- The constructors will always be executed in the linearized order,
+  regardless of the order in which their arguments are provided in the
+  inheriting contract’s constructor.
+- shadowing?
