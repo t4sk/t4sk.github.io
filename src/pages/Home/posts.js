@@ -1,6 +1,13 @@
 export default [
   {
     thumbnailUrl:
+      "https://i.ytimg.com/vi/dcNpIOhTNQg/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCjHeYDhI4TvPhI8TnnKFJN4sJOpA",
+    youTubeUrl: "https://www.youtube.com/watch?v=dcNpIOhTNQg",
+    title: "Learn Solidity - Inheritance (part 3)",
+    createdAt: "2019-11-08",
+  },
+  {
+    thumbnailUrl:
       "https://i.ytimg.com/vi/Q5_Gmm_IZSI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCjGnK1kE6_65BGCnXFzYL10ES4Bg",
     youTubeUrl: "https://www.youtube.com/watch?v=Q5_Gmm_IZSI",
     title: "Learn Solidity - Inheritance (part 2)",
