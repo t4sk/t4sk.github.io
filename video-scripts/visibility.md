@@ -66,14 +66,14 @@ contract Base {
     // }
 
     // State variables
-    string public publicVar = "my public variable";
     string private privateVar = "my private variable";
     string internal internalVar = "my internal variable";
+    string public publicVar = "my public variable";
     // State variables cannot be external
     // string external externalVar = "my external variable";
 }
 
-contract Test is Base {
+contract Child is Base {
     // function testPrivateFunc() public pure returns (string memory) {
     //     return privateFunc();
     // }
