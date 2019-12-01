@@ -6,15 +6,21 @@
 
 # Error
 
-- errors causes transaction to fail
-  - undo all state changes in the current call
-  - errors "bubble up"
+// TODO slide
+
 - 3 ways to throw an error
+
   - assert
   - require
   - revert
 
 # account contract
+
+- errors causes transaction to fail
+
+  - undo all state changes in the current call
+    // TODO slide?
+  - errors "bubble up"
 
 - write out logic for balance, withdraw, deposit without any validation
 
@@ -32,13 +38,6 @@
 - consumes all available gas
 - code
   - check invariant balance state
-  - explain uint overflow / and underflow (using clock) and check for overflow
-    - overflow / underflow
-      - overflow
-        - x + y <= x - 1 => overflow
-      - underflow
-        - x >= y => x - y >= 0 => no underflow
-        - x - y > x => underflow
 - demo
   - create `uint constant public MAX_UINT = 2 **256 - 1;`
   - compile and deploy
@@ -47,6 +46,14 @@
   - check that tx failed and all gas was used
   - check balance and note that balance has not changed
   - hide tabs
+    // TODO slides
+  - explain uint overflow / and underflow (using clock) and check for overflow
+    - overflow / underflow
+      - overflow
+        - x + y < x => overflow
+      - underflow
+        - x >= y => x - y >= 0 => no underflow
+        - x - y > x => underflow
 
 # require
 
@@ -86,35 +93,50 @@ pragma solidity ^0.5.11;
 
 contract Account {
     uint public balance;
-    uint constant public MAX_UINT = 2 ** 256 - 1;
+    uint public constant MAX_UINT = 2 ** 256 - 1;
 
     function deposit(uint _amount) public {
-        require(_amount > 0, "Amount must be > 0");
+        // TODO require only owner can deposit
+        // TODO require _amount > 0
 
+        // balance + _amount does not overflow if balance + _amount >= balance
         uint oldBalance = balance;
+        uint newBalance = balance + _amount;
+        require(newBalance >= oldBalance, "Overflow");
 
-        balance += _amount;
+        balance = newBalance;
 
-        // check overflow
         assert(balance >= oldBalance);
-        // check invariant
-        assert(balance == oldBalance + _amount);
     }
 
     function withdraw(uint _amount) public {
-        // require(_amount <= balance, "Insufficient funds");
-        if (_amount > balance) {
-            revert("Insufficient funds");
-        }
+        // TODO require only owner can withdraw
+        // TODO require _amount > 0
 
         uint oldBalance = balance;
 
+        // balance - _amount does not underflow if balance >= _amount
+        require(balance >= _amount, "Underflow");
+
+        if (balance < _amount) {
+            revert("Underflow");
+        }
+
         balance -= _amount;
 
-        // check underflow
         assert(balance <= oldBalance);
-        // check invariant
-        assert(balance == oldBalance - _amount);
     }
 }
 ```
+
+# in this video
+
+- assert
+  - should never evaluate to false
+  - uses all gas
+- require
+  - validations (inputs, preconditions, other function outputs)
+  - does not use all gas
+- revert
+  - like require
+  - useful for checking complex conditions
