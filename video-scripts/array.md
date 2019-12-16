@@ -51,11 +51,20 @@ One trick to keep the array compact is to move the last element into the place t
 ```
 pragma solidity ^0.5.11;
 
+// Examples
+// - How to write an array
+// - Push, pop and length
+// - Removing elements from an array
+
 contract Array {
     uint[] public myArray;
     uint[] public myArray2 = [1,2,3];
 
     uint[10] public myFixedSizeArray;
+
+    function get(uint i) public view returns (uint) {
+      return myArray[i];
+    }
 
     function push(uint i) public {
         myArray.push(i);
@@ -87,8 +96,10 @@ contract CompactArray {
         myArray.push(2);
         myArray.push(3);
         myArray.push(4);
+        // [1, 2, 3, 4]
 
         remove(1);
+        // [1, 4, 3]
 
         assert(myArray.length == 3);
         assert(myArray[0] == 1);
@@ -96,6 +107,7 @@ contract CompactArray {
         assert(myArray[2] == 3);
 
         remove(2);
+        // [1, 4]
 
         assert(myArray.length == 2);
         assert(myArray[0] == 1);
@@ -103,4 +115,19 @@ contract CompactArray {
     }
 }
 
+```
+
+```
+pragma solidity ^0.5.11;
+
+// Examples
+// - How to write an array
+// - Push, pop and length
+// - Removing elements from an array
+
+contract Array {
+    uint[] public myArray;
+    uint[] public myArray2 = [1, 2, 3];
+    uint[10] public myFixedSizeArray;
+}
 ```
