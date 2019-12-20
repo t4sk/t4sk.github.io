@@ -71,8 +71,9 @@ contract Mapping {
     function remove(address _addr) public {
         delete myMap[_addr];
     }
-}
 ```
+
+}
 
 ```
 pragma solidity ^0.5.11;
