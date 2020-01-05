@@ -83,10 +83,10 @@ exports[`it renders 1`] = `
           key="0"
         >
           <Post
-            createdAt="2019-12-07"
-            thumbnailUrl="https://i.ytimg.com/vi/hzxdGvcsDvU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCOTTmKP0noS7RPRHiBz9trPRFwEw"
-            title="Learn Solidity - Loop"
-            youTubeUrl="https://www.youtube.com/watch?v=hzxdGvcsDvU"
+            createdAt="2020-01-04"
+            thumbnailUrl="https://i.ytimg.com/vi/yJbx07N15j0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB2sFL7xZ5URczE_Uqrg8seEUQYIg"
+            title="Learn Solidity - Enum"
+            youTubeUrl="https://www.youtube.com/watch?v=yJbx07N15j0"
           />
         </div>
         <div
@@ -94,10 +94,10 @@ exports[`it renders 1`] = `
           key="1"
         >
           <Post
-            createdAt="2019-12-01"
-            thumbnailUrl="https://i.ytimg.com/vi/k4mdv97up5M/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCCuy97YgJvXzihSTt4jwpAHM-dFQ"
-            title="Learn Solidity - Error"
-            youTubeUrl="https://www.youtube.com/watch?v=k4mdv97up5M"
+            createdAt="2019-12-24"
+            thumbnailUrl="https://i.ytimg.com/vi/n6nEPaE7KZ8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBRkj1A5Yr7-5DWKO1N9cwRtcVPSg"
+            title="Learn Solidity - Merkle Tree"
+            youTubeUrl="https://www.youtube.com/watch?v=n6nEPaE7KZ8"
           />
         </div>
         <div
@@ -105,10 +105,10 @@ exports[`it renders 1`] = `
           key="2"
         >
           <Post
-            createdAt="2019-11-25"
-            thumbnailUrl="https://i.ytimg.com/vi/BduMOagAuKs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBQV4qUgy6AHOR5GZYnuJxt-tM6aQ"
-            title="Learn Solidity - Events"
-            youTubeUrl="https://www.youtube.com/watch?v=BduMOagAuKs"
+            createdAt="2019-12-19"
+            thumbnailUrl="https://i.ytimg.com/vi/tO3vVMCOts8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBBNKTpwDFbwjJ-gn0pNAB-5BVvCA"
+            title="Learn Solidity - Mapping"
+            youTubeUrl="https://www.youtube.com/watch?v=tO3vVMCOts8"
           />
         </div>
       </div>
@@ -121,10 +121,10 @@ exports[`it renders 1`] = `
           key="0"
         >
           <Post
-            createdAt="2019-11-15"
-            thumbnailUrl="https://i.ytimg.com/vi/NBzQVJ6OrrQ/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAHT2JRAbMuSeLilA2TVeepyfuzcg"
-            title="Learn Solidity - Visibility"
-            youTubeUrl="https://www.youtube.com/watch?v=NBzQVJ6OrrQ&t=2s"
+            createdAt="2019-12-12"
+            thumbnailUrl="https://i.ytimg.com/vi/Vx0AoK7Vauw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAKyRdDzQpXLlGclc26LZagRA4r7A"
+            title="Learn Solidity - Array"
+            youTubeUrl="https://www.youtube.com/watch?v=Vx0AoK7Vauw"
           />
         </div>
         <div
@@ -132,10 +132,10 @@ exports[`it renders 1`] = `
           key="1"
         >
           <Post
-            createdAt="2019-11-08"
-            thumbnailUrl="https://i.ytimg.com/vi/dcNpIOhTNQg/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCjHeYDhI4TvPhI8TnnKFJN4sJOpA"
-            title="Learn Solidity - Inheritance (part 3)"
-            youTubeUrl="https://www.youtube.com/watch?v=dcNpIOhTNQg"
+            createdAt="2019-12-07"
+            thumbnailUrl="https://i.ytimg.com/vi/hzxdGvcsDvU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCOTTmKP0noS7RPRHiBz9trPRFwEw"
+            title="Learn Solidity - Loop"
+            youTubeUrl="https://www.youtube.com/watch?v=hzxdGvcsDvU"
           />
         </div>
         <div
@@ -143,10 +143,10 @@ exports[`it renders 1`] = `
           key="2"
         >
           <Post
-            createdAt="2019-11-04"
-            thumbnailUrl="https://i.ytimg.com/vi/Q5_Gmm_IZSI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCjGnK1kE6_65BGCnXFzYL10ES4Bg"
-            title="Learn Solidity - Inheritance (part 2)"
-            youTubeUrl="https://www.youtube.com/watch?v=Q5_Gmm_IZSI"
+            createdAt="2019-12-01"
+            thumbnailUrl="https://i.ytimg.com/vi/k4mdv97up5M/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCCuy97YgJvXzihSTt4jwpAHM-dFQ"
+            title="Learn Solidity - Error"
+            youTubeUrl="https://www.youtube.com/watch?v=k4mdv97up5M"
           />
         </div>
       </div>
@@ -159,10 +159,10 @@ exports[`it renders 1`] = `
           key="0"
         >
           <Post
-            createdAt="2019-10-30"
-            thumbnailUrl="https://i.ytimg.com/vi/GnztHR8-1o8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBQeYOr7TI-FFZDyz06dhADsv7JXQ"
-            title="Learn Solidity - Inheritance (part 1)"
-            youTubeUrl="https://www.youtube.com/watch?v=GnztHR8-1o8"
+            createdAt="2019-11-25"
+            thumbnailUrl="https://i.ytimg.com/vi/BduMOagAuKs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBQV4qUgy6AHOR5GZYnuJxt-tM6aQ"
+            title="Learn Solidity - Events"
+            youTubeUrl="https://www.youtube.com/watch?v=BduMOagAuKs"
           />
         </div>
         <div
@@ -170,10 +170,10 @@ exports[`it renders 1`] = `
           key="1"
         >
           <Post
-            createdAt="2019-10-24"
-            thumbnailUrl="https://i.ytimg.com/vi/HpjZZ9tASGs/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBmmxQO823nu0rRRnQNg9IAglG4cw"
-            title="Learn Solidity - Constructor"
-            youTubeUrl="https://www.youtube.com/watch?v=HpjZZ9tASGs"
+            createdAt="2019-11-15"
+            thumbnailUrl="https://i.ytimg.com/vi/NBzQVJ6OrrQ/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAHT2JRAbMuSeLilA2TVeepyfuzcg"
+            title="Learn Solidity - Visibility"
+            youTubeUrl="https://www.youtube.com/watch?v=NBzQVJ6OrrQ&t=2s"
           />
         </div>
         <div
@@ -181,10 +181,10 @@ exports[`it renders 1`] = `
           key="2"
         >
           <Post
-            createdAt="2019-10-20"
-            thumbnailUrl="https://i.ytimg.com/vi/thADMg9cKPM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZkbd-AkQwPSSQ7rIejxHSJhzU7g"
-            title="Learn Solidity - Function Modifiers"
-            youTubeUrl="https://www.youtube.com/watch?v=thADMg9cKPM"
+            createdAt="2019-11-08"
+            thumbnailUrl="https://i.ytimg.com/vi/dcNpIOhTNQg/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCjHeYDhI4TvPhI8TnnKFJN4sJOpA"
+            title="Learn Solidity - Inheritance (part 3)"
+            youTubeUrl="https://www.youtube.com/watch?v=dcNpIOhTNQg"
           />
         </div>
       </div>
@@ -197,10 +197,10 @@ exports[`it renders 1`] = `
           key="0"
         >
           <Post
-            createdAt="2019-10-12"
-            thumbnailUrl="https://i.ytimg.com/vi/xknoxALAL8c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLChZTh-2zMGnYu_pF0AD5XREgaB8w"
-            title="Learn Solidity - View and Pure Functions"
-            youTubeUrl="https://www.youtube.com/watch?v=xknoxALAL8c"
+            createdAt="2019-11-04"
+            thumbnailUrl="https://i.ytimg.com/vi/Q5_Gmm_IZSI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCjGnK1kE6_65BGCnXFzYL10ES4Bg"
+            title="Learn Solidity - Inheritance (part 2)"
+            youTubeUrl="https://www.youtube.com/watch?v=Q5_Gmm_IZSI"
           />
         </div>
         <div
@@ -208,10 +208,10 @@ exports[`it renders 1`] = `
           key="1"
         >
           <Post
-            createdAt="2019-10-06"
-            thumbnailUrl="https://i.ytimg.com/vi/71cmPaD_AnQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCcIoVXOmZYekcdlbijNKfCD7KLoA"
-            title="Learn Solidity - Functions"
-            youTubeUrl="https://www.youtube.com/watch?v=71cmPaD_AnQ"
+            createdAt="2019-10-30"
+            thumbnailUrl="https://i.ytimg.com/vi/GnztHR8-1o8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBQeYOr7TI-FFZDyz06dhADsv7JXQ"
+            title="Learn Solidity - Inheritance (part 1)"
+            youTubeUrl="https://www.youtube.com/watch?v=GnztHR8-1o8"
           />
         </div>
         <div
@@ -219,10 +219,10 @@ exports[`it renders 1`] = `
           key="2"
         >
           <Post
-            createdAt="2019-09-30"
-            thumbnailUrl="https://i.ytimg.com/vi/oTS9uxU6cAM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBFNU6ibn-6fR2RUzTKjSSowdAAoA"
-            title="Learn Solidity - Gas and Gas Price"
-            youTubeUrl="https://www.youtube.com/watch?v=oTS9uxU6cAM"
+            createdAt="2019-10-24"
+            thumbnailUrl="https://i.ytimg.com/vi/HpjZZ9tASGs/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBmmxQO823nu0rRRnQNg9IAglG4cw"
+            title="Learn Solidity - Constructor"
+            youTubeUrl="https://www.youtube.com/watch?v=HpjZZ9tASGs"
           />
         </div>
       </div>
@@ -235,6 +235,55 @@ exports[`it renders 1`] = `
           key="0"
         >
           <Post
+            createdAt="2019-10-20"
+            thumbnailUrl="https://i.ytimg.com/vi/thADMg9cKPM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZkbd-AkQwPSSQ7rIejxHSJhzU7g"
+            title="Learn Solidity - Function Modifiers"
+            youTubeUrl="https://www.youtube.com/watch?v=thADMg9cKPM"
+          />
+        </div>
+        <div
+          className="post"
+          key="1"
+        >
+          <Post
+            createdAt="2019-10-12"
+            thumbnailUrl="https://i.ytimg.com/vi/xknoxALAL8c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLChZTh-2zMGnYu_pF0AD5XREgaB8w"
+            title="Learn Solidity - View and Pure Functions"
+            youTubeUrl="https://www.youtube.com/watch?v=xknoxALAL8c"
+          />
+        </div>
+        <div
+          className="post"
+          key="2"
+        >
+          <Post
+            createdAt="2019-10-06"
+            thumbnailUrl="https://i.ytimg.com/vi/71cmPaD_AnQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCcIoVXOmZYekcdlbijNKfCD7KLoA"
+            title="Learn Solidity - Functions"
+            youTubeUrl="https://www.youtube.com/watch?v=71cmPaD_AnQ"
+          />
+        </div>
+      </div>
+      <div
+        className="row"
+        key="5"
+      >
+        <div
+          className="post"
+          key="0"
+        >
+          <Post
+            createdAt="2019-09-30"
+            thumbnailUrl="https://i.ytimg.com/vi/oTS9uxU6cAM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBFNU6ibn-6fR2RUzTKjSSowdAAoA"
+            title="Learn Solidity - Gas and Gas Price"
+            youTubeUrl="https://www.youtube.com/watch?v=oTS9uxU6cAM"
+          />
+        </div>
+        <div
+          className="post"
+          key="1"
+        >
+          <Post
             createdAt="2019-09-21"
             thumbnailUrl="https://i.ytimg.com/vi/ybPQsjssyNw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBS8cUaXPkG9N9EJWSwHCchOI-NNQ"
             title="Learn Solidity - Ether and Wei"
@@ -243,7 +292,7 @@ exports[`it renders 1`] = `
         </div>
         <div
           className="post"
-          key="1"
+          key="2"
         >
           <Post
             createdAt="2019-09-15"
@@ -252,9 +301,14 @@ exports[`it renders 1`] = `
             youTubeUrl="https://www.youtube.com/watch?v=4XQsHBJScEk&t=5s"
           />
         </div>
+      </div>
+      <div
+        className="row"
+        key="6"
+      >
         <div
           className="post"
-          key="2"
+          key="0"
         >
           <Post
             createdAt="2019-08-20"
