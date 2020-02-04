@@ -9,7 +9,7 @@ Fallback function
 - executed when
     - calling a function that does not exist (call video)
     - receiving Ether (NOTE: not executed when calling another payable function) (must be payable)
-        - except coinbase (TODO: explain coinbase)
+        - except coinbase (NOTE: explain coinbase)
 - sent via
     - account (wallet), call (no gas limit)
     - send / transfer (forwards 2300 gas)
@@ -18,7 +18,7 @@ Fallback function
             - Create a contract
             - Call an external function which consumes a large amount of gas
             - Sending Ether
-        - TODO: briefly explain re-entrancy and how 2300 gas prevents it
+         - TODO: briefly explain re-entrancy and how 2300 gas prevents it
 */
 contract Fallback {
     event Log(uint gas);
@@ -28,7 +28,8 @@ contract Fallback {
     // NOTE: external
     // NOTE: payable
     function () external payable {
-        // TODO: gasleft
+        // NOTE: gasleft returns the remaining gas
+        // NOTE: arbitrary code can be executed here (if enough gas is sent)
         emit Log(gasleft());
     }
 
