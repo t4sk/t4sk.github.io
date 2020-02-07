@@ -1,7 +1,9 @@
-.Component {
+.component {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .header {
   font-size: 2.5rem;
@@ -14,6 +16,14 @@
   color: #4e4e4e;
   font-size: 1.3rem;
   margin-top: 50px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.listItem {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .email {
   font-weight: 700;

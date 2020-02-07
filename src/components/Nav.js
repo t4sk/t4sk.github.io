@@ -32,9 +32,11 @@ export function Nav(props) {
         </Menu.Item>
 
         <Menu.Menu position="right">
+          {/*}
           <Menu.Item as="a" href="/about">
             About
           </Menu.Item>
+          */}
         </Menu.Menu>
       </Container>
     </Menu>

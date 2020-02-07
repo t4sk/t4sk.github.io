@@ -4,18 +4,7 @@ import PageLayout from "../../components/PageLayout"
 import SEO from "../../components/SEO"
 import logo from "../../components/logo.svg"
 import styles from "./index.module.css"
-import Post from "./Post"
-import POSTS from "./posts"
-
-function chunk(arr, size) {
-  let chunks = []
-
-  for (let i = 0; i < arr.length; i += size) {
-    chunks.push(arr.slice(i, i + size))
-  }
-
-  return chunks
-}
+import About from "./About"
 
 function Home(props) {
   return (
@@ -43,7 +32,7 @@ function Home(props) {
           </div>
           <Header
             as="h1"
-            content="Smart Contract Programming"
+            content="Smart Contract Programmer"
             inverted
             style={{
               fontSize: "2.5em",
@@ -52,21 +41,13 @@ function Home(props) {
               marginTop: 0,
             }}
           />
+          {/* TODO sub header
           <p>a blog for developers about smart contracts</p>
+          */}
         </Container>
       </Segment>
       <div className={styles.main}>
-        <div className={styles.posts}>
-          {chunk(POSTS, 3).map((posts, i) => (
-            <div key={i} className={styles.row}>
-              {posts.map((post, j) => (
-                <div key={j} className={styles.post}>
-                  <Post {...post} />
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
+        <About />
       </div>
     </PageLayout>
   )

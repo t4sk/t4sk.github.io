@@ -1,9 +1,11 @@
 import React from "react"
 import { shallow } from "enzyme"
-import Header from "./Header"
+import About from "./About"
+
+const props = {}
 
 test("it renders", () => {
-  const component = shallow(<Header>Header Goes Here</Header>)
+  const component = shallow(<About {...props} />)
 
   expect(component).toMatchSnapshot()
 })
