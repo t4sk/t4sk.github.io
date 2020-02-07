@@ -7,16 +7,6 @@ exports[`it renders 1`] = `
   <Switch>
     <Route
       component={[Function]}
-      exact={true}
-      path="/about"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/"
-    />
-    <Route
-      component={[Function]}
     />
   </Switch>
 </BrowserRouter>

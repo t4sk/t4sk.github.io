@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<div
+  className="component"
+>
+  <div
+    className="profile"
+  >
+    <Image
+      alt="profile"
+      as="img"
+      circular={true}
+      fluid={true}
+      src="profile.jpeg"
+      style={
+        Object {
+          "height": 150,
+          "width": 150,
+        }
+      }
+      ui={true}
+    />
+    <h1
+      className="header"
+    >
+      Tasuku Nakamura
+    </h1>
+  </div>
+  <div
+    className="intro"
+  >
+    <p>
+      Hi, I am a software engineer who makes videos about smart contracts.
+    </p>
+    <p>
+      Creator of
+       
+      <a
+        href="https://solidity-by-example.org/"
+        rel="noopener noreferrer"
+        target="__blank"
+      >
+        Solidity by Example
+      </a>
+    </p>
+  </div>
+  <Divider />
+  <h3>
+    Follow me
+  </h3>
+  <div>
+    <a
+      href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA/featured"
+      rel="noopener noreferrer"
+      target="__blank"
+    >
+      <div
+        className="followMeLink"
+      >
+        <Icon
+          as="i"
+          color="red"
+          name="youtube"
+          size="large"
+        />
+        YouTube
+      </div>
+    </a>
+    <a
+      href="https://twitter.com/ProgrammerSmart"
+      rel="noopener noreferrer"
+      target="__blank"
+    >
+      <div
+        className="followMeLink"
+      >
+        <Icon
+          as="i"
+          color="blue"
+          name="twitter"
+          size="large"
+        />
+        Twitter
+      </div>
+    </a>
+    <a
+      href="https://github.com/t4sk"
+      rel="noopener noreferrer"
+      target="__blank"
+    >
+      <div
+        className="followMeLink"
+      >
+        <Icon
+          as="i"
+          color="black"
+          name="github"
+          size="large"
+        />
+        GitHub
+      </div>
+    </a>
+  </div>
+  <Divider />
+  <p>
+    You can contact me at
+     
+    <span
+      className="email"
+    >
+      contact@smartcontractprogrammer.com
+    </span>
+  </p>
+</div>
+`;
