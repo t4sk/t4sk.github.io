@@ -27,17 +27,34 @@ contract Callee {
     }
 }
 
+contract Foo {
+    uint public x;
+
+    function setX(uint _x) public returns (uint) {
+        x = _x + 1;
+        return 0;
+    }
+}
+
 contract Caller {
+    function setXFromAddress(address _addr, uint _x) public {
+        // NOTE: instantiate contract
+        Callee callee = Callee(_addr);
+        callee.setX(_x);
+    }
+
+    // NOTE: same as above
     // NOTE: Callee input (address)
-    // TODO: what is the type of Callee?
-    function callSetX(Callee _callee, uint _x) public {
+    function setX(Callee _callee, uint _x) public {
+        // NOTE: no guarantee that code at Callee will be executed
+        // NOTE: return value
         uint x = _callee.setX(_x);
     }
 
     // NOTE: payable
-    function callSetXAndSendEther(Callee _callee, uint _x) public payable {
+    function setXAndSendEther(Callee _callee, uint _x) public payable {
         // NOTE: fails to compiles if func does not exit or wrong parameters (unlike call)
-        // NOTE: assigning multiple outputs
+        // NOTE: returning multiple outputs
         (uint x, uint value) = _callee.setXandSendEther.value(msg.value)(_x);
     }
 }
