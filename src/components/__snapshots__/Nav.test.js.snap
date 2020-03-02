@@ -5,6 +5,7 @@ exports[`it renders 1`] = `
   borderless={true}
   fixed="top"
   fluid={true}
+  inverted={true}
   size="large"
   style={Object {}}
 >
@@ -13,6 +14,12 @@ exports[`it renders 1`] = `
       as="a"
       header={true}
       href="/"
+      style={
+        Object {
+          "padding": 0,
+          "paddingRight": 15,
+        }
+      }
     >
       <Image
         alt="logo"
@@ -22,7 +29,7 @@ exports[`it renders 1`] = `
           Object {
             "backgroundColor": "#1b1c1d",
             "borderRadius": 4,
-            "height": 24,
+            "height": 48,
             "margin": 5,
           }
         }
@@ -32,14 +39,7 @@ exports[`it renders 1`] = `
     </MenuItem>
     <MenuMenu
       position="right"
-    >
-      <MenuItem
-        as="a"
-        href="/about"
-      >
-        About
-      </MenuItem>
-    </MenuMenu>
+    />
   </Container>
 </Menu>
 `;

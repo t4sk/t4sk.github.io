@@ -3,10 +3,12 @@ import { Menu, Container, Image } from "semantic-ui-react"
 import logo from "./logo.svg"
 
 export function Nav(props) {
+  // TODO responsive
   return (
     <Menu
       borderless
       fluid
+      inverted
       fixed="top"
       style={
         {
@@ -17,11 +19,16 @@ export function Nav(props) {
       size="large"
     >
       <Container>
-        <Menu.Item header as="a" href="/">
+        <Menu.Item
+          header
+          as="a"
+          href="/"
+          style={{ padding: 0, paddingRight: 15 }}
+        >
           <Image
             src={logo}
             style={{
-              height: 24,
+              height: 48,
               backgroundColor: "#1b1c1d",
               margin: 5,
               borderRadius: 4,
