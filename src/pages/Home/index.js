@@ -3,6 +3,7 @@ import { Segment, Image, Header, Container } from "semantic-ui-react"
 import PageLayout from "../../components/PageLayout"
 import SEO from "../../components/SEO"
 import logo from "../../components/logo.svg"
+import { BACKGROUND_COLOR } from "../../constants"
 import styles from "./index.module.css"
 import About from "./About"
 
@@ -16,7 +17,7 @@ function Home(props) {
         style={{
           minHeight: 150,
           padding: "2em 0em",
-          backgroundColor: "#20232a",
+          backgroundColor: BACKGROUND_COLOR,
         }}
         vertical
       >

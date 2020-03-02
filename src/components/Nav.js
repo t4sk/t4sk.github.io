@@ -1,5 +1,6 @@
 import React from "react"
 import { Menu, Container, Image } from "semantic-ui-react"
+import { BACKGROUND_COLOR } from "../constants"
 import logo from "./logo.svg"
 
 export function Nav(props) {
@@ -10,12 +11,11 @@ export function Nav(props) {
       fluid
       inverted
       fixed="top"
-      style={
-        {
-          // boxShadow: "none",
-          // borderBottom: "none",
-        }
-      }
+      style={{
+        // boxShadow: "none",
+        // borderBottom: "none",
+        backgroundColor: BACKGROUND_COLOR,
+      }}
       size="large"
     >
       <Container>
@@ -29,7 +29,7 @@ export function Nav(props) {
             src={logo}
             style={{
               height: 48,
-              backgroundColor: "#1b1c1d",
+              backgroundColor: BACKGROUND_COLOR,
               margin: 5,
               borderRadius: 4,
             }}
