@@ -62,3 +62,40 @@ NOTE: How is it useful?
 
 /* DEMO
 */
+```
+
+pragma solidity ^0.5.11;
+
+/*
+Contract that creates other contracts
+
+How is it useful?
+- pass fixed inputs to a new contracts
+- manage many contracts from a single contract
+
+Examples
+- create a new contract
+- send ether and create a new contract
+*/
+
+contract Car {
+    string public model;
+    address public owner;
+
+    constructor(string memory _model, address _owner) public payable {
+        model = _model;
+        owner = _owner;
+    }
+}
+
+contract CarFactory {
+    function create(string memory _model) public {
+        Car car = new Car(_model, address(this));
+    }
+
+    function createAndSendEther(address _owner, string memory _model) public payable {
+        Car car = (new Car).value(msg.value)(_model, _owner);
+    }
+}
+
+```
