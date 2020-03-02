@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://smartcontractprogrammer.com",
   "dependencies": {
-    "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -16,15 +15,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "npm run gen-posts",
     "build": "react-scripts build",
     "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build && npm test",
-    "deploy": "gh-pages -b master -d build",
-    "md-to-react": "node ./scripts/md-to-react/index.js",
-    "gen-posts": "node ./scripts/gen-posts/index.js"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,8 +40,6 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
     "gh-pages": "^2.2.0",
-    "marked": "^0.8.0",
-    "mustache": "^4.0.0",
     "react-snap": "^1.23.0"
   },
   "jest": {
