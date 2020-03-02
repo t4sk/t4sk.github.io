@@ -37,12 +37,6 @@ contract Foo {
 }
 
 contract Caller {
-    function setXFromAddress(address _addr, uint _x) public {
-        // NOTE: instantiate contract
-        Callee callee = Callee(_addr);
-        callee.setX(_x);
-    }
-
     // NOTE: same as above
     // NOTE: Callee input (address)
     function setX(Callee _callee, uint _x) public {
@@ -51,18 +45,17 @@ contract Caller {
         uint x = _callee.setX(_x);
     }
 
+    function setXFromAddress(address _addr, uint _x) public {
+        // NOTE: instantiate contract
+        Callee callee = Callee(_addr);
+        callee.setX(_x);
+    }
+
     // NOTE: payable
-    function setXAndSendEther(Callee _callee, uint _x) public payable {
+    function setXandSendEther(Callee _callee, uint _x) public payable {
         // NOTE: fails to compiles if func does not exit or wrong parameters (unlike call)
         // NOTE: returning multiple outputs
         (uint x, uint value) = _callee.setXandSendEther.value(msg.value)(_x);
     }
 }
-
-/*
-DEMO
-NOTE: callee = address type
-callSetX
-callSetXAndSendEther
-*/
 ```
