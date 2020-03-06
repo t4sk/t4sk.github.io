@@ -77,7 +77,6 @@ Examples
 - create a new contract
 - send ether and create a new contract
 */
-
 contract Car {
     string public model;
     address public owner;
@@ -89,13 +88,15 @@ contract Car {
 }
 
 contract CarFactory {
+    Car[] public cars;
+
     function create(string memory _model) public {
         Car car = new Car(_model, address(this));
+        cars.push(car);
     }
 
     function createAndSendEther(address _owner, string memory _model) public payable {
         Car car = (new Car).value(msg.value)(_model, _owner);
     }
 }
-
 ```
