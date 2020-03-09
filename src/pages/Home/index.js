@@ -1,5 +1,5 @@
 import React from "react"
-import { Segment, Image, Header, Container } from "semantic-ui-react"
+import { Segment, Image, Header, Container, Button } from "semantic-ui-react"
 import PageLayout from "../../components/PageLayout"
 import SEO from "../../components/SEO"
 import logo from "../../components/logo.svg"
@@ -8,6 +8,7 @@ import styles from "./index.module.css"
 import About from "./About"
 
 function Home(props) {
+  // TODO mobile friendly
   return (
     <PageLayout>
       <SEO title="Smart Contract Programmer" />
@@ -15,36 +16,31 @@ function Home(props) {
         inverted
         textAlign="center"
         style={{
-          minHeight: 150,
-          padding: "2em 0em",
+          minHeight: "70vh",
+          padding: "2rem 0rem",
           backgroundColor: BACKGROUND_COLOR,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
         }}
         vertical
       >
+        <Image src={logo} style={{ height: 250 }} alt="logo" />
         <Container text>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-            }}
-          >
-            <Image src={logo} style={{ height: 250 }} alt="logo" />
-          </div>
           <Header
             as="h1"
-            content="Smart Contract Programmer"
+            content="SMART CONTRACT TUTORIALS"
             inverted
             style={{
-              fontSize: "2.5em",
-              // fontWeight: "normal",
-              marginBottom: 0,
+              fontSize: "5rem",
+              marginBottom: 100,
               marginTop: 0,
             }}
           />
-          {/* TODO sub header
-          <p>a blog for developers about smart contracts</p>
-          */}
+          <Button size="massive" color="green" fluid>
+            Start here
+          </Button>
         </Container>
       </Segment>
       <div className={styles.main}>
