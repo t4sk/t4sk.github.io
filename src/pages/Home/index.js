@@ -5,6 +5,7 @@ import SEO from "../../components/SEO"
 import logo from "../../components/logo.svg"
 import { BACKGROUND_COLOR } from "../../constants"
 import styles from "./index.module.css"
+import EmailSubscriptionForm from "./EmailSubscriptionForm"
 import About from "./About"
 
 function Home(props) {
@@ -22,6 +23,7 @@ function Home(props) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          paddingBottom: 80,
         }}
         vertical
       >
@@ -33,7 +35,7 @@ function Home(props) {
             inverted
             style={{
               fontSize: "5rem",
-              marginBottom: 80,
+              marginBottom: 50,
               marginTop: 0,
             }}
           />
@@ -43,6 +45,7 @@ function Home(props) {
         </Container>
       </Segment>
       <div className={styles.main}>
+        <EmailSubscriptionForm />
         <About />
       </div>
     </PageLayout>
