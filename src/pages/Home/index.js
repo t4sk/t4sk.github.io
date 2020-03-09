@@ -17,7 +17,6 @@ function Home(props) {
         textAlign="center"
         style={{
           minHeight: "70vh",
-          padding: "2rem 0rem",
           backgroundColor: BACKGROUND_COLOR,
           display: "flex",
           flexDirection: "column",
@@ -39,7 +38,7 @@ function Home(props) {
             }}
           />
           <Button size="massive" color="green" fluid>
-            Start here
+            Get Started
           </Button>
         </Container>
       </Segment>

@@ -25,7 +25,6 @@ exports[`it renders 1`] = `
         "flexDirection": "column",
         "justifyContent": "center",
         "minHeight": "70vh",
-        "padding": "2rem 0rem",
       }
     }
     textAlign="center"
@@ -59,7 +58,7 @@ exports[`it renders 1`] = `
         fluid={true}
         size="massive"
       >
-        Start here
+        Get Started
       </Button>
     </Container>
   </Segment>

@@ -1,13 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it renders 1`] = `
+exports[`about active 1`] = `
 <Menu
   borderless={true}
   fixed="top"
   fluid={true}
   inverted={true}
   size="large"
-  style={Object {}}
+  style={
+    Object {
+      "backgroundColor": "#20232a",
+    }
+  }
 >
   <Container>
     <MenuItem
@@ -27,7 +31,7 @@ exports[`it renders 1`] = `
         src="logo.svg"
         style={
           Object {
-            "backgroundColor": "#1b1c1d",
+            "backgroundColor": "#20232a",
             "borderRadius": 4,
             "height": 48,
             "margin": 5,
@@ -39,7 +43,239 @@ exports[`it renders 1`] = `
     </MenuItem>
     <MenuMenu
       position="right"
-    />
+    >
+      <MenuItem
+        active={false}
+        as="a"
+        href="/tutorials"
+      >
+        Tutorials
+      </MenuItem>
+      <MenuItem
+        active={true}
+        as="a"
+        href="/about"
+      >
+        About
+      </MenuItem>
+      <MenuItem
+        active={false}
+        as="a"
+        href="/contact"
+      >
+        Contact
+      </MenuItem>
+    </MenuMenu>
+  </Container>
+</Menu>
+`;
+
+exports[`contact active 1`] = `
+<Menu
+  borderless={true}
+  fixed="top"
+  fluid={true}
+  inverted={true}
+  size="large"
+  style={
+    Object {
+      "backgroundColor": "#20232a",
+    }
+  }
+>
+  <Container>
+    <MenuItem
+      as="a"
+      header={true}
+      href="/"
+      style={
+        Object {
+          "padding": 0,
+          "paddingRight": 15,
+        }
+      }
+    >
+      <Image
+        alt="logo"
+        as="img"
+        src="logo.svg"
+        style={
+          Object {
+            "backgroundColor": "#20232a",
+            "borderRadius": 4,
+            "height": 48,
+            "margin": 5,
+          }
+        }
+        ui={true}
+      />
+      Smart Contract Programmer
+    </MenuItem>
+    <MenuMenu
+      position="right"
+    >
+      <MenuItem
+        active={false}
+        as="a"
+        href="/tutorials"
+      >
+        Tutorials
+      </MenuItem>
+      <MenuItem
+        active={false}
+        as="a"
+        href="/about"
+      >
+        About
+      </MenuItem>
+      <MenuItem
+        active={true}
+        as="a"
+        href="/contact"
+      >
+        Contact
+      </MenuItem>
+    </MenuMenu>
+  </Container>
+</Menu>
+`;
+
+exports[`it renders 1`] = `
+<Menu
+  borderless={true}
+  fixed="top"
+  fluid={true}
+  inverted={true}
+  size="large"
+  style={
+    Object {
+      "backgroundColor": "#20232a",
+    }
+  }
+>
+  <Container>
+    <MenuItem
+      as="a"
+      header={true}
+      href="/"
+      style={
+        Object {
+          "padding": 0,
+          "paddingRight": 15,
+        }
+      }
+    >
+      <Image
+        alt="logo"
+        as="img"
+        src="logo.svg"
+        style={
+          Object {
+            "backgroundColor": "#20232a",
+            "borderRadius": 4,
+            "height": 48,
+            "margin": 5,
+          }
+        }
+        ui={true}
+      />
+      Smart Contract Programmer
+    </MenuItem>
+    <MenuMenu
+      position="right"
+    >
+      <MenuItem
+        active={false}
+        as="a"
+        href="/tutorials"
+      >
+        Tutorials
+      </MenuItem>
+      <MenuItem
+        active={false}
+        as="a"
+        href="/about"
+      >
+        About
+      </MenuItem>
+      <MenuItem
+        active={false}
+        as="a"
+        href="/contact"
+      >
+        Contact
+      </MenuItem>
+    </MenuMenu>
+  </Container>
+</Menu>
+`;
+
+exports[`tutorials active 1`] = `
+<Menu
+  borderless={true}
+  fixed="top"
+  fluid={true}
+  inverted={true}
+  size="large"
+  style={
+    Object {
+      "backgroundColor": "#20232a",
+    }
+  }
+>
+  <Container>
+    <MenuItem
+      as="a"
+      header={true}
+      href="/"
+      style={
+        Object {
+          "padding": 0,
+          "paddingRight": 15,
+        }
+      }
+    >
+      <Image
+        alt="logo"
+        as="img"
+        src="logo.svg"
+        style={
+          Object {
+            "backgroundColor": "#20232a",
+            "borderRadius": 4,
+            "height": 48,
+            "margin": 5,
+          }
+        }
+        ui={true}
+      />
+      Smart Contract Programmer
+    </MenuItem>
+    <MenuMenu
+      position="right"
+    >
+      <MenuItem
+        active={true}
+        as="a"
+        href="/tutorials"
+      >
+        Tutorials
+      </MenuItem>
+      <MenuItem
+        active={false}
+        as="a"
+        href="/about"
+      >
+        About
+      </MenuItem>
+      <MenuItem
+        active={false}
+        as="a"
+        href="/contact"
+      >
+        Contact
+      </MenuItem>
+    </MenuMenu>
   </Container>
 </Menu>
 `;

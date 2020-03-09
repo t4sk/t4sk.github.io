@@ -1,10 +1,13 @@
 import React from "react"
+import PropTypes from "prop-types"
+import { withRouter } from "react-router-dom"
 import { Menu, Container, Image } from "semantic-ui-react"
 import { BACKGROUND_COLOR } from "../constants"
 import logo from "./logo.svg"
 
 export function Nav(props) {
-  // TODO responsive
+  const { location } = props
+
   return (
     <Menu
       borderless
@@ -39,6 +42,27 @@ export function Nav(props) {
         </Menu.Item>
 
         <Menu.Menu position="right">
+          <Menu.Item
+            as="a"
+            href="/tutorials"
+            active={location.pathname === "/tutorials"}
+          >
+            Tutorials
+          </Menu.Item>
+          <Menu.Item
+            as="a"
+            href="/about"
+            active={location.pathname === "/about"}
+          >
+            About
+          </Menu.Item>
+          <Menu.Item
+            as="a"
+            href="/contact"
+            active={location.pathname === "/contact"}
+          >
+            Contact
+          </Menu.Item>
           {/*}
           <Menu.Item as="a" href="/about">
             About
@@ -50,6 +74,10 @@ export function Nav(props) {
   )
 }
 
-Nav.propTypes = {}
+Nav.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+}
 
-export default Nav
+export default withRouter(Nav)
