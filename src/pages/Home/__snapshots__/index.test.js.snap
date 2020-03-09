@@ -19,50 +19,48 @@ exports[`it renders 1`] = `
     inverted={true}
     style={
       Object {
+        "alignItems": "center",
         "backgroundColor": "#20232a",
-        "minHeight": 150,
-        "padding": "2em 0em",
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "minHeight": "70vh",
+        "padding": "2rem 0rem",
       }
     }
     textAlign="center"
     vertical={true}
   >
+    <Image
+      alt="logo"
+      as="img"
+      className="logo"
+      src="logo.svg"
+      ui={true}
+    />
     <Container
       text={true}
     >
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "flexDirection": "row",
-            "justifyContent": "center",
-          }
-        }
-      >
-        <Image
-          alt="logo"
-          as="img"
-          src="logo.svg"
-          style={
-            Object {
-              "height": 250,
-            }
-          }
-          ui={true}
-        />
-      </div>
       <Header
         as="h1"
-        content="Smart Contract Programmer"
+        content="SMART CONTRACT TUTORIALS"
         inverted={true}
         style={
           Object {
-            "fontSize": "2.5em",
-            "marginBottom": 0,
+            "fontSize": "5rem",
+            "marginBottom": 80,
             "marginTop": 0,
           }
         }
       />
+      <Button
+        as="button"
+        color="green"
+        fluid={true}
+        size="massive"
+      >
+        Start here
+      </Button>
     </Container>
   </Segment>
   <div

@@ -26,7 +26,7 @@ function Home(props) {
         }}
         vertical
       >
-        <Image src={logo} style={{ height: 250 }} alt="logo" />
+        <Image src={logo} className={styles.logo} alt="logo" />
         <Container text>
           <Header
             as="h1"
@@ -34,7 +34,7 @@ function Home(props) {
             inverted
             style={{
               fontSize: "5rem",
-              marginBottom: 100,
+              marginBottom: 80,
               marginTop: 0,
             }}
           />
