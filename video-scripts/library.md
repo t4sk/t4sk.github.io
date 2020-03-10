@@ -3,24 +3,48 @@ pragma solidity ^0.5.11;
 
 /*
 Library
-This means that if library functions are called, their code is executed in the context of the calling contract
+- no state variables
+- cannot hold ether
 
-The directive using A for B; can be used to attach library functions (from the library A) to any type (B).
+Why use libraries?
+- DRY (Don't Repeat Yourself)
+- Save gas
 
-Unlike contracts library can not have any storage variables, as its only meant for code reuse and not for state management.
+// TODO: slides
+Libraries can be embedded or linked
+- embedded (library has only internal functions)
+- must be deployed and then linked (library has public or external functions)
 
-# embedded vs deployed
-- If a smart contract is consuming a library which have only internal functions than EVM simply embeds library into the contract.
-- if a library contain public or external functions then library needs to be deployed.
-
-# pure and storage
-- safe math
-- iterable maps
-
-# using for
-
-# import open zeppelin library (SafeMath)
+Examples
+- safe math (embedded, pure internal functions)
+- iterable map (functions operating on storage)
 */
+
+contract A {
+    function incrementByOne(uint x) public pure returns (uint) {
+        return add(x, 1);
+    }
+
+    function add(uint x, uint y) internal pure returns (uint) {
+        uint z = x + y;
+        require(z >= x, "uint overflow");
+
+        return z;
+    }
+}
+
+contract B {
+    function incrementByTwo(uint x) public pure returns (uint) {
+        return add(x, 2);
+    }
+
+    function add(uint x, uint y) internal pure returns (uint) {
+        uint z = x + y;
+        require(z >= x, "uint overflow");
+
+        return z;
+    }
+}
 
 // NOTE: pure and embedded
 library MySafeMath {
@@ -34,10 +58,10 @@ library MySafeMath {
     }
 }
 
-// TODO: import from open zeppelin
-
 contract TestSafeMath {
+    // NOTE: demo without using for first
     // NOTE: using for
+    // using MyLib for type (attach library functions (from the library A) to type (B)).
     using MySafeMath for uint;
 
     // NOTE: max uint
@@ -46,13 +70,26 @@ contract TestSafeMath {
     function testAdd(uint x, uint y) public pure returns (uint) {
         // NOTE: library functions will receive the object they are called on as their first parameter
         // NOTE: demo overflow return x + y
+        // NOTE:
+        // return MySafeMath.add(x, y);
+        // NOTE: only second parameter passed;
         return x.add(y);
     }
 }
 
+/*
+DEMO
+NOTE?: only one contract deployed (MySafeMath is embedded)
+
+*/
+// TODO: import from open zeppelin
+
+
+
 // NOTE: deployed storage
 // NOTE: cannot link in Remix
-// TODO: why link?
+
+// TODO: slides (insert, iterate)
 library IterableMapping {
     struct IMap {
         mapping(address => uint) indexOf;
@@ -62,6 +99,7 @@ library IterableMapping {
 
     // NOTE: IMap and storage
     // NOTE: not underscored
+    // NOTE: public (deployed and linked)
     function has(IMap storage iMap, address addr) public view returns (bool) {
         return iMap.inserted[addr];
     }
@@ -87,6 +125,7 @@ library IterableMapping {
 }
 
 contract TestIterableMap {
+    // NOTE: using for
     using IterableMapping for IterableMapping.IMap;
 
     // NOTE: cannot be public
@@ -96,6 +135,7 @@ contract TestIterableMap {
         // NOTE: address must be unique
         // NOTE: first parameter do not need to pass
         iMap.add(address(0));
+        // NOTE: IterableMapping.add(iMap, address(0));
         iMap.add(address(1));
         iMap.add(address(2));
 
@@ -105,6 +145,16 @@ contract TestIterableMap {
         }
     }
 }
+
+/*
+DEMO
+NOTE: test iterable map only succeeds once
+*/
+
+
+
+
+
 
 
 
