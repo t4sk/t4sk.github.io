@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<div
+  className="component"
+>
+  <h1>
+    Subscribe for news and updates
+  </h1>
+  <div
+    className="form"
+  >
+    <Form
+      action="https://smartcontractprogrammer.us19.list-manage.com/subscribe/post?u=7e2cbef6d220f8cb6ee957b85&id=6e01d69c76"
+      as="form"
+      className="validate"
+      id="mc-embedded-subscribe-form"
+      method="post"
+      name="mc-embedded-subscribe-form"
+      noValidate={true}
+      target="_blank"
+    >
+      <Input
+        action={
+          Object {
+            "content": <div
+              className="action"
+            >
+              Subscribe
+            </div>,
+            "loading": false,
+          }
+        }
+        className="email"
+        fluid={true}
+        id="mce-EMAIL"
+        name="EMAIL"
+        onChange={[Function]}
+        placeholder="Type your email..."
+        size="huge"
+        type="email"
+        value=""
+      />
+      <input
+        name="b_7e2cbef6d220f8cb6ee957b85_6e01d69c76"
+        onChange={[Function]}
+        style={
+          Object {
+            "display": "none ",
+          }
+        }
+        tabIndex="-1"
+        type="text"
+        value=""
+      />
+    </Form>
+  </div>
+  <p>
+    We won’t share or sell your email to 3rd parties
+  </p>
+</div>
+`;
