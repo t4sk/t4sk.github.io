@@ -7,7 +7,13 @@ export function CourseCard(props) {
   const { title, logo, href } = props
 
   return (
-    <a href={href}>
+    <a
+      href={href}
+      onClick={e => {
+        e.preventDefault()
+        alert("Coming soon")
+      }}
+    >
       <Card>
         <Image src={logo} wrapped ui={false} />
         <Card.Content>
