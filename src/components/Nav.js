@@ -44,10 +44,10 @@ export function Nav(props) {
         <Menu.Menu position="right">
           <Menu.Item
             as="a"
-            href="/tutorials"
-            active={location.pathname === "/tutorials"}
+            href="/courses"
+            active={location.pathname === "/courses"}
           >
-            Tutorials
+            Courses
           </Menu.Item>
           <Menu.Item
             as="a"
