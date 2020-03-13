@@ -2,27 +2,32 @@
 
 exports[`it renders 1`] = `
 <div
-  className="Footer"
+  className="component"
 >
-  <Image
-    alt="license"
-    as="img"
-    src="creative-commons-logo.svg"
-    style={
-      Object {
-        "height": 20,
-        "margin": 10,
-      }
-    }
-    ui={true}
-  />
-  <div>
-    <a
-      href="https://creativecommons.org/licenses/by-sa/3.0/deed.en"
-      target="__blank"
+  <Container>
+    <div
+      className="row"
     >
-      Creative Commons CC BY-SA 3.0
-    </a>
-  </div>
+      <Image
+        alt="license"
+        as="img"
+        src="creative-commons-logo.svg"
+        style={
+          Object {
+            "height": 20,
+            "margin": 10,
+          }
+        }
+        ui={true}
+      />
+      <a
+        className="link"
+        href="https://creativecommons.org/licenses/by-sa/3.0/deed.en"
+        target="__blank"
+      >
+        Creative Commons CC BY-SA 3.0
+      </a>
+    </div>
+  </Container>
 </div>
 `;
