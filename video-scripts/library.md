@@ -164,3 +164,82 @@ NOTE: test iterable map only succeeds once
 
 
 ```
+
+```
+pragma solidity ^0.5.16;
+
+/*
+Library
+
+Why use libraries?
+- DRY (Don't Repeat Yourself)
+- Save gas
+
+Embedded or linked
+- embedded (library has only internal functions)
+- deployed and then linked (library has public or external functions)
+
+Examples
+- safe math (embedded, pure internal functions)
+- iterable map (functions operating on storage)
+*/
+
+library SafeMath {
+    function add(uint x, uint y) pure internal returns (uint) {
+        uint z = x + y;
+        require(z >= x, "uint overflow");
+
+        return z;
+    }
+}
+
+contract TestSafeMath {
+    // using SomeLib for B (attach functions from SomeLib to type B).
+    using SafeMath for uint;
+    // x.add(y)
+
+    uint public MAX_UINT = 2 ** 256 - 1;
+
+    function testAdd(uint x, uint y) public pure returns (uint) {
+        // return MySafeMath.add(x, y);
+        return x.add(y);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```

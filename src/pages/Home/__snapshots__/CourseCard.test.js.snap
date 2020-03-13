@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<a
+  href="/courses/learn-solidity"
+>
+  <Card>
+    <Image
+      as="img"
+      src="path/to/logo"
+      ui={false}
+      wrapped={true}
+    />
+    <CardContent>
+      <CardHeader>
+        <div
+          className="title"
+        >
+          Learn Solidity
+        </div>
+      </CardHeader>
+    </CardContent>
+  </Card>
+</a>
+`;

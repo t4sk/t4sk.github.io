@@ -6,6 +6,7 @@ import logo from "../../components/logo.svg"
 import { BACKGROUND_COLOR } from "../../constants"
 import styles from "./index.module.css"
 import EmailSubscriptionForm from "./EmailSubscriptionForm"
+import Courses from "./Courses"
 import About from "./About"
 
 function Home(props) {
@@ -46,6 +47,9 @@ function Home(props) {
       </Segment>
       <div className={styles.main}>
         <EmailSubscriptionForm />
+        <div className={styles.courses}>
+          <Courses />
+        </div>
         <About />
       </div>
     </PageLayout>

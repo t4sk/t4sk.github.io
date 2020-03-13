@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<div
+  className="component"
+>
+  <CourseCard
+    href="/courses/learn-solidity"
+    key="Learn Solidity"
+    logo="learn-solidity-card.svg"
+    title="Learn Solidity"
+  />
+</div>
+`;
