@@ -11,7 +11,7 @@ import Courses from "./Courses"
 import About from "./About"
 import Contact from "./Contact"
 
-function Home(props) {
+function HomePage(props) {
   // TODO mobile friendly
   return (
     <PageLayout>
@@ -63,6 +63,6 @@ function Home(props) {
   )
 }
 
-Home.propTypes = {}
+HomePage.propTypes = {}
 
-export default Home
+export default HomePage

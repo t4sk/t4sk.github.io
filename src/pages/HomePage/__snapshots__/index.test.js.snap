@@ -54,9 +54,10 @@ exports[`it renders 1`] = `
         }
       />
       <Button
-        as="button"
+        as="a"
         color="green"
         fluid={true}
+        href="#courses"
         size="massive"
       >
         Get Started
