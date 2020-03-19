@@ -7,6 +7,7 @@ import Footer from "./Footer"
 export function PageLayout(props) {
   const { children } = props
 
+  // NOTE: id="top" used to scroll to top
   return (
     <div id="top" className={styles.PageLayout}>
       <Nav />
