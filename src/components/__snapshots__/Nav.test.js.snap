@@ -17,7 +17,7 @@ exports[`about active 1`] = `
     <MenuItem
       as="a"
       header={true}
-      href="/"
+      href="#top"
       style={
         Object {
           "padding": 0,
@@ -47,21 +47,21 @@ exports[`about active 1`] = `
       <MenuItem
         active={false}
         as="a"
-        href="/courses"
+        href="#courses"
       >
         Courses
       </MenuItem>
       <MenuItem
         active={true}
         as="a"
-        href="/about"
+        href="#about"
       >
         About
       </MenuItem>
       <MenuItem
         active={false}
         as="a"
-        href="/contact"
+        href="#contact"
       >
         Contact
       </MenuItem>
@@ -87,7 +87,7 @@ exports[`contact active 1`] = `
     <MenuItem
       as="a"
       header={true}
-      href="/"
+      href="#top"
       style={
         Object {
           "padding": 0,
@@ -117,21 +117,21 @@ exports[`contact active 1`] = `
       <MenuItem
         active={false}
         as="a"
-        href="/courses"
+        href="#courses"
       >
         Courses
       </MenuItem>
       <MenuItem
         active={false}
         as="a"
-        href="/about"
+        href="#about"
       >
         About
       </MenuItem>
       <MenuItem
         active={true}
         as="a"
-        href="/contact"
+        href="#contact"
       >
         Contact
       </MenuItem>
@@ -157,7 +157,7 @@ exports[`courses active 1`] = `
     <MenuItem
       as="a"
       header={true}
-      href="/"
+      href="#top"
       style={
         Object {
           "padding": 0,
@@ -187,21 +187,21 @@ exports[`courses active 1`] = `
       <MenuItem
         active={true}
         as="a"
-        href="/courses"
+        href="#courses"
       >
         Courses
       </MenuItem>
       <MenuItem
         active={false}
         as="a"
-        href="/about"
+        href="#about"
       >
         About
       </MenuItem>
       <MenuItem
         active={false}
         as="a"
-        href="/contact"
+        href="#contact"
       >
         Contact
       </MenuItem>
@@ -227,7 +227,7 @@ exports[`it renders 1`] = `
     <MenuItem
       as="a"
       header={true}
-      href="/"
+      href="#top"
       style={
         Object {
           "padding": 0,
@@ -257,21 +257,21 @@ exports[`it renders 1`] = `
       <MenuItem
         active={false}
         as="a"
-        href="/courses"
+        href="#courses"
       >
         Courses
       </MenuItem>
       <MenuItem
         active={false}
         as="a"
-        href="/about"
+        href="#about"
       >
         About
       </MenuItem>
       <MenuItem
         active={false}
         as="a"
-        href="/contact"
+        href="#contact"
       >
         Contact
       </MenuItem>

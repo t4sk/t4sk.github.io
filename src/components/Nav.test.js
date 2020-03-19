@@ -5,6 +5,7 @@ import { Nav } from "./Nav"
 const props = {
   location: {
     pathname: "/",
+    hash: "",
   },
 }
 
@@ -16,7 +17,7 @@ test("it renders", () => {
 
 test("courses active", () => {
   const component = shallow(
-    <Nav {...props} location={{ pathname: "/courses" }} />
+    <Nav {...props} location={{ ...props.location, hash: "#courses" }} />
   )
 
   expect(component).toMatchSnapshot()
@@ -24,7 +25,7 @@ test("courses active", () => {
 
 test("about active", () => {
   const component = shallow(
-    <Nav {...props} location={{ pathname: "/about" }} />
+    <Nav {...props} location={{ ...props.location, hash: "#about" }} />
   )
 
   expect(component).toMatchSnapshot()
@@ -32,7 +33,7 @@ test("about active", () => {
 
 test("contact active", () => {
   const component = shallow(
-    <Nav {...props} location={{ pathname: "/contact" }} />
+    <Nav {...props} location={{ ...props.location, hash: "#contact" }} />
   )
 
   expect(component).toMatchSnapshot()

@@ -25,7 +25,7 @@ export function Nav(props) {
         <Menu.Item
           header
           as="a"
-          href="/"
+          href="#top"
           style={{ padding: 0, paddingRight: 15 }}
         >
           <Image
@@ -44,30 +44,21 @@ export function Nav(props) {
         <Menu.Menu position="right">
           <Menu.Item
             as="a"
-            href="/courses"
-            active={location.pathname === "/courses"}
+            href="#courses"
+            active={location.hash === "#courses"}
           >
             Courses
           </Menu.Item>
-          <Menu.Item
-            as="a"
-            href="/about"
-            active={location.pathname === "/about"}
-          >
+          <Menu.Item as="a" href="#about" active={location.hash === "#about"}>
             About
           </Menu.Item>
           <Menu.Item
             as="a"
-            href="/contact"
-            active={location.pathname === "/contact"}
+            href="#contact"
+            active={location.hash === "#contact"}
           >
             Contact
           </Menu.Item>
-          {/*}
-          <Menu.Item as="a" href="/about">
-            About
-          </Menu.Item>
-          */}
         </Menu.Menu>
       </Container>
     </Menu>
@@ -77,6 +68,7 @@ export function Nav(props) {
 Nav.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
+    hash: PropTypes.string.isRequired,
   }).isRequired,
 }
 

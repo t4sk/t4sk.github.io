@@ -8,7 +8,7 @@ export function PageLayout(props) {
   const { children } = props
 
   return (
-    <div className={styles.PageLayout}>
+    <div id="top" className={styles.PageLayout}>
       <Nav />
       <div style={{ paddingBottom: 40 }} />
       <div className={styles.main}>{children}</div>
