@@ -68,11 +68,20 @@ exports[`it renders 1`] = `
   >
     <EmailSubscriptionForm />
     <div
-      className="courses"
+      id="courses"
     >
       <Courses />
     </div>
-    <About />
+    <div
+      id="about"
+    >
+      <About />
+    </div>
+    <div
+      id="contact"
+    >
+      contact
+    </div>
   </div>
 </PageLayout>
 `;

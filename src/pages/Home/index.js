@@ -5,6 +5,7 @@ import SEO from "../../components/SEO"
 import logo from "../../components/logo.svg"
 import { BACKGROUND_COLOR } from "../../constants"
 import styles from "./index.module.css"
+import "./index.css"
 import EmailSubscriptionForm from "./EmailSubscriptionForm"
 import Courses from "./Courses"
 import About from "./About"
@@ -47,10 +48,13 @@ function Home(props) {
       </Segment>
       <div className={styles.main}>
         <EmailSubscriptionForm />
-        <div className={styles.courses}>
+        <div id="courses">
           <Courses />
         </div>
-        <About />
+        <div id="about">
+          <About />
+        </div>
+        <div id="contact">contact</div>
       </div>
     </PageLayout>
   )
