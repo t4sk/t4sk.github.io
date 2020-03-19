@@ -42,7 +42,12 @@ function Home(props) {
               marginTop: 0,
             }}
           />
-          <Button size="massive" color="green" fluid>
+          <Button
+            size="massive"
+            color="green"
+            fluid
+            onClick={() => alert("Courses coming soon")}
+          >
             Get Started
           </Button>
         </Container>
