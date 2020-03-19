@@ -71,12 +71,6 @@ function About(props) {
       </div>
 
       <Divider />
-      <p>
-        You can contact me at{" "}
-        <span className={styles.email}>
-          contact@smartcontractprogrammer.com
-        </span>
-      </p>
     </div>
   )
 }

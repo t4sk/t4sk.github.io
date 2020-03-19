@@ -9,6 +9,7 @@ import "./index.css"
 import EmailSubscriptionForm from "./EmailSubscriptionForm"
 import Courses from "./Courses"
 import About from "./About"
+import Contact from "./Contact"
 
 function Home(props) {
   // TODO mobile friendly
@@ -54,7 +55,9 @@ function Home(props) {
         <div id="about">
           <About />
         </div>
-        <div id="contact">contact</div>
+        <div id="contact">
+          <Contact />
+        </div>
       </div>
     </PageLayout>
   )

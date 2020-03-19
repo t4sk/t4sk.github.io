@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<p>
+  You can contact me at
+   
+  <span
+    className="email"
+  >
+    contact@smartcontractprogrammer.com
+  </span>
+</p>
+`;

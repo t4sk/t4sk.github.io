@@ -103,14 +103,5 @@ exports[`it renders 1`] = `
     </a>
   </div>
   <Divider />
-  <p>
-    You can contact me at
-     
-    <span
-      className="email"
-    >
-      contact@smartcontractprogrammer.com
-    </span>
-  </p>
 </div>
 `;

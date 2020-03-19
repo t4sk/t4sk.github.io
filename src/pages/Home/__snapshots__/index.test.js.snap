@@ -80,7 +80,7 @@ exports[`it renders 1`] = `
     <div
       id="contact"
     >
-      contact
+      <Contact />
     </div>
   </div>
 </PageLayout>
