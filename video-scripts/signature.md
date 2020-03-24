@@ -3,18 +3,11 @@ pragma solidity ^0.5.16;
 
 /* Signature Verification
 
-Applications
-- multisig wallet (wallet / contract owned by N owners, M signatures required)
-- payment channels (offchain transactions, onchain settlement)
-    - A 250 <----> B 50
-- meta transaction (someone else pay for my transaction fee)
-- plasma (sidechain)
-
 How to Sign and Verify
 # Signing
 1. Create message to sign
 2. Hash the message
-3. Sign the hash
+3. Sign the hash (off chain, keep your private key secret)
 
 # Verify
 1. Recreate hash from the original message
@@ -107,7 +100,7 @@ contract VerifySignature {
             // first 32 bytes, after the length prefix
             r := mload(add(sig, 32))
             // second 32 bytes
-            s:= mload(add(sig, 64))
+            s := mload(add(sig, 64))
             // final byte (first byte of the next 32 bytes)
             v := byte(0, mload(add(sig, 96)))
         }
