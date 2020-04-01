@@ -24,7 +24,7 @@ exports[`it renders 1`] = `
     <TutorialCard
       logo="solidity-app.svg"
       onClick={[Function]}
-      path="/tutorials/build-a-multi-sig-wallet-in-solidity"
+      path="/tutorials/solidity-multi-sig-wallet"
       title="Build a Multi-Sig Wallet in Solidity"
     />
   </div>

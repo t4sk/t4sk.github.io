@@ -1,14 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "react-router-dom"
 import { Card, Image } from "semantic-ui-react"
 import styles from "./TutorialCard.module.css"
 
 export function TutorialCard(props) {
   const { title, logo, path } = props
 
+  // NOTE: use anchor instead of Link to reset scroll
   return (
-    <Link to={path}>
+    <a href={path}>
       <Card style={{ height: 500, width: 350 }}>
         <Image src={logo} wrapped ui={false} />
         <Card.Content>
@@ -17,7 +17,7 @@ export function TutorialCard(props) {
           </Card.Header>
         </Card.Content>
       </Card>
-    </Link>
+    </a>
   )
 }
 

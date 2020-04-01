@@ -20,7 +20,7 @@ const TUTORIALS = [
   {
     title: "Build a Multi-Sig Wallet in Solidity",
     logo: solidityAppLogo,
-    path: "/tutorials/build-a-multi-sig-wallet-in-solidity",
+    path: "/tutorials/solidity-multi-sig-wallet",
     // TODO: remove onClick
     onClick: e => {},
   },

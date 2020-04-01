@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it renders 1`] = `
-<Link
-  to="/tutorials/learn-solidity"
+<a
+  href="/tutorials/learn-solidity"
 >
   <Card
     style={
@@ -28,5 +28,5 @@ exports[`it renders 1`] = `
       </CardHeader>
     </CardContent>
   </Card>
-</Link>
+</a>
 `;
