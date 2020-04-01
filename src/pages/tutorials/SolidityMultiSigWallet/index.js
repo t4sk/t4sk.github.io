@@ -5,6 +5,7 @@ import SEO from "../../../components/SEO"
 import PageLayout from "../../../components/PageLayout"
 import solidityAppLogo from "../../../static/solidity-app.svg"
 import styles from "./index.module.css"
+import { SOLIDITY_LESSONS } from "./routes"
 
 function Logo() {
   return (
@@ -15,73 +16,6 @@ function Logo() {
     />
   )
 }
-
-const LESSONS = [
-  {
-    icon: "youtube",
-    color: "red",
-    href: "",
-    path: "overview",
-    header: "Overview",
-    description: "",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "00-constructor",
-    header: "Constructor",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "01-fallback",
-    header: "Fallback",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "02-submit-transaction",
-    header: "Submit Transaction",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "03-confirm-transaction",
-    header: "Confirm Transaction",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "04-execute-transaction",
-    header: "Execute Transaction",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "05-revoke-transaction",
-    header: "Revoke Transaction",
-    description: "Exercise",
-  },
-  {
-    icon: "github",
-    color: "",
-    href: "https://github.com/t4sk/solidity-multi-sig-wallet",
-    openNewTab: true,
-    path: "",
-    header: "Code",
-  },
-]
 
 export function SolidityMultiSigWallet(props) {
   // TODO checkbox
@@ -103,7 +37,7 @@ export function SolidityMultiSigWallet(props) {
             <div className={styles.lessons}>
               <h2>Solidity Contract</h2>
               <List divided relaxed selection>
-                {LESSONS.map((lesson, i) => (
+                {SOLIDITY_LESSONS.map((lesson, i) => (
                   <List.Item key={i}>
                     <List.Icon
                       name={lesson.icon}

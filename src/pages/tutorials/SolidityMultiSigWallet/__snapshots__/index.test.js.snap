@@ -51,7 +51,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="/tutorials/solidity-multi-sig-wallet/overview"
+                  href="/tutorials/solidity-multi-sig-wallet/00-overview"
                 >
                   Overview
                 </ListHeader>
@@ -68,7 +68,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="/tutorials/solidity-multi-sig-wallet/00-constructor"
+                  href="/tutorials/solidity-multi-sig-wallet/01-constructor"
                 >
                   Constructor
                 </ListHeader>
@@ -88,7 +88,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="/tutorials/solidity-multi-sig-wallet/01-fallback"
+                  href="/tutorials/solidity-multi-sig-wallet/02-fallback"
                 >
                   Fallback
                 </ListHeader>
@@ -108,7 +108,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="/tutorials/solidity-multi-sig-wallet/02-submit-transaction"
+                  href="/tutorials/solidity-multi-sig-wallet/03-submit-transaction"
                 >
                   Submit Transaction
                 </ListHeader>
@@ -128,7 +128,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="/tutorials/solidity-multi-sig-wallet/03-confirm-transaction"
+                  href="/tutorials/solidity-multi-sig-wallet/04-confirm-transaction"
                 >
                   Confirm Transaction
                 </ListHeader>
@@ -148,7 +148,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="/tutorials/solidity-multi-sig-wallet/04-execute-transaction"
+                  href="/tutorials/solidity-multi-sig-wallet/05-execute-transaction"
                 >
                   Execute Transaction
                 </ListHeader>
@@ -168,7 +168,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="/tutorials/solidity-multi-sig-wallet/05-revoke-transaction"
+                  href="/tutorials/solidity-multi-sig-wallet/06-revoke-transaction"
                 >
                   Revoke Transaction
                 </ListHeader>
