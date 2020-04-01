@@ -5,7 +5,7 @@ import { TutorialCard } from "./TutorialCard"
 const props = {
   title: "Learn Solidity",
   logo: "path/to/logo",
-  href: "/tutorials/learn-solidity",
+  path: "/tutorials/learn-solidity",
 }
 
 beforeEach(() => {})

@@ -4,11 +4,29 @@ exports[`it renders 1`] = `
 <div
   className="component"
 >
-  <TutorialCard
-    href="/tutorials/learn-solidity"
+  <div
+    className="card"
     key="Learn Solidity"
-    logo="learn-solidity-card.svg"
-    title="Learn Solidity"
-  />
+    onClick={[Function]}
+  >
+    <TutorialCard
+      logo="solidity.svg"
+      onClick={[Function]}
+      path="/tutorials/learn-solidity"
+      title="Learn Solidity"
+    />
+  </div>
+  <div
+    className="card"
+    key="Build a Multi-Sig Wallet in Solidity"
+    onClick={[Function]}
+  >
+    <TutorialCard
+      logo="solidity-app.svg"
+      onClick={[Function]}
+      path="/tutorials/build-a-multi-sig-wallet-in-solidity"
+      title="Build a Multi-Sig Wallet in Solidity"
+    />
+  </div>
 </div>
 `;
