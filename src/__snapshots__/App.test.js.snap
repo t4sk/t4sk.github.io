@@ -7,6 +7,10 @@ exports[`it renders 1`] = `
   <Switch>
     <Route
       component={[Function]}
+      path="/tutorials/solidity-multi-sig-wallet"
+    />
+    <Route
+      component={[Function]}
     />
   </Switch>
 </BrowserRouter>
