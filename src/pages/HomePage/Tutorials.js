@@ -10,6 +10,11 @@ const COURSES = [
     title: "Learn Solidity",
     logo: learnSolidityCardLogo,
     href: "/tutorials/learn-solidity",
+    // TODO: remove onClick
+    onClick: e => {
+      e.preventDefault()
+      alert("Coming soon...")
+    },
   },
 ]
 
@@ -17,7 +22,9 @@ export function Tutorials(props) {
   return (
     <div className={styles.component}>
       {COURSES.map(course => (
-        <TutorialCard key={course.title} {...course} />
+        <div onClick={course.onClick}>
+          <TutorialCard key={course.title} {...course} />
+        </div>
       ))}
     </div>
   )
