@@ -27,7 +27,7 @@ export function Nav(props) {
         <Menu.Item
           header
           as="a"
-          href="#top"
+          href="/"
           style={{ padding: 0, paddingRight: 15 }}
         >
           <Image
