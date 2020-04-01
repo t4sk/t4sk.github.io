@@ -1,17 +1,17 @@
 import React from "react"
 import { shallow } from "enzyme"
-import { CourseCard } from "./CourseCard"
+import { TutorialCard } from "./TutorialCard"
 
 const props = {
   title: "Learn Solidity",
   logo: "path/to/logo",
-  href: "/courses/learn-solidity",
+  href: "/tutorials/learn-solidity",
 }
 
 beforeEach(() => {})
 
 test("it renders", () => {
-  const component = shallow(<CourseCard {...props} />)
+  const component = shallow(<TutorialCard {...props} />)
 
   expect(component).toMatchSnapshot()
 })

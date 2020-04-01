@@ -2,8 +2,7 @@
 
 exports[`it renders 1`] = `
 <a
-  href="/courses/learn-solidity"
-  onClick={[Function]}
+  href="/tutorials/learn-solidity"
 >
   <Card>
     <Image

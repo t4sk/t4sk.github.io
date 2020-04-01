@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styles from "./Courses.module.css"
-import CourseCard from "./CourseCard"
+import styles from "./Tutorials.module.css"
+import TutorialCard from "./TutorialCard"
 
 import learnSolidityCardLogo from "../../static/learn-solidity-card.svg"
 
@@ -9,20 +9,20 @@ const COURSES = [
   {
     title: "Learn Solidity",
     logo: learnSolidityCardLogo,
-    href: "/courses/learn-solidity",
+    href: "/tutorials/learn-solidity",
   },
 ]
 
-export function Courses(props) {
+export function Tutorials(props) {
   return (
     <div className={styles.component}>
       {COURSES.map(course => (
-        <CourseCard key={course.title} {...course} />
+        <TutorialCard key={course.title} {...course} />
       ))}
     </div>
   )
 }
 
-Courses.propTypes = {}
+Tutorials.propTypes = {}
 
-export default Courses
+export default Tutorials

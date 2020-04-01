@@ -15,9 +15,9 @@ test("it renders", () => {
   expect(component).toMatchSnapshot()
 })
 
-test("courses active", () => {
+test("tutorials active", () => {
   const component = shallow(
-    <Nav {...props} location={{ ...props.location, hash: "#courses" }} />
+    <Nav {...props} location={{ ...props.location, hash: "#tutorials" }} />
   )
 
   expect(component).toMatchSnapshot()

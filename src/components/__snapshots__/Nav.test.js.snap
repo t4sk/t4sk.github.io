@@ -47,9 +47,9 @@ exports[`about active 1`] = `
       <MenuItem
         active={false}
         as="a"
-        href="#courses"
+        href="#tutorials"
       >
-        Courses
+        Tutorials
       </MenuItem>
       <MenuItem
         active={true}
@@ -117,9 +117,9 @@ exports[`contact active 1`] = `
       <MenuItem
         active={false}
         as="a"
-        href="#courses"
+        href="#tutorials"
       >
-        Courses
+        Tutorials
       </MenuItem>
       <MenuItem
         active={false}
@@ -140,7 +140,7 @@ exports[`contact active 1`] = `
 </Menu>
 `;
 
-exports[`courses active 1`] = `
+exports[`tutorials active 1`] = `
 <Menu
   borderless={true}
   fixed="top"
@@ -187,9 +187,9 @@ exports[`courses active 1`] = `
       <MenuItem
         active={true}
         as="a"
-        href="#courses"
+        href="#tutorials"
       >
-        Courses
+        Tutorials
       </MenuItem>
       <MenuItem
         active={false}
@@ -257,9 +257,9 @@ exports[`it renders 1`] = `
       <MenuItem
         active={false}
         as="a"
-        href="#courses"
+        href="#tutorials"
       >
-        Courses
+        Tutorials
       </MenuItem>
       <MenuItem
         active={false}

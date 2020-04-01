@@ -1,19 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Card, Image } from "semantic-ui-react"
-import styles from "./CourseCard.module.css"
+import styles from "./TutorialCard.module.css"
 
-export function CourseCard(props) {
+export function TutorialCard(props) {
   const { title, logo, href } = props
 
   return (
-    <a
-      href={href}
-      onClick={e => {
-        e.preventDefault()
-        alert("Coming soon")
-      }}
-    >
+    <a href={href}>
       <Card>
         <Image src={logo} wrapped ui={false} />
         <Card.Content>
@@ -26,10 +20,10 @@ export function CourseCard(props) {
   )
 }
 
-CourseCard.propTypes = {
+TutorialCard.propTypes = {
   title: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
 }
 
-export default CourseCard
+export default TutorialCard

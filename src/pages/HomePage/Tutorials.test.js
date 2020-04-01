@@ -1,13 +1,13 @@
 import React from "react"
 import { shallow } from "enzyme"
-import { Courses } from "./Courses"
+import { Tutorials } from "./Tutorials"
 
 const props = {}
 
 beforeEach(() => {})
 
 test("it renders", () => {
-  const component = shallow(<Courses {...props} />)
+  const component = shallow(<Tutorials {...props} />)
 
   expect(component).toMatchSnapshot()
 })

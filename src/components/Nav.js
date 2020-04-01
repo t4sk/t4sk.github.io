@@ -8,6 +8,8 @@ import logo from "./logo.svg"
 export function Nav(props) {
   const { location } = props
 
+  // Fix nav links
+
   return (
     <Menu
       borderless
@@ -44,10 +46,10 @@ export function Nav(props) {
         <Menu.Menu position="right">
           <Menu.Item
             as="a"
-            href="#courses"
-            active={location.hash === "#courses"}
+            href="#tutorials"
+            active={location.hash === "#tutorials"}
           >
-            Courses
+            Tutorials
           </Menu.Item>
           <Menu.Item as="a" href="#about" active={location.hash === "#about"}>
             About

@@ -4,8 +4,8 @@ exports[`it renders 1`] = `
 <div
   className="component"
 >
-  <CourseCard
-    href="/courses/learn-solidity"
+  <TutorialCard
+    href="/tutorials/learn-solidity"
     key="Learn Solidity"
     logo="learn-solidity-card.svg"
     title="Learn Solidity"
