@@ -33,8 +33,9 @@ async function toHTML(filePath) {
   )).toString()
   const js = mustache.render(jsTemplate, { html })
 
-  console.log(`Writing file to ${path.join(dir, `${fileName}.html.js`)}`)
   writeFile(path.join(dir, `${fileName}.html.js`), js)
+
+  console.log(`${path.join(dir, `${fileName}.html.js`)}`)
 }
 
 module.exports = {

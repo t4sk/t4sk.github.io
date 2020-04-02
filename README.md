@@ -1,8 +1,8 @@
 # Memo
 
 ```shell
-# conver md to html string
-npm run md-to-html -- src/pages/path/to/file.md
+# convert md to js file containing html as string
+npm run md-to-html -- src/pages/path/to/folder
 ```
 
 # Screen Cast
