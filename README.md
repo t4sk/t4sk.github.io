@@ -1,6 +1,8 @@
+# Memo
+
 ```shell
-# create react component from md
-npm run md-to-react src/pages/Blog/posts/en_2019-04-06
+# conver md to html string
+npm run md-to-html -- src/pages/path/to/file.md
 ```
 
 # Screen Cast
