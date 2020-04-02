@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import hljs from "highlight.js"
-import "highlight.js/styles/atom-one-dark.css"
+import "highlight.js/styles/obsidian.css"
 import hljsDefineSolidity from "highlightjs-solidity"
 
 function Html(props) {
