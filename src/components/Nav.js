@@ -23,46 +23,40 @@ export function Nav(props) {
       }}
       size="large"
     >
-      <Container>
-        <Menu.Item
-          header
-          as="a"
-          href="/"
-          style={{ padding: 0, paddingRight: 15 }}
-        >
-          <Image
-            src={logo}
-            style={{
-              height: 48,
-              backgroundColor: BACKGROUND_COLOR,
-              margin: 5,
-              borderRadius: 4,
-            }}
-            alt="logo"
-          />
-          Smart Contract Programmer
-        </Menu.Item>
+      <Menu.Item
+        header
+        as="a"
+        href="/"
+        style={{ padding: 0, paddingRight: 15 }}
+      >
+        <Image
+          src={logo}
+          style={{
+            height: 48,
+            backgroundColor: BACKGROUND_COLOR,
+            margin: 5,
+            borderRadius: 4,
+          }}
+          alt="logo"
+        />
+        Smart Contract Programmer
+      </Menu.Item>
 
-        <Menu.Menu position="right">
-          <Menu.Item
-            as="a"
-            href="#tutorials"
-            active={location.hash === "#tutorials"}
-          >
-            Tutorials
-          </Menu.Item>
-          <Menu.Item as="a" href="#about" active={location.hash === "#about"}>
-            About
-          </Menu.Item>
-          <Menu.Item
-            as="a"
-            href="#contact"
-            active={location.hash === "#contact"}
-          >
-            Contact
-          </Menu.Item>
-        </Menu.Menu>
-      </Container>
+      <Menu.Menu position="right">
+        <Menu.Item
+          as="a"
+          href="#tutorials"
+          active={location.hash === "#tutorials"}
+        >
+          Tutorials
+        </Menu.Item>
+        <Menu.Item as="a" href="#about" active={location.hash === "#about"}>
+          About
+        </Menu.Item>
+        <Menu.Item as="a" href="#contact" active={location.hash === "#contact"}>
+          Contact
+        </Menu.Item>
+      </Menu.Menu>
     </Menu>
   )
 }

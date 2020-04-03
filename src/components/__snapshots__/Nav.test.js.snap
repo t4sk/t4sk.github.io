@@ -13,60 +13,58 @@ exports[`about active 1`] = `
     }
   }
 >
-  <Container>
-    <MenuItem
-      as="a"
-      header={true}
-      href="/"
+  <MenuItem
+    as="a"
+    header={true}
+    href="/"
+    style={
+      Object {
+        "padding": 0,
+        "paddingRight": 15,
+      }
+    }
+  >
+    <Image
+      alt="logo"
+      as="img"
+      src="logo.svg"
       style={
         Object {
-          "padding": 0,
-          "paddingRight": 15,
+          "backgroundColor": "#20232a",
+          "borderRadius": 4,
+          "height": 48,
+          "margin": 5,
         }
       }
+      ui={true}
+    />
+    Smart Contract Programmer
+  </MenuItem>
+  <MenuMenu
+    position="right"
+  >
+    <MenuItem
+      active={false}
+      as="a"
+      href="#tutorials"
     >
-      <Image
-        alt="logo"
-        as="img"
-        src="logo.svg"
-        style={
-          Object {
-            "backgroundColor": "#20232a",
-            "borderRadius": 4,
-            "height": 48,
-            "margin": 5,
-          }
-        }
-        ui={true}
-      />
-      Smart Contract Programmer
+      Tutorials
     </MenuItem>
-    <MenuMenu
-      position="right"
+    <MenuItem
+      active={true}
+      as="a"
+      href="#about"
     >
-      <MenuItem
-        active={false}
-        as="a"
-        href="#tutorials"
-      >
-        Tutorials
-      </MenuItem>
-      <MenuItem
-        active={true}
-        as="a"
-        href="#about"
-      >
-        About
-      </MenuItem>
-      <MenuItem
-        active={false}
-        as="a"
-        href="#contact"
-      >
-        Contact
-      </MenuItem>
-    </MenuMenu>
-  </Container>
+      About
+    </MenuItem>
+    <MenuItem
+      active={false}
+      as="a"
+      href="#contact"
+    >
+      Contact
+    </MenuItem>
+  </MenuMenu>
 </Menu>
 `;
 
@@ -83,60 +81,58 @@ exports[`contact active 1`] = `
     }
   }
 >
-  <Container>
-    <MenuItem
-      as="a"
-      header={true}
-      href="/"
+  <MenuItem
+    as="a"
+    header={true}
+    href="/"
+    style={
+      Object {
+        "padding": 0,
+        "paddingRight": 15,
+      }
+    }
+  >
+    <Image
+      alt="logo"
+      as="img"
+      src="logo.svg"
       style={
         Object {
-          "padding": 0,
-          "paddingRight": 15,
+          "backgroundColor": "#20232a",
+          "borderRadius": 4,
+          "height": 48,
+          "margin": 5,
         }
       }
+      ui={true}
+    />
+    Smart Contract Programmer
+  </MenuItem>
+  <MenuMenu
+    position="right"
+  >
+    <MenuItem
+      active={false}
+      as="a"
+      href="#tutorials"
     >
-      <Image
-        alt="logo"
-        as="img"
-        src="logo.svg"
-        style={
-          Object {
-            "backgroundColor": "#20232a",
-            "borderRadius": 4,
-            "height": 48,
-            "margin": 5,
-          }
-        }
-        ui={true}
-      />
-      Smart Contract Programmer
+      Tutorials
     </MenuItem>
-    <MenuMenu
-      position="right"
+    <MenuItem
+      active={false}
+      as="a"
+      href="#about"
     >
-      <MenuItem
-        active={false}
-        as="a"
-        href="#tutorials"
-      >
-        Tutorials
-      </MenuItem>
-      <MenuItem
-        active={false}
-        as="a"
-        href="#about"
-      >
-        About
-      </MenuItem>
-      <MenuItem
-        active={true}
-        as="a"
-        href="#contact"
-      >
-        Contact
-      </MenuItem>
-    </MenuMenu>
-  </Container>
+      About
+    </MenuItem>
+    <MenuItem
+      active={true}
+      as="a"
+      href="#contact"
+    >
+      Contact
+    </MenuItem>
+  </MenuMenu>
 </Menu>
 `;
 
@@ -153,60 +149,58 @@ exports[`it renders 1`] = `
     }
   }
 >
-  <Container>
-    <MenuItem
-      as="a"
-      header={true}
-      href="/"
+  <MenuItem
+    as="a"
+    header={true}
+    href="/"
+    style={
+      Object {
+        "padding": 0,
+        "paddingRight": 15,
+      }
+    }
+  >
+    <Image
+      alt="logo"
+      as="img"
+      src="logo.svg"
       style={
         Object {
-          "padding": 0,
-          "paddingRight": 15,
+          "backgroundColor": "#20232a",
+          "borderRadius": 4,
+          "height": 48,
+          "margin": 5,
         }
       }
+      ui={true}
+    />
+    Smart Contract Programmer
+  </MenuItem>
+  <MenuMenu
+    position="right"
+  >
+    <MenuItem
+      active={false}
+      as="a"
+      href="#tutorials"
     >
-      <Image
-        alt="logo"
-        as="img"
-        src="logo.svg"
-        style={
-          Object {
-            "backgroundColor": "#20232a",
-            "borderRadius": 4,
-            "height": 48,
-            "margin": 5,
-          }
-        }
-        ui={true}
-      />
-      Smart Contract Programmer
+      Tutorials
     </MenuItem>
-    <MenuMenu
-      position="right"
+    <MenuItem
+      active={false}
+      as="a"
+      href="#about"
     >
-      <MenuItem
-        active={false}
-        as="a"
-        href="#tutorials"
-      >
-        Tutorials
-      </MenuItem>
-      <MenuItem
-        active={false}
-        as="a"
-        href="#about"
-      >
-        About
-      </MenuItem>
-      <MenuItem
-        active={false}
-        as="a"
-        href="#contact"
-      >
-        Contact
-      </MenuItem>
-    </MenuMenu>
-  </Container>
+      About
+    </MenuItem>
+    <MenuItem
+      active={false}
+      as="a"
+      href="#contact"
+    >
+      Contact
+    </MenuItem>
+  </MenuMenu>
 </Menu>
 `;
 
@@ -223,59 +217,57 @@ exports[`tutorials active 1`] = `
     }
   }
 >
-  <Container>
-    <MenuItem
-      as="a"
-      header={true}
-      href="/"
+  <MenuItem
+    as="a"
+    header={true}
+    href="/"
+    style={
+      Object {
+        "padding": 0,
+        "paddingRight": 15,
+      }
+    }
+  >
+    <Image
+      alt="logo"
+      as="img"
+      src="logo.svg"
       style={
         Object {
-          "padding": 0,
-          "paddingRight": 15,
+          "backgroundColor": "#20232a",
+          "borderRadius": 4,
+          "height": 48,
+          "margin": 5,
         }
       }
+      ui={true}
+    />
+    Smart Contract Programmer
+  </MenuItem>
+  <MenuMenu
+    position="right"
+  >
+    <MenuItem
+      active={true}
+      as="a"
+      href="#tutorials"
     >
-      <Image
-        alt="logo"
-        as="img"
-        src="logo.svg"
-        style={
-          Object {
-            "backgroundColor": "#20232a",
-            "borderRadius": 4,
-            "height": 48,
-            "margin": 5,
-          }
-        }
-        ui={true}
-      />
-      Smart Contract Programmer
+      Tutorials
     </MenuItem>
-    <MenuMenu
-      position="right"
+    <MenuItem
+      active={false}
+      as="a"
+      href="#about"
     >
-      <MenuItem
-        active={true}
-        as="a"
-        href="#tutorials"
-      >
-        Tutorials
-      </MenuItem>
-      <MenuItem
-        active={false}
-        as="a"
-        href="#about"
-      >
-        About
-      </MenuItem>
-      <MenuItem
-        active={false}
-        as="a"
-        href="#contact"
-      >
-        Contact
-      </MenuItem>
-    </MenuMenu>
-  </Container>
+      About
+    </MenuItem>
+    <MenuItem
+      active={false}
+      as="a"
+      href="#contact"
+    >
+      Contact
+    </MenuItem>
+  </MenuMenu>
 </Menu>
 `;
