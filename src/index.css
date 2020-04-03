@@ -20,6 +20,7 @@ pre {
   padding-left: 20px;
   padding-right: 15px;
   background: #282b2e;
+  border-radius: 10px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
