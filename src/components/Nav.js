@@ -1,14 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { withRouter } from "react-router-dom"
-import { Menu, Container, Image } from "semantic-ui-react"
+import { Menu, Image } from "semantic-ui-react"
 import { BACKGROUND_COLOR } from "../constants"
 import logo from "./logo.svg"
 
 export function Nav(props) {
   const { location } = props
-
-  // Fix nav links
 
   return (
     <Menu
@@ -23,12 +21,7 @@ export function Nav(props) {
       }}
       size="large"
     >
-      <Menu.Item
-        header
-        as="a"
-        href="/"
-        style={{ padding: 0, paddingRight: 15 }}
-      >
+      <Menu.Item header as="a" href="/#top" style={{ padding: 0, width: 300 }}>
         <Image
           src={logo}
           style={{
@@ -45,15 +38,19 @@ export function Nav(props) {
       <Menu.Menu position="right">
         <Menu.Item
           as="a"
-          href="#tutorials"
+          href="/#tutorials"
           active={location.hash === "#tutorials"}
         >
           Tutorials
         </Menu.Item>
-        <Menu.Item as="a" href="#about" active={location.hash === "#about"}>
+        <Menu.Item as="a" href="/#about" active={location.hash === "#about"}>
           About
         </Menu.Item>
-        <Menu.Item as="a" href="#contact" active={location.hash === "#contact"}>
+        <Menu.Item
+          as="a"
+          href="/#contact"
+          active={location.hash === "#contact"}
+        >
           Contact
         </Menu.Item>
       </Menu.Menu>
