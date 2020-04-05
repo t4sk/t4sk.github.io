@@ -11,7 +11,7 @@ export function PageLayout(props) {
   return (
     <div id="top" className={styles.PageLayout}>
       <Nav />
-      <div style={{ paddingBottom: 40 }} />
+      <div style={{ paddingBottom: 58 }} />
       <div className={styles.main}>{children}</div>
       <div style={{ padding: 50 }} />
       <Footer />

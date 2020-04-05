@@ -1,10 +1,10 @@
 .PageLayout {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  /* background-color: red; */
+  flex: 1;
 }
 .main {
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  /* background-color: green; */
 }
