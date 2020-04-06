@@ -19,9 +19,11 @@ export function LessonLayout(props) {
           <SideNav baseUrl={baseUrl} chapters={chapters} />
           <div className={styles.main}>
             <Container>
-              <div className={styles.youTube}>
-                {youTube && <YouTube {...youTube} />}
-              </div>
+              {youTube && (
+                <div className={styles.youTube}>
+                  <YouTube {...youTube} />
+                </div>
+              )}
 
               <Html html={html} />
 

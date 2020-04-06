@@ -21,7 +21,7 @@ exports[`it renders 1`] = `
     <div
       className="row"
     >
-      <SideNav
+      <withRouter(SideNav)
         baseUrl="http://localhost:3000"
         chapters={
           Array [

@@ -67,7 +67,7 @@ export const SOLIDITY_LESSONS = [
     icon: "youtube",
     color: "red",
     href: "",
-    path: "01-constructor-solution",
+    path: "01-fallback-solution",
     header: "Fallback",
     description: "Solution",
     youTube: {

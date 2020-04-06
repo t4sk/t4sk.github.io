@@ -19,6 +19,7 @@ exports[`it renders 1`] = `
         selection={true}
       >
         <ListItem
+          active={false}
           key="0"
         >
           <ListIcon
@@ -37,6 +38,7 @@ exports[`it renders 1`] = `
           </ListContent>
         </ListItem>
         <ListItem
+          active={false}
           key="1"
         >
           <ListIcon
@@ -57,6 +59,7 @@ exports[`it renders 1`] = `
           </ListContent>
         </ListItem>
         <ListItem
+          active={false}
           key="2"
         >
           <ListIcon
@@ -87,6 +90,7 @@ exports[`it renders 1`] = `
         selection={true}
       >
         <ListItem
+          active={false}
           key="0"
         >
           <ListIcon
@@ -105,6 +109,7 @@ exports[`it renders 1`] = `
           </ListContent>
         </ListItem>
         <ListItem
+          active={false}
           key="1"
         >
           <ListIcon

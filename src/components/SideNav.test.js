@@ -3,6 +3,9 @@ import { shallow } from "enzyme"
 import { SideNav } from "./SideNav"
 
 const props = {
+  match: {
+    url: "http://localhost:3000",
+  },
   baseUrl: "http://localhost:3000",
   chapters: [
     {
