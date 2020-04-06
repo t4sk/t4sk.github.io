@@ -191,3 +191,7 @@ export const SOLIDITY_LESSONS = [
     html: lesson_08_code,
   },
 ]
+
+export const SOLIDITY_LESSON_LINKS = SOLIDITY_LESSONS.map(
+  ({ html, ...rest }) => rest
+)
