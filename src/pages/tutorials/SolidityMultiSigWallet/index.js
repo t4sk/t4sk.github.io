@@ -5,7 +5,7 @@ import SEO from "../../../components/SEO"
 import PageLayout from "../../../components/PageLayout"
 import solidityAppLogo from "../../../static/solidity-app.svg"
 import styles from "./index.module.css"
-import { SOLIDITY_LESSONS } from "./routes"
+import { SOLIDITY_LESSONS } from "./lessons"
 
 function Logo() {
   return (
@@ -20,7 +20,7 @@ function Logo() {
 export function SolidityMultiSigWallet(props) {
   // TODO checkbox
   const {
-    match: { path },
+    match: { path, url },
   } = props
 
   return (
@@ -48,7 +48,7 @@ export function SolidityMultiSigWallet(props) {
                     <List.Content>
                       <List.Header
                         as="a"
-                        href={lesson.href || `${path}/${lesson.path}`}
+                        href={lesson.href || `${url}/${lesson.path}`}
                         {...(lesson.openNewTab ? { target: "__blank" } : {})}
                       >
                         {lesson.header}

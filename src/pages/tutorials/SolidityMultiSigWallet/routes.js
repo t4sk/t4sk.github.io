@@ -1,66 +1,27 @@
-export const SOLIDITY_LESSONS = [
-  {
-    icon: "youtube",
-    color: "red",
-    href: "",
-    path: "00-overview",
-    header: "Overview",
-    description: "",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "01-constructor",
-    header: "Constructor",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "02-fallback",
-    header: "Fallback",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "03-submit-transaction",
-    header: "Submit Transaction",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "04-confirm-transaction",
-    header: "Confirm Transaction",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "05-execute-transaction",
-    header: "Execute Transaction",
-    description: "Exercise",
-  },
-  {
-    icon: "code",
-    color: "",
-    href: "",
-    path: "06-revoke-transaction",
-    header: "Revoke Transaction",
-    description: "Exercise",
-  },
-  {
-    icon: "github",
-    color: "",
-    href: "https://github.com/t4sk/solidity-multi-sig-wallet",
-    openNewTab: true,
-    path: "",
-    header: "Code",
-  },
-]
+import React from "react"
+import LessonLayout from "../../../components/LessonLayout"
+import { CHAPTERS, BASE_URL } from "./lib"
+import { SOLIDITY_LESSONS } from "./lessons"
+
+function createPage(lesson) {
+  const { youTube, html } = lesson
+
+  return props => (
+    <LessonLayout
+      title={"Build a Multi-Sig Wallet in Solidity"}
+      baseUrl={BASE_URL}
+      chapters={CHAPTERS}
+      youTube={youTube}
+      html={html}
+    />
+  )
+}
+
+const ROUTES = SOLIDITY_LESSONS.map(lesson => {
+  return {
+    path: `${BASE_URL}/${lesson.path}`,
+    component: createPage(lesson),
+  }
+})
+
+export default ROUTES
