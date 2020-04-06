@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+<PageLayout>
+  <SEO
+    description="Learn how to program smart contracts."
+    keywords={
+      Array [
+        "smart contract",
+        "solidity",
+        "ethereum",
+      ]
+    }
+    lang="en"
+    meta={Array []}
+    title="Multi-Sig Wallet | Smart Contract Programmer"
+  />
+  <div
+    className="component"
+  >
+    <div
+      className="row"
+    >
+      <SideNav
+        baseUrl="http://localhost:3000"
+        chapters={
+          Array [
+            Object {
+              "header": "Solidity Contract",
+              "lessons": Array [
+                Object {
+                  "color": "red",
+                  "description": "",
+                  "header": "Intro",
+                  "href": "",
+                  "icon": "youtube",
+                  "path": "00-overview",
+                },
+                Object {
+                  "color": "",
+                  "header": "Code",
+                  "href": "https://github.com/t4sk/solidity-multi-sig-wallet",
+                  "icon": "github",
+                  "openNewTab": true,
+                  "path": "",
+                },
+              ],
+            },
+          ]
+        }
+      />
+      <div
+        className="main"
+      >
+        <Container>
+          <div
+            className="youTube"
+          >
+            <YouTube
+              end={123}
+              start={1}
+              url="https://youtube.com"
+            />
+          </div>
+          <Html
+            html="<p>foo bar</p>"
+          />
+          <div
+            className="buttons"
+          >
+            <Button
+              animated={true}
+              as="button"
+              size="huge"
+            >
+              <ButtonContent
+                visible={true}
+              >
+                Back
+              </ButtonContent>
+              <ButtonContent
+                hidden={true}
+              >
+                <Icon
+                  as="i"
+                  name="arrow left"
+                />
+              </ButtonContent>
+            </Button>
+            <Button
+              animated={true}
+              as="button"
+              size="huge"
+            >
+              <ButtonContent
+                visible={true}
+              >
+                Next
+              </ButtonContent>
+              <ButtonContent
+                hidden={true}
+              >
+                <Icon
+                  as="i"
+                  name="arrow right"
+                />
+              </ButtonContent>
+            </Button>
+          </div>
+        </Container>
+      </div>
+    </div>
+  </div>
+</PageLayout>
+`;
