@@ -11,7 +11,6 @@ const props = {
         {
           icon: "youtube",
           color: "red",
-          href: "",
           path: "00-overview",
           header: "Intro",
           description: "",
@@ -19,7 +18,6 @@ const props = {
         {
           icon: "code",
           color: "",
-          href: "",
           path: "01-constructor",
           header: "Constructor",
           description: "Exercise",
@@ -27,8 +25,6 @@ const props = {
         {
           icon: "github",
           color: "",
-          href: "https://github.com/t4sk/solidity-multi-sig-wallet",
-          openNewTab: true,
           path: "",
           header: "Code",
         },
@@ -40,7 +36,6 @@ const props = {
         {
           icon: "youtube",
           color: "red",
-          href: "",
           path: "00-overview",
           header: "Intro",
           description: "",
@@ -48,7 +43,6 @@ const props = {
         {
           icon: "code",
           color: "",
-          href: "",
           path: "01-constructor",
           header: "Constructor",
           description: "Exercise",

@@ -7,8 +7,8 @@ export function SideNav(props) {
   const { baseUrl, chapters } = props
 
   // TODO active
-  // TODO link back to base url
-
+  // NOTE: using Link does not load highlight.js so he use anchor to navigate
+  // TODO FIX - use react router, load syntax highlight, reset scroll by document.getElementById("root").scrollTo(0, 0)
   return (
     <div className={styles.component}>
       <div className={styles.sideNav}>
@@ -25,11 +25,7 @@ export function SideNav(props) {
                     verticalAlign="middle"
                   />
                   <List.Content>
-                    <List.Header
-                      as="a"
-                      href={lesson.href || `${baseUrl}/${lesson.path}`}
-                      {...(lesson.openNewTab ? { target: "__blank" } : {})}
-                    >
+                    <List.Header as="a" href={`${baseUrl}/${lesson.path}`}>
                       {lesson.header}
                     </List.Header>
                     {lesson.description && (
@@ -55,9 +51,7 @@ SideNav.propTypes = {
         PropTypes.shape({
           icon: PropTypes.string.isRequired,
           color: PropTypes.string,
-          href: PropTypes.string,
           path: PropTypes.string,
-          openNewTab: PropTypes.bool,
           header: PropTypes.string.isRequired,
           description: PropTypes.string,
         })
