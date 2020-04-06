@@ -11,6 +11,8 @@ import lesson_05_execute_transaction_ex from "./lesson_05_execute_transaction_ex
 import lesson_05_execute_transaction_sol from "./lesson_05_execute_transaction_sol.html"
 import lesson_06_revoke_confirmation_ex from "./lesson_06_revoke_confirmation_ex.html"
 import lesson_06_revoke_confirmation_sol from "./lesson_06_revoke_confirmation_sol.html"
+import lesson_07_demo from "./lesson_07_demo.html"
+import lesson_08_code from "./lesson_08_code.html"
 
 // TODO data from markdown metadata
 // TODO separate data for side nav
@@ -172,17 +174,13 @@ export const SOLIDITY_LESSONS = [
       url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
       end: 29,
     },
-    // TODO: optional html
-    html: lesson_00_intro,
+    html: lesson_07_demo,
   },
   {
-    // TODO remove from nav add to footer or create markdown page?
     icon: "github",
     color: "",
-    href: "https://github.com/t4sk/solidity-multi-sig-wallet",
-    openNewTab: true,
-    path: "",
+    path: "08-code",
     header: "Code",
-    html: lesson_00_intro,
+    html: lesson_08_code,
   },
 ]
