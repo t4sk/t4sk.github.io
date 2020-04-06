@@ -3,6 +3,7 @@ import { shallow } from "enzyme"
 import { YouTube, getUrl } from "./YouTube"
 
 const props = {
+  title: "Multi Sig Wallet",
   url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
   start: 123,
   end: 456,

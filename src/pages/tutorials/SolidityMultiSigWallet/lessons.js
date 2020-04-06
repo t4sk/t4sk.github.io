@@ -25,6 +25,7 @@ export const SOLIDITY_LESSONS = [
     header: "Intro",
     description: "",
     youTube: {
+      title: "Multi Sig Wallet",
       url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
       end: 29,
     },
@@ -47,6 +48,7 @@ export const SOLIDITY_LESSONS = [
     header: "Constructor",
     description: "Solution",
     youTube: {
+      title: "Multi Sig Wallet",
       url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
       end: 29,
     },
@@ -69,6 +71,7 @@ export const SOLIDITY_LESSONS = [
     header: "Fallback",
     description: "Solution",
     youTube: {
+      title: "Multi Sig Wallet",
       url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
       end: 29,
     },
@@ -91,6 +94,7 @@ export const SOLIDITY_LESSONS = [
     header: "Submit Transaction",
     description: "Solution",
     youTube: {
+      title: "Multi Sig Wallet",
       url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
       end: 29,
     },
@@ -113,6 +117,7 @@ export const SOLIDITY_LESSONS = [
     header: "Confirm Transaction",
     description: "Solution",
     youTube: {
+      title: "Multi Sig Wallet",
       url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
       end: 29,
     },
@@ -127,7 +132,6 @@ export const SOLIDITY_LESSONS = [
     description: "Exercise",
     html: lesson_05_execute_transaction_ex,
   },
-
   {
     icon: "youtube",
     color: "red",
@@ -136,6 +140,7 @@ export const SOLIDITY_LESSONS = [
     header: "Execute Transaction",
     description: "Solution",
     youTube: {
+      title: "Multi Sig Wallet",
       url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
       end: 29,
     },
@@ -158,6 +163,7 @@ export const SOLIDITY_LESSONS = [
     header: "Revoke Transaction",
     description: "Solution",
     youTube: {
+      title: "Multi Sig Wallet",
       url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
       end: 29,
     },
@@ -171,6 +177,7 @@ export const SOLIDITY_LESSONS = [
     header: "Demo",
     description: "",
     youTube: {
+      title: "Multi Sig Wallet",
       url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
       end: 29,
     },

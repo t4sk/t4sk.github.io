@@ -25,11 +25,13 @@ export function getUrl({ url, start, end }) {
 }
 
 export function YouTube(props) {
+  const { title } = props
   // TODO responsive YouTube
 
   return (
     <div className={styles.component}>
       <iframe
+        title={title}
         width="889"
         height="500"
         src={getUrl(props)}
@@ -42,6 +44,7 @@ export function YouTube(props) {
 }
 
 YouTube.propTypes = {
+  title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   start: PropTypes.number,
   end: PropTypes.number,
