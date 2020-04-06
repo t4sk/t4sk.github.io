@@ -29,11 +29,14 @@ const props = {
     },
   ],
   youTube: {
+    title: "YouTube title",
     url: "https://youtube.com",
     start: 1,
     end: 123,
   },
   html: "<p>foo bar</p>",
+  prevHref: "localhost:3000/path/to/prev",
+  nextHref: "localhost:3000/path/to/next",
 }
 
 beforeEach(() => {})

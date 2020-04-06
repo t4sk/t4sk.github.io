@@ -9,9 +9,7 @@ import SideNav from "./SideNav"
 import styles from "./LessonLayout.module.css"
 
 export function LessonLayout(props) {
-  const { title, baseUrl, chapters, youTube, html } = props
-
-  // TODO back, next buttons
+  const { title, baseUrl, chapters, youTube, html, prevHref, nextHref } = props
 
   return (
     <PageLayout>
@@ -28,13 +26,13 @@ export function LessonLayout(props) {
               <Html html={html} />
 
               <div className={styles.buttons}>
-                <Button animated size="huge">
+                <Button animated size="huge" as="a" href={prevHref}>
                   <Button.Content visible>Back</Button.Content>
                   <Button.Content hidden>
                     <Icon name="arrow left" />
                   </Button.Content>
                 </Button>
-                <Button animated size="huge">
+                <Button animated size="huge" as="a" href={nextHref}>
                   <Button.Content visible>Next</Button.Content>
                   <Button.Content hidden>
                     <Icon name="arrow right" />
@@ -60,6 +58,8 @@ LessonLayout.propTypes = {
   ).isRequired,
   youTube: PropTypes.object,
   html: PropTypes.string.isRequired,
+  prevHref: PropTypes.string.isRequired,
+  nextHref: PropTypes.string.isRequired,
 }
 
 export default LessonLayout

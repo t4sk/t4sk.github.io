@@ -59,6 +59,7 @@ exports[`it renders 1`] = `
             <YouTube
               end={123}
               start={1}
+              title="YouTube title"
               url="https://youtube.com"
             />
           </div>
@@ -70,7 +71,8 @@ exports[`it renders 1`] = `
           >
             <Button
               animated={true}
-              as="button"
+              as="a"
+              href="localhost:3000/path/to/prev"
               size="huge"
             >
               <ButtonContent
@@ -89,7 +91,8 @@ exports[`it renders 1`] = `
             </Button>
             <Button
               animated={true}
-              as="button"
+              as="a"
+              href="localhost:3000/path/to/next"
               size="huge"
             >
               <ButtonContent
