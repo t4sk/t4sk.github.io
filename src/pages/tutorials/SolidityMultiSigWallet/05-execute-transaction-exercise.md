@@ -1,3 +1,9 @@
+---
+icon: "code"
+header: "Execute Transaction"
+description: "Exercise"
+---
+
 # Execute Transaction (Exercise)
 
 ### 1. Checkout the exercise

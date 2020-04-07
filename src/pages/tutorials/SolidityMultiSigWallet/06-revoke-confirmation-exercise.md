@@ -1,3 +1,9 @@
+---
+icon: "code"
+header: "Revoke Confirmation"
+description: "Exercise"
+---
+
 # Revoke Confirmation (Exercise)
 
 ### 1. Checkout the exercise

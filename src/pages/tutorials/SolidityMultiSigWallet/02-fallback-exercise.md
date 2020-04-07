@@ -1,3 +1,9 @@
+---
+icon: "code"
+header: "Fallback"
+description: "Exercise"
+---
+
 # Fallback (Exercise)
 
 ### 1. Checkout the exercise

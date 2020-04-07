@@ -1,3 +1,12 @@
+---
+icon: "youtube"
+header: "Intro"
+youTubeTitle: "Multi Sig Wallet"
+youTubeUrl: "https://www.youtube.com/embed/Dh7r6Ze-0Bs"
+youTubeStart: 0
+youTubeEnd: 291
+---
+
 # Solidity Multi-Sig Wallet
 
 Learn how to write a multi-sig wallet in Solidity

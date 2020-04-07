@@ -1,3 +1,9 @@
+---
+icon: "code"
+header: "Confirm Transaction"
+description: "Exercise"
+---
+
 # Confirm Transaction (Exercise)
 
 ### 1. Checkout the exercise

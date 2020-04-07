@@ -1,3 +1,9 @@
+---
+icon: "youtube"
+header: "Revoke Transaction"
+description: "Solution"
+---
+
 # Revoke Confirmation (Exercise)
 
 ### Solution
