@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { withRouter } from "react-router-dom"
-import { List } from "semantic-ui-react"
+import { List, Divider, Icon } from "semantic-ui-react"
 import styles from "./SideNav.module.css"
 
 export function SideNav(props) {
@@ -19,6 +19,11 @@ export function SideNav(props) {
       <div className={styles.sideNav}>
         {chapters.map(({ header, lessons }) => (
           <div key={header}>
+            <a className={styles.overviewLink} href={baseUrl}>
+              <Icon name="chevron left" />
+              <div>Coarse Overview</div>
+            </a>
+            <Divider />
             <h2>{header}</h2>
             <List divided relaxed selection>
               {lessons.map((lesson, i) => {
