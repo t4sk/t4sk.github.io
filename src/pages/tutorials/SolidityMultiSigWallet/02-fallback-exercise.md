@@ -1,7 +1,7 @@
 ---
-icon: "code"
-header: "Fallback"
-description: "Exercise"
+icon: code
+header: Fallback
+description: Exercise
 ---
 
 # Fallback (Exercise)

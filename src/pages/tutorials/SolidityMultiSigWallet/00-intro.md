@@ -1,10 +1,10 @@
 ---
-icon: "youtube"
-header: "Intro"
-youTubeTitle: "Multi Sig Wallet"
-youTubeUrl: "https://www.youtube.com/embed/Dh7r6Ze-0Bs"
-youTubeStart: 0
-youTubeEnd: 291
+icon: youtube
+header: Intro
+youTube:
+  title: Multi Sig Wallet
+  url: https://www.youtube.com/embed/Dh7r6Ze-0Bs
+  end: 291
 ---
 
 # Solidity Multi-Sig Wallet

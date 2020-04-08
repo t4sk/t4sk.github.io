@@ -1,11 +1,12 @@
 ---
-icon: "youtube"
-header: "Fallback"
-description: "Solution"
-youTubeTitle: "Multi Sig Wallet"
-youTubeUrl: "https://www.youtube.com/embed/Dh7r6Ze-0Bs"
-youTubeStart: 689
-youTubeEnd: 702
+icon: youtube
+header: Fallback
+description: Solution
+youTube:
+  title: Multi Sig Wallet
+  url: https://www.youtube.com/embed/Dh7r6Ze-0Bs
+  start: 689
+  end: 702
 ---
 
 # Fallback (Solution)

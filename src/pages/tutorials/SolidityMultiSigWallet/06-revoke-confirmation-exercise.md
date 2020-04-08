@@ -1,7 +1,7 @@
 ---
-icon: "code"
-header: "Revoke Confirmation"
-description: "Exercise"
+icon: code
+header: Revoke Confirmation
+description: Exercise
 ---
 
 # Revoke Confirmation (Exercise)

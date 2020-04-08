@@ -1,7 +1,7 @@
 ---
-icon: "code"
-header: "Execute Transaction"
-description: "Exercise"
+icon: code
+header: Execute Transaction
+description: Exercise
 ---
 
 # Execute Transaction (Exercise)

@@ -1,11 +1,12 @@
 ---
-icon: "youtube"
-header: "Constructor"
-description: "Solution"
-youTubeTitle: "Multi Sig Wallet"
-youTubeUrl: "https://www.youtube.com/embed/Dh7r6Ze-0Bs"
-youTubeStart: 291
-youTubeEnd: 382
+icon: youtube
+header: Constructor
+description: Solution
+youTube:
+  title: Multi Sig Wallet
+  url: https://www.youtube.com/embed/Dh7r6Ze-0Bs
+  start: 291
+  end: 382
 ---
 
 # Constructor (Solution)

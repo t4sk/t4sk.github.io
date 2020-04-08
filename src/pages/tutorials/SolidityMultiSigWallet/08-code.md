@@ -1,6 +1,6 @@
 ---
-icon: "github"
-header: "Code"
+icon: github
+header: Code
 ---
 
 # Code

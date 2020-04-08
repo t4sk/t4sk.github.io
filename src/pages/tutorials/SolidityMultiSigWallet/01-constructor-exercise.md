@@ -1,7 +1,7 @@
 ---
-icon: "code"
-header: "Constructor"
-description: "Exercise"
+icon: code
+header: Constructor
+description: Exercise
 ---
 
 # Constructor (Exercise)

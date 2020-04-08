@@ -1,11 +1,12 @@
 ---
-icon: "youtube"
-header: "Submit Transaction"
-description: "Solution"
-youTubeTitle: "Multi Sig Wallet"
-youTubeUrl: "https://www.youtube.com/embed/Dh7r6Ze-0Bs"
-youTubeStart: 382
-youTubeEnd: 472
+icon: youtube
+header: Submit Transaction
+description: Solution
+youTube:
+  title: Multi Sig Wallet
+  url: https://www.youtube.com/embed/Dh7r6Ze-0Bs
+  start: 382
+  end: 472
 ---
 
 # Submit Transaction (Solution)
