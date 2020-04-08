@@ -80,7 +80,7 @@ async function toHTML(filePath) {
 
   // render markdown to html
   const jsTemplate = (await readFile(
-    path.join(__dirname, "markdown.html.js.mustache")
+    path.join(__dirname, "template", "markdown.html.js.mustache")
   )).toString()
   const js = mustache.render(jsTemplate, {
     html,
@@ -92,6 +92,4 @@ async function toHTML(filePath) {
   console.log(`${path.join(dir, `${fileName}.html.js`)}`)
 }
 
-module.exports = {
-  toHTML,
-}
+module.exports = toHTML

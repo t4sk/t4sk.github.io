@@ -2,7 +2,7 @@ const fs = require("fs")
 const util = require("util")
 const path = require("path")
 const readdir = util.promisify(fs.readdir)
-const { toHTML } = require("./template/lib")
+const toHTML = require("./to-html")
 
 function getExtension(file) {
   return file.split(".").slice(-1)[0]
