@@ -5,7 +5,7 @@ import SEO from "../../../components/SEO"
 import PageLayout from "../../../components/PageLayout"
 import solidityAppLogo from "../../../static/solidity-app.svg"
 import styles from "./index.module.css"
-import { SOLIDITY_LESSON_LINKS } from "./lessons"
+import lessons from "./lessons"
 
 function Logo() {
   return (
@@ -37,7 +37,7 @@ export function SolidityMultiSigWallet(props) {
             <div className={styles.lessons}>
               <h2>Solidity Contract</h2>
               <List divided relaxed selection>
-                {SOLIDITY_LESSON_LINKS.map((lesson, i) => (
+                {lessons.map((lesson, i) => (
                   <List.Item key={i}>
                     <List.Icon
                       name={lesson.icon}

@@ -17,7 +17,7 @@ module.exports = async function(dir, data) {
 
     lessons.push({
       variableName,
-      importPath: `./${file}`,
+      importPath: `./${file}.js`,
       icon,
       header,
       description,
@@ -33,7 +33,7 @@ module.exports = async function(dir, data) {
     lessons,
   })
 
-  writeFile(path.join(dir, `lessons_test.js`), js)
+  writeFile(path.join(dir, `lessons.js`), js)
 
-  console.log(`${path.join(dir, `lessons_test.js`)}`)
+  console.log(`${path.join(dir, `lessons.js`)}`)
 }

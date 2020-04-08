@@ -1,7 +1,7 @@
 import React from "react"
 import LessonLayout from "../../../components/LessonLayout"
 import { CHAPTERS, BASE_URL } from "./lib"
-import { SOLIDITY_LESSONS } from "./lessons"
+import lessons from "./lessons"
 
 export function getPrevHref(baseUrl, lessons, i) {
   if (i <= 0) {
@@ -33,9 +33,9 @@ function createPage(lesson, prevHref, nextHref) {
   )
 }
 
-const ROUTES = SOLIDITY_LESSONS.map((lesson, i) => {
-  const prevHref = getPrevHref(BASE_URL, SOLIDITY_LESSONS, i)
-  const nextHref = getNextHref(BASE_URL, SOLIDITY_LESSONS, i)
+const routes = lessons.map((lesson, i) => {
+  const prevHref = getPrevHref(BASE_URL, lessons, i)
+  const nextHref = getNextHref(BASE_URL, lessons, i)
 
   return {
     path: `${BASE_URL}/${lesson.path}`,
@@ -43,4 +43,4 @@ const ROUTES = SOLIDITY_LESSONS.map((lesson, i) => {
   }
 })
 
-export default ROUTES
+export default routes
