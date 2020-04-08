@@ -19,3 +19,16 @@ npx truffle compile
 npx truffle test
 
 ```
+
+# migration (dev)
+
+```
+
+```
+
+# local dev
+
+```
+npx truffle develop
+migrate
+```
