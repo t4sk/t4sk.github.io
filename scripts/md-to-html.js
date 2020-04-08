@@ -83,6 +83,13 @@ async function mdToHTML(filePath) {
   writeFile(path.join(dir, `${fileName}.md.js`), js)
 
   console.log(`${path.join(dir, `${fileName}.md.js`)}`)
+
+  return {
+    metadata: metadata.reduce((obj, { key, val }) => {
+      obj[key] = val
+      return obj
+    }, {}),
+  }
 }
 
 module.exports = mdToHTML
