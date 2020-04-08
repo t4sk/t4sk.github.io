@@ -1,7 +1,11 @@
 import React from "react"
 import LessonLayout from "../../../components/LessonLayout"
 import chapters, { BASE_URL } from "./chapters"
-import lessons from "./chapter-00"
+
+const lessons = chapters.reduce((arr, { lessons }) => {
+  arr.push(...lessons)
+  return arr
+}, [])
 
 export function getPrevHref(baseUrl, lessons, i) {
   if (i <= 0) {
