@@ -2,7 +2,7 @@
 
 ```shell
 # convert md to js file containing html as string
-npm run md-to-html -- src/pages/path/to/folder
+npm run build-md -- src/pages/path/to/folder
 ```
 
 # Screen Cast
