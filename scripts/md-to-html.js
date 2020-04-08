@@ -6,6 +6,7 @@ const readFile = util.promisify(fs.readFile)
 const writeFile = util.promisify(fs.writeFile)
 const mustache = require("mustache")
 const marked = require("marked")
+const yaml = require("yaml")
 const { removeExtension } = require("./lib")
 
 function findIndexOfFrontMatter(lines) {
@@ -24,22 +25,7 @@ function getMetadata(lines) {
   assert(lines[0] === "---", "Invalid front matter")
   assert(lines[lines.length - 1] === "---", "Invalid front matter")
 
-  // NOTE: store in array so it can be looped inside mustache
-  const metadata = []
-
-  for (let i = 1; i < lines.length - 1; i++) {
-    const line = lines[i]
-    const j = line.indexOf(":")
-    const key = line.slice(0, j)
-    const val = line.slice(j + 1).trim()
-
-    metadata.push({
-      key,
-      val,
-    })
-  }
-
-  return metadata
+  return yaml.parse(lines.slice(1, -1).join("\n"))
 }
 
 function parse(file) {
@@ -77,7 +63,6 @@ async function mdToHTML(filePath) {
   )).toString()
   const js = mustache.render(jsTemplate, {
     html,
-    metadata,
   })
 
   writeFile(path.join(dir, `${fileName}.md.js`), js)
@@ -85,10 +70,7 @@ async function mdToHTML(filePath) {
   console.log(`${path.join(dir, `${fileName}.md.js`)}`)
 
   return {
-    metadata: metadata.reduce((obj, { key, val }) => {
-      obj[key] = val
-      return obj
-    }, {}),
+    metadata,
   }
 }
 

@@ -15,11 +15,12 @@ async function main() {
 
   const files = (await readdir(dir)).filter(file => getExtension(file) === "md")
 
-  // for (const file of files) {
-  //   await mdToHTML(path.join(dir, file))
-  // }
+  for (const file of files) {
+    const { metadata } = await mdToHTML(path.join(dir, file))
+    console.log(metadata)
+  }
 
-  await createLessons(dir, files)
+  // await createLessons(dir, files)
 }
 
 main()
