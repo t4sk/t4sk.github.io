@@ -4,7 +4,7 @@ header: Execute Transaction
 description: Solution
 youTube:
   title: Multi Sig Wallet
-  url: https://www.youtube.com/embed/Dh7r6Ze-0Bs
+  url: https://www.youtube-nocookie.com/embed/Dh7r6Ze-0Bs
   start: 608
   end: 677
 ---

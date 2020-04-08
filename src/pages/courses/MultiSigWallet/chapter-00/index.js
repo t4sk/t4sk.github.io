@@ -22,7 +22,7 @@ export default [
       description: "",
       youTube: {
           title: "Multi Sig Wallet",
-          url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
+          url: "https://www.youtube-nocookie.com/embed/Dh7r6Ze-0Bs",
           end: 291,
       },
       html: file_00_intro
@@ -41,7 +41,7 @@ export default [
       description: "Solution",
       youTube: {
           title: "Multi Sig Wallet",
-          url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
+          url: "https://www.youtube-nocookie.com/embed/Dh7r6Ze-0Bs",
           start: 291,
           end: 382,
       },
@@ -61,7 +61,7 @@ export default [
       description: "Solution",
       youTube: {
           title: "Multi Sig Wallet",
-          url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
+          url: "https://www.youtube-nocookie.com/embed/Dh7r6Ze-0Bs",
           start: 689,
           end: 703,
       },
@@ -81,7 +81,7 @@ export default [
       description: "Solution",
       youTube: {
           title: "Multi Sig Wallet",
-          url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
+          url: "https://www.youtube-nocookie.com/embed/Dh7r6Ze-0Bs",
           start: 383,
           end: 472,
       },
@@ -101,7 +101,7 @@ export default [
       description: "Solution",
       youTube: {
           title: "Multi Sig Wallet",
-          url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
+          url: "https://www.youtube-nocookie.com/embed/Dh7r6Ze-0Bs",
           start: 472,
           end: 608,
       },
@@ -121,7 +121,7 @@ export default [
       description: "Solution",
       youTube: {
           title: "Multi Sig Wallet",
-          url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
+          url: "https://www.youtube-nocookie.com/embed/Dh7r6Ze-0Bs",
           start: 608,
           end: 677,
       },
@@ -148,7 +148,7 @@ export default [
       description: "",
       youTube: {
           title: "Multi Sig Wallet",
-          url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
+          url: "https://www.youtube-nocookie.com/embed/Dh7r6Ze-0Bs",
           start: 713,
       },
       html: file_07_demo
