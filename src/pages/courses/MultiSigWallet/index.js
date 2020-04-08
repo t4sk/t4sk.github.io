@@ -7,6 +7,7 @@ import solidityAppLogo from "../../../static/solidity-app.svg"
 import styles from "./index.module.css"
 import chapters from "./chapters"
 
+// TODO fix css at 08-code
 function Logo() {
   return (
     <Image
