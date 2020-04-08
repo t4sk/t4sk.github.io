@@ -4,16 +4,9 @@ const path = require("path")
 const util = require("util")
 const readFile = util.promisify(fs.readFile)
 const writeFile = util.promisify(fs.writeFile)
-
 const mustache = require("mustache")
 const marked = require("marked")
-
-function removeExt(fileName) {
-  return fileName
-    .split(".")
-    .slice(0, -1)
-    .join("")
-}
+const { removeExtension } = require("./lib")
 
 function findIndexOfFrontMatter(lines) {
   assert(lines[0] === "---", "Front matter missing")
@@ -65,7 +58,7 @@ function parse(file) {
 
 // NOTE: converts file.md -> file.html.js
 async function mdToHTML(filePath) {
-  const fileName = removeExt(filePath.split("/").pop())
+  const fileName = removeExtension(filePath.split("/").pop())
   const dir = filePath
     .split("/")
     .slice(0, -1)
@@ -80,16 +73,16 @@ async function mdToHTML(filePath) {
 
   // render markdown to html
   const jsTemplate = (await readFile(
-    path.join(__dirname, "template", "markdown.html.js.mustache")
+    path.join(__dirname, "template", "md.js.mustache")
   )).toString()
   const js = mustache.render(jsTemplate, {
     html,
     metadata,
   })
 
-  writeFile(path.join(dir, `${fileName}.html.js`), js)
+  writeFile(path.join(dir, `${fileName}.md.js`), js)
 
-  console.log(`${path.join(dir, `${fileName}.html.js`)}`)
+  console.log(`${path.join(dir, `${fileName}.md.js`)}`)
 }
 
 module.exports = mdToHTML
