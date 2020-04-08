@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.dcec2beb.chunk.css",
-    "main.js": "/static/js/main.78fa9eb0.chunk.js",
-    "main.js.map": "/static/js/main.78fa9eb0.chunk.js.map",
+    "main.css": "/static/css/main.8a01c1f3.chunk.css",
+    "main.js": "/static/js/main.7ad73cbe.chunk.js",
+    "main.js.map": "/static/js/main.7ad73cbe.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.df34b4f2.js",
     "runtime-main.js.map": "/static/js/runtime-main.df34b4f2.js.map",
-    "static/css/2.0252c3bb.chunk.css": "/static/css/2.0252c3bb.chunk.css",
-    "static/js/2.81c10a74.chunk.js": "/static/js/2.81c10a74.chunk.js",
-    "static/js/2.81c10a74.chunk.js.map": "/static/js/2.81c10a74.chunk.js.map",
+    "static/css/2.258da46e.chunk.css": "/static/css/2.258da46e.chunk.css",
+    "static/js/2.fee8802c.chunk.js": "/static/js/2.fee8802c.chunk.js",
+    "static/js/2.fee8802c.chunk.js.map": "/static/js/2.fee8802c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.548af0576fcb830c2c419531d8342094.js": "/precache-manifest.548af0576fcb830c2c419531d8342094.js",
+    "precache-manifest.3b94d73482c5e2fb2ef28c4b8b3467bd.js": "/precache-manifest.3b94d73482c5e2fb2ef28c4b8b3467bd.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.0252c3bb.chunk.css.map": "/static/css/2.0252c3bb.chunk.css.map",
-    "static/css/main.dcec2beb.chunk.css.map": "/static/css/main.dcec2beb.chunk.css.map",
-    "static/js/2.81c10a74.chunk.js.LICENSE.txt": "/static/js/2.81c10a74.chunk.js.LICENSE.txt",
+    "static/css/2.258da46e.chunk.css.map": "/static/css/2.258da46e.chunk.css.map",
+    "static/css/main.8a01c1f3.chunk.css.map": "/static/css/main.8a01c1f3.chunk.css.map",
+    "static/js/2.fee8802c.chunk.js.LICENSE.txt": "/static/js/2.fee8802c.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
     "static/media/creative-commons-logo.svg": "/static/media/creative-commons-logo.60ebfa35.svg",
-    "static/media/learn-solidity-card.svg": "/static/media/learn-solidity-card.da793b47.svg",
-    "static/media/logo.svg": "/static/media/logo.cae6ce4a.svg"
+    "static/media/logo.svg": "/static/media/logo.cae6ce4a.svg",
+    "static/media/solidity-app.svg": "/static/media/solidity-app.0623e708.svg",
+    "static/media/solidity.svg": "/static/media/solidity.da793b47.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.df34b4f2.js",
-    "static/css/2.0252c3bb.chunk.css",
-    "static/js/2.81c10a74.chunk.js",
-    "static/css/main.dcec2beb.chunk.css",
-    "static/js/main.78fa9eb0.chunk.js"
+    "static/css/2.258da46e.chunk.css",
+    "static/js/2.fee8802c.chunk.js",
+    "static/css/main.8a01c1f3.chunk.css",
+    "static/js/main.7ad73cbe.chunk.js"
   ]
 }
