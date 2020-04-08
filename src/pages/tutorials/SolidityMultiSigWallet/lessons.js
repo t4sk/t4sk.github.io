@@ -14,6 +14,7 @@ import lesson_06_revoke_confirmation_sol from "./lesson_06_revoke_confirmation_s
 import lesson_07_demo from "./lesson_07_demo.html"
 import lesson_08_code from "./lesson_08_code.html"
 
+// TODO generate this file from script
 export const SOLIDITY_LESSONS = [
   {
     icon: "youtube",

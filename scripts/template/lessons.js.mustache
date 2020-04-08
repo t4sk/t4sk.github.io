@@ -1,0 +1,27 @@
+{{#lessons}}
+import {{{variableName}}} from "{{{importPath}}}"
+{{/lessons}}
+
+export default [
+  {{#lessons}}
+    {
+      icon: "{{{icon}}}",
+      path: "{{{path}}}",
+      header: "{{{header}}}",
+      description: "{{{description}}}",
+      {{#youTube}}
+      youTube: {
+          title: "{{{title}}}",
+          url: "{{{url}}}",
+          {{#start}}
+          start: {{{start}}},
+          {{/start}}
+          {{#end}}
+          end: {{{end}}},
+          {{/end}}
+      },
+      {{/youTube}}
+      html: {{{variableName}}}
+    },
+  {{/lessons}}
+]
