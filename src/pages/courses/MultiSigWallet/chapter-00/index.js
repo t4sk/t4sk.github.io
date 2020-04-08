@@ -63,7 +63,7 @@ export default [
           title: "Multi Sig Wallet",
           url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
           start: 689,
-          end: 702,
+          end: 703,
       },
       html: file_02_fallback_solution
     },
@@ -82,7 +82,7 @@ export default [
       youTube: {
           title: "Multi Sig Wallet",
           url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
-          start: 382,
+          start: 383,
           end: 472,
       },
       html: file_03_submit_transaction_solution
@@ -103,7 +103,7 @@ export default [
           title: "Multi Sig Wallet",
           url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
           start: 472,
-          end: 607,
+          end: 608,
       },
       html: file_04_confirm_transaction_solution
     },
@@ -122,7 +122,7 @@ export default [
       youTube: {
           title: "Multi Sig Wallet",
           url: "https://www.youtube.com/embed/Dh7r6Ze-0Bs",
-          start: 607,
+          start: 608,
           end: 677,
       },
       html: file_05_execute_transaction_solution

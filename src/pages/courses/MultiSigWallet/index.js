@@ -8,6 +8,7 @@ import styles from "./index.module.css"
 import chapters from "./chapters"
 
 // TODO fix css at 08-code
+// TODO split youtube and upload
 function Logo() {
   return (
     <Image

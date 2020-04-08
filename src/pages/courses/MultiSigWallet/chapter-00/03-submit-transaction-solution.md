@@ -5,7 +5,7 @@ description: Solution
 youTube:
   title: Multi Sig Wallet
   url: https://www.youtube.com/embed/Dh7r6Ze-0Bs
-  start: 382
+  start: 383
   end: 472
 ---
 
@@ -15,6 +15,13 @@ youTube:
 
 ```shell
 git checkout exercise-02-solution
+```
+
+```solidity
+modifier onlyOwner() {
+    require(isOwner[msg.sender], "not owner");
+    _;
+}
 ```
 
 ```solidity
