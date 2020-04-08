@@ -1,5 +1,5 @@
 ---
-icon: youtube
+icon: code
 header: Revoke Transaction
 description: Solution
 ---

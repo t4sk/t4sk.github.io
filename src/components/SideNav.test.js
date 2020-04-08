@@ -13,21 +13,18 @@ const props = {
       lessons: [
         {
           icon: "youtube",
-          color: "red",
           path: "00-overview",
           header: "Intro",
           description: "",
         },
         {
           icon: "code",
-          color: "",
           path: "01-constructor",
           header: "Constructor",
           description: "Exercise",
         },
         {
           icon: "github",
-          color: "",
           path: "",
           header: "Code",
         },
@@ -38,14 +35,12 @@ const props = {
       lessons: [
         {
           icon: "youtube",
-          color: "red",
           path: "00-overview",
           header: "Intro",
           description: "",
         },
         {
           icon: "code",
-          color: "",
           path: "01-constructor",
           header: "Constructor",
           description: "Exercise",

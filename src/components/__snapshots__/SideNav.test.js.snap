@@ -55,6 +55,7 @@ exports[`it renders 1`] = `
           key="1"
         >
           <ListIcon
+            color="black"
             name="code"
             size="large"
             verticalAlign="middle"
@@ -76,6 +77,7 @@ exports[`it renders 1`] = `
           key="2"
         >
           <ListIcon
+            color="black"
             name="github"
             size="large"
             verticalAlign="middle"
@@ -139,6 +141,7 @@ exports[`it renders 1`] = `
           key="1"
         >
           <ListIcon
+            color="black"
             name="code"
             size="large"
             verticalAlign="middle"

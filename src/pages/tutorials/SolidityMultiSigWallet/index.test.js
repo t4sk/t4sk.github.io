@@ -4,7 +4,7 @@ import { SolidityMultiSigWallet } from "./index"
 
 const props = {
   match: {
-    path: "/tutorials/solidity-multi-sig-wallet",
+    url: "localhost:3000/tutorials/solidity-multi-sig-wallet",
   },
 }
 

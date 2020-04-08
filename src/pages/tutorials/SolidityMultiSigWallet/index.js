@@ -20,7 +20,7 @@ function Logo() {
 export function SolidityMultiSigWallet(props) {
   // TODO checkbox
   const {
-    match: { path, url },
+    match: { url },
   } = props
 
   return (
@@ -41,7 +41,7 @@ export function SolidityMultiSigWallet(props) {
                   <List.Item key={i}>
                     <List.Icon
                       name={lesson.icon}
-                      {...(lesson.color ? { color: lesson.color } : {})}
+                      color={lesson.icon === "youtube" ? "red" : "black"}
                       size="large"
                       verticalAlign="middle"
                     />
@@ -49,7 +49,6 @@ export function SolidityMultiSigWallet(props) {
                       <List.Header
                         as="a"
                         href={lesson.href || `${url}/${lesson.path}`}
-                        {...(lesson.openNewTab ? { target: "__blank" } : {})}
                       >
                         {lesson.header}
                       </List.Header>
@@ -72,7 +71,7 @@ export function SolidityMultiSigWallet(props) {
 
 SolidityMultiSigWallet.propTypes = {
   match: PropTypes.shape({
-    path: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
   }).isRequired,
 }
 

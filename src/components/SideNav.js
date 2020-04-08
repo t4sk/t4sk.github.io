@@ -29,12 +29,13 @@ export function SideNav(props) {
               {lessons.map((lesson, i) => {
                 const href = `${baseUrl}/${lesson.path}`
                 const active = href === url
+                const color = lesson.icon === "youtube" ? "red" : "black"
 
                 return (
                   <List.Item key={i} active={active}>
                     <List.Icon
                       name={lesson.icon}
-                      {...(lesson.color ? { color: lesson.color } : {})}
+                      color={color}
                       size="large"
                       verticalAlign="middle"
                     />
@@ -70,7 +71,6 @@ SideNav.propTypes = {
       lessons: PropTypes.arrayOf(
         PropTypes.shape({
           icon: PropTypes.string.isRequired,
-          color: PropTypes.string,
           path: PropTypes.string,
           header: PropTypes.string.isRequired,
           description: PropTypes.string,

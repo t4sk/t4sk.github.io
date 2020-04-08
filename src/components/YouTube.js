@@ -27,6 +27,7 @@ export function getUrl({ url, start, end }) {
 export function YouTube(props) {
   const { title } = props
   // TODO responsive YouTube
+  // TODO FIX cors
 
   return (
     <div className={styles.component}>
