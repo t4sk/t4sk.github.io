@@ -1,7 +1,7 @@
 import React from "react"
 import LessonLayout from "../../../components/LessonLayout"
-import { CHAPTERS, BASE_URL } from "./lib"
-import lessons from "./lessons"
+import chapters, { BASE_URL } from "./chapters"
+import lessons from "./chapter-00"
 
 export function getPrevHref(baseUrl, lessons, i) {
   if (i <= 0) {
@@ -24,7 +24,7 @@ function createPage(lesson, prevHref, nextHref) {
     <LessonLayout
       title={"Build a Multi-Sig Wallet in Solidity"}
       baseUrl={BASE_URL}
-      chapters={CHAPTERS}
+      chapters={chapters}
       youTube={youTube}
       html={html}
       prevHref={prevHref}

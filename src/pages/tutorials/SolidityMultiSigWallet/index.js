@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Container, List, Image, Checkbox } from "semantic-ui-react"
+import { Container, List, Image } from "semantic-ui-react"
 import SEO from "../../../components/SEO"
 import PageLayout from "../../../components/PageLayout"
 import solidityAppLogo from "../../../static/solidity-app.svg"
 import styles from "./index.module.css"
-import lessons from "./lessons"
+import chapters from "./chapters"
 
 function Logo() {
   return (
@@ -32,37 +32,39 @@ export function SolidityMultiSigWallet(props) {
             Build a Multi-Sig Wallet in Solidity
           </h1>
 
-          <div className={styles.section}>
-            <Logo />
-            <div className={styles.lessons}>
-              <h2>Solidity Contract</h2>
-              <List divided relaxed selection>
-                {lessons.map((lesson, i) => (
-                  <List.Item key={i}>
-                    <List.Icon
-                      name={lesson.icon}
-                      color={lesson.icon === "youtube" ? "red" : "black"}
-                      size="large"
-                      verticalAlign="middle"
-                    />
-                    <List.Content>
-                      <List.Header
-                        as="a"
-                        href={lesson.href || `${url}/${lesson.path}`}
-                      >
-                        {lesson.header}
-                      </List.Header>
-                      {lesson.description && (
-                        <List.Description>
-                          {lesson.description}
-                        </List.Description>
-                      )}
-                    </List.Content>
-                  </List.Item>
-                ))}
-              </List>
+          {chapters.map(({ header, lessons }) => (
+            <div className={styles.section} key={header}>
+              <Logo />
+              <div className={styles.lessons}>
+                <h2>{header}</h2>
+                <List divided relaxed selection>
+                  {lessons.map((lesson, i) => (
+                    <List.Item key={i}>
+                      <List.Icon
+                        name={lesson.icon}
+                        color={lesson.icon === "youtube" ? "red" : "black"}
+                        size="large"
+                        verticalAlign="middle"
+                      />
+                      <List.Content>
+                        <List.Header
+                          as="a"
+                          href={lesson.href || `${url}/${lesson.path}`}
+                        >
+                          {lesson.header}
+                        </List.Header>
+                        {lesson.description && (
+                          <List.Description>
+                            {lesson.description}
+                          </List.Description>
+                        )}
+                      </List.Content>
+                    </List.Item>
+                  ))}
+                </List>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </Container>
     </PageLayout>

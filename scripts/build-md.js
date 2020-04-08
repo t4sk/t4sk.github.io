@@ -3,7 +3,7 @@ const util = require("util")
 const path = require("path")
 const readdir = util.promisify(fs.readdir)
 const mdToHTML = require("./md-to-html")
-const createLessons = require("./create-lessons")
+const createChapter = require("./create-chapter")
 const { getExtension } = require("./lib")
 
 async function main() {
@@ -18,7 +18,7 @@ async function main() {
     data.push({ file, metadata })
   }
 
-  await createLessons(dir, data)
+  await createChapter(dir, data)
 }
 
 main()

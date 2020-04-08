@@ -27,13 +27,13 @@ module.exports = async function(dir, data) {
   }
 
   const template = (await readFile(
-    path.join(__dirname, "template", "lessons.js.mustache")
+    path.join(__dirname, "template", "chapter.js.mustache")
   )).toString()
   const js = mustache.render(template, {
     lessons,
   })
 
-  writeFile(path.join(dir, `lessons.js`), js)
+  writeFile(path.join(dir, `index.js`), js)
 
-  console.log(`${path.join(dir, `lessons.js`)}`)
+  console.log(`${path.join(dir, `index.js`)}`)
 }
