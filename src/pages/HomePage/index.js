@@ -7,7 +7,7 @@ import { BACKGROUND_COLOR } from "../../constants"
 import styles from "./index.module.css"
 import "./index.css"
 import EmailSubscriptionForm from "./EmailSubscriptionForm"
-import Tutorials from "./Tutorials"
+import Courses from "./Courses"
 import About from "./About"
 import Contact from "./Contact"
 
@@ -42,15 +42,15 @@ function HomePage(props) {
               marginTop: 0,
             }}
           />
-          <Button size="massive" color="green" fluid as="a" href="#tutorials">
+          <Button size="massive" color="green" fluid as="a" href="#courses">
             Get Started
           </Button>
         </Container>
       </Segment>
       <div className={styles.main}>
         <EmailSubscriptionForm />
-        <div id="tutorials">
-          <Tutorials />
+        <div id="courses">
+          <Courses />
         </div>
         <div id="about">
           <About />

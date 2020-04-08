@@ -17,7 +17,7 @@ function Logo() {
   )
 }
 
-export function SolidityMultiSigWallet(props) {
+export function MultiSigWallet(props) {
   // TODO checkbox
   const {
     match: { url },
@@ -71,10 +71,10 @@ export function SolidityMultiSigWallet(props) {
   )
 }
 
-SolidityMultiSigWallet.propTypes = {
+MultiSigWallet.propTypes = {
   match: PropTypes.shape({
     url: PropTypes.string.isRequired,
   }).isRequired,
 }
 
-export default SolidityMultiSigWallet
+export default MultiSigWallet

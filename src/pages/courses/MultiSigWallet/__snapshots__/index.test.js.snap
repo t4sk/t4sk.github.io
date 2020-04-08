@@ -26,6 +26,7 @@ exports[`it renders 1`] = `
       </h1>
       <div
         className="section"
+        key="Solidity Contract"
       >
         <Logo />
         <div

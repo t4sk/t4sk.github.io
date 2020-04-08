@@ -38,10 +38,10 @@ export function Nav(props) {
       <Menu.Menu position="right">
         <Menu.Item
           as="a"
-          href="/#tutorials"
-          active={location.hash === "#tutorials"}
+          href="/#courses"
+          active={location.hash === "#courses"}
         >
-          Tutorials
+          Courses
         </Menu.Item>
         <Menu.Item as="a" href="/#about" active={location.hash === "#about"}>
           About

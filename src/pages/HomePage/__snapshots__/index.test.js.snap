@@ -57,7 +57,7 @@ exports[`it renders 1`] = `
         as="a"
         color="green"
         fluid={true}
-        href="#tutorials"
+        href="#courses"
         size="massive"
       >
         Get Started
@@ -69,9 +69,9 @@ exports[`it renders 1`] = `
   >
     <EmailSubscriptionForm />
     <div
-      id="tutorials"
+      id="courses"
     >
-      <Tutorials />
+      <Courses />
     </div>
     <div
       id="about"

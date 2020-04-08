@@ -1,6 +1,6 @@
 import React from "react"
 import { shallow } from "enzyme"
-import { SolidityMultiSigWallet } from "./index"
+import { MultiSigWallet } from "./index"
 
 const props = {
   match: {
@@ -11,7 +11,7 @@ const props = {
 beforeEach(() => {})
 
 test("it renders", () => {
-  const component = shallow(<SolidityMultiSigWallet {...props} />)
+  const component = shallow(<MultiSigWallet {...props} />)
 
   expect(component).toMatchSnapshot()
 })

@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Card, Image } from "semantic-ui-react"
-import styles from "./TutorialCard.module.css"
+import styles from "./CourseCard.module.css"
 
-export function TutorialCard(props) {
+export function CourseCard(props) {
   const { title, logo, path } = props
 
   // NOTE: use anchor instead of Link to reset scroll
@@ -21,10 +21,10 @@ export function TutorialCard(props) {
   )
 }
 
-TutorialCard.propTypes = {
+CourseCard.propTypes = {
   title: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
 }
 
-export default TutorialCard
+export default CourseCard

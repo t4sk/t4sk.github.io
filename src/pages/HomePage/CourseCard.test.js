@@ -1,6 +1,6 @@
 import React from "react"
 import { shallow } from "enzyme"
-import { TutorialCard } from "./TutorialCard"
+import { CourseCard } from "./CourseCard"
 
 const props = {
   title: "Learn Solidity",
@@ -11,7 +11,7 @@ const props = {
 beforeEach(() => {})
 
 test("it renders", () => {
-  const component = shallow(<TutorialCard {...props} />)
+  const component = shallow(<CourseCard {...props} />)
 
   expect(component).toMatchSnapshot()
 })

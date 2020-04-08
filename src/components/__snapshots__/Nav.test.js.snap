@@ -46,9 +46,9 @@ exports[`about active 1`] = `
     <MenuItem
       active={false}
       as="a"
-      href="/#tutorials"
+      href="/#courses"
     >
-      Tutorials
+      Courses
     </MenuItem>
     <MenuItem
       active={true}
@@ -114,9 +114,9 @@ exports[`contact active 1`] = `
     <MenuItem
       active={false}
       as="a"
-      href="/#tutorials"
+      href="/#courses"
     >
-      Tutorials
+      Courses
     </MenuItem>
     <MenuItem
       active={false}
@@ -127,6 +127,74 @@ exports[`contact active 1`] = `
     </MenuItem>
     <MenuItem
       active={true}
+      as="a"
+      href="/#contact"
+    >
+      Contact
+    </MenuItem>
+  </MenuMenu>
+</Menu>
+`;
+
+exports[`courses active 1`] = `
+<Menu
+  borderless={true}
+  fixed="top"
+  fluid={true}
+  inverted={true}
+  size="large"
+  style={
+    Object {
+      "backgroundColor": "#20232a",
+    }
+  }
+>
+  <MenuItem
+    as="a"
+    header={true}
+    href="/#top"
+    style={
+      Object {
+        "padding": 0,
+        "width": 300,
+      }
+    }
+  >
+    <Image
+      alt="logo"
+      as="img"
+      src="logo.svg"
+      style={
+        Object {
+          "backgroundColor": "#20232a",
+          "borderRadius": 4,
+          "height": 48,
+          "margin": 5,
+        }
+      }
+      ui={true}
+    />
+    Smart Contract Programmer
+  </MenuItem>
+  <MenuMenu
+    position="right"
+  >
+    <MenuItem
+      active={true}
+      as="a"
+      href="/#courses"
+    >
+      Courses
+    </MenuItem>
+    <MenuItem
+      active={false}
+      as="a"
+      href="/#about"
+    >
+      About
+    </MenuItem>
+    <MenuItem
+      active={false}
       as="a"
       href="/#contact"
     >
@@ -182,77 +250,9 @@ exports[`it renders 1`] = `
     <MenuItem
       active={false}
       as="a"
-      href="/#tutorials"
+      href="/#courses"
     >
-      Tutorials
-    </MenuItem>
-    <MenuItem
-      active={false}
-      as="a"
-      href="/#about"
-    >
-      About
-    </MenuItem>
-    <MenuItem
-      active={false}
-      as="a"
-      href="/#contact"
-    >
-      Contact
-    </MenuItem>
-  </MenuMenu>
-</Menu>
-`;
-
-exports[`tutorials active 1`] = `
-<Menu
-  borderless={true}
-  fixed="top"
-  fluid={true}
-  inverted={true}
-  size="large"
-  style={
-    Object {
-      "backgroundColor": "#20232a",
-    }
-  }
->
-  <MenuItem
-    as="a"
-    header={true}
-    href="/#top"
-    style={
-      Object {
-        "padding": 0,
-        "width": 300,
-      }
-    }
-  >
-    <Image
-      alt="logo"
-      as="img"
-      src="logo.svg"
-      style={
-        Object {
-          "backgroundColor": "#20232a",
-          "borderRadius": 4,
-          "height": 48,
-          "margin": 5,
-        }
-      }
-      ui={true}
-    />
-    Smart Contract Programmer
-  </MenuItem>
-  <MenuMenu
-    position="right"
-  >
-    <MenuItem
-      active={true}
-      as="a"
-      href="/#tutorials"
-    >
-      Tutorials
+      Courses
     </MenuItem>
     <MenuItem
       active={false}

@@ -1,16 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styles from "./Tutorials.module.css"
-import TutorialCard from "./TutorialCard"
+import styles from "./Courses.module.css"
+import CourseCard from "./CourseCard"
 
 import solidityLogo from "../../static/solidity.svg"
 import solidityAppLogo from "../../static/solidity-app.svg"
 
-const TUTORIALS = [
+const COURSES = [
   {
     title: "Learn Solidity",
     logo: solidityLogo,
-    path: "/tutorials/learn-solidity",
+    path: "/courses/learn-solidity",
     // TODO: remove onClick
     onClick: e => {
       e.preventDefault()
@@ -20,28 +20,28 @@ const TUTORIALS = [
   {
     title: "Build a Multi-Sig Wallet in Solidity",
     logo: solidityAppLogo,
-    path: "/tutorials/solidity-multi-sig-wallet",
+    path: "/courses/multi-sig-wallet",
     // TODO: remove onClick
     onClick: e => {},
   },
 ]
 
-export function Tutorials(props) {
+export function Courses(props) {
   return (
     <div className={styles.component}>
-      {TUTORIALS.map(course => (
+      {COURSES.map(course => (
         <div
           key={course.title}
           className={styles.card}
           onClick={course.onClick}
         >
-          <TutorialCard {...course} />
+          <CourseCard {...course} />
         </div>
       ))}
     </div>
   )
 }
 
-Tutorials.propTypes = {}
+Courses.propTypes = {}
 
-export default Tutorials
+export default Courses
