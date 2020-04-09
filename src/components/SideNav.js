@@ -17,14 +17,14 @@ export function SideNav(props) {
   return (
     <div className={styles.component}>
       <div className={styles.sideNav}>
+        <a className={styles.overviewLink} href={baseUrl}>
+          <Icon name="chevron left" />
+          <div>Coarse Overview</div>
+        </a>
+        <Divider />
         {chapters.map(({ header, lessons }) => (
           <div key={header}>
-            <a className={styles.overviewLink} href={baseUrl}>
-              <Icon name="chevron left" />
-              <div>Coarse Overview</div>
-            </a>
-            <Divider />
-            <h2>{header}</h2>
+            <h2 className={styles.header}>{header}</h2>
             <List divided relaxed selection>
               {lessons.map((lesson, i) => {
                 const href = `${baseUrl}/${lesson.path}`

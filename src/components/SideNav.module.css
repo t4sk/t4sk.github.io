@@ -10,10 +10,13 @@
 .sideNav {
   width: 300px;
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 15px;
   position: fixed;
   overflow-y: auto;
   /* 58px = top nav height */
   height: calc(100vh - 58px);
   background-color: white;
+}
+.header {
+  padding-top: 20px;
 }
