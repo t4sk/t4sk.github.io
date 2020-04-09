@@ -3,15 +3,13 @@ import PropTypes from "prop-types"
 import { Container, List, Image } from "semantic-ui-react"
 import SEO from "../../../components/SEO"
 import PageLayout from "../../../components/PageLayout"
-import solidityAppLogo from "../../../static/solidity-app.svg"
 import styles from "./index.module.css"
 import chapters from "./chapters"
 
-// TODO split youtube and upload
-function Logo() {
+function Logo({ logo }) {
   return (
     <Image
-      src={solidityAppLogo}
+      src={logo}
       circular
       style={{ height: 50, width: 50, marginRight: 20 }}
     />
@@ -33,9 +31,9 @@ export function MultiSigWallet(props) {
             Build a Multi-Sig Wallet in Solidity
           </h1>
 
-          {chapters.map(({ header, lessons }) => (
+          {chapters.map(({ logo, header, lessons }) => (
             <div className={styles.section} key={header}>
-              <Logo />
+              <Logo logo={logo} />
               <div className={styles.lessons}>
                 <h2>{header}</h2>
                 <List divided relaxed selection>
