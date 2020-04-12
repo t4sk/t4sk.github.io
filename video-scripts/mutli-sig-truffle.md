@@ -1,3 +1,9 @@
+# intro
+
+why use Truffle
+
+# setup
+
 ```
 https://www.trufflesuite.com/docs/truffle/getting-started/installation
 npm install -g truffle
@@ -10,10 +16,18 @@ truffle init
 npm init -f
 npm i --save-dev truffle
 npm i --save-dev chai chai-as-promised
+```
 
+# compile
+
+```
 # create MultiSigWallet.sol and copy & paste code
 npx truffle compile
+```
 
+# test
+
+```
 # create test (test execute and already executed)
 
 npx truffle test
@@ -29,6 +43,9 @@ npx truffle test
 # local dev
 
 ```
+
 npx truffle develop
 migrate
+
+logs
 ```
