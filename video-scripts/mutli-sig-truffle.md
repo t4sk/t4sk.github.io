@@ -1,6 +1,11 @@
 # intro
 
-why use Truffle
+- why use Truffle
+- setup
+- testing
+
+- migration
+- local dev (dapp)
 
 # setup
 
@@ -14,7 +19,6 @@ cd solidity-multi-sig-wallet
 truffle init
 
 npm init -f
-npm i --save-dev truffle
 npm i --save-dev chai chai-as-promised
 ```
 
@@ -22,16 +26,14 @@ npm i --save-dev chai chai-as-promised
 
 ```
 # create MultiSigWallet.sol and copy & paste code
-npx truffle compile
+truffle compile
 ```
 
 # test
 
 ```
 # create test (test execute and already executed)
-
-npx truffle test
-
+truffle test
 ```
 
 # migration (dev)
@@ -43,9 +45,6 @@ npx truffle test
 # local dev
 
 ```
-
-npx truffle develop
+truffle develop
 migrate
-
-logs
 ```

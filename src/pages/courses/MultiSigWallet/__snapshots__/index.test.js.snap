@@ -28,7 +28,9 @@ exports[`it renders 1`] = `
         className="section"
         key="Solidity Contract"
       >
-        <Logo />
+        <Logo
+          logo="solidity-app.svg"
+        />
         <div
           className="lessons"
         >
@@ -52,7 +54,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/00-intro"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/00-intro"
                 >
                   Intro
                 </ListHeader>
@@ -70,7 +72,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/01-constructor-exercise"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/01-constructor-exercise"
                 >
                   Constructor
                 </ListHeader>
@@ -91,7 +93,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/01-constructor-solution"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/01-constructor-solution"
                 >
                   Constructor
                 </ListHeader>
@@ -112,7 +114,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/02-fallback-exercise"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/02-fallback-exercise"
                 >
                   Fallback
                 </ListHeader>
@@ -133,7 +135,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/02-fallback-solution"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/02-fallback-solution"
                 >
                   Fallback
                 </ListHeader>
@@ -154,7 +156,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/03-submit-transaction-exercise"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/03-submit-transaction-exercise"
                 >
                   Submit Transaction
                 </ListHeader>
@@ -175,7 +177,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/03-submit-transaction-solution"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/03-submit-transaction-solution"
                 >
                   Submit Transaction
                 </ListHeader>
@@ -196,7 +198,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/04-confirm-transaction-exercise"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/04-confirm-transaction-exercise"
                 >
                   Confirm Transaction
                 </ListHeader>
@@ -217,7 +219,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/04-confirm-transaction-solution"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/04-confirm-transaction-solution"
                 >
                   Confirm Transaction
                 </ListHeader>
@@ -238,7 +240,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/05-execute-transaction-exercise"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/05-execute-transaction-exercise"
                 >
                   Execute Transaction
                 </ListHeader>
@@ -259,7 +261,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/05-execute-transaction-solution"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/05-execute-transaction-solution"
                 >
                   Execute Transaction
                 </ListHeader>
@@ -280,7 +282,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/06-revoke-confirmation-exercise"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/06-revoke-confirmation-exercise"
                 >
                   Revoke Confirmation
                 </ListHeader>
@@ -301,7 +303,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/06-revoke-confirmation-solution"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/06-revoke-confirmation-solution"
                 >
                   Revoke Transaction
                 </ListHeader>
@@ -322,7 +324,7 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/07-demo"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/07-demo"
                 >
                   Demo
                 </ListHeader>
@@ -340,9 +342,48 @@ exports[`it renders 1`] = `
               <ListContent>
                 <ListHeader
                   as="a"
-                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/08-code"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-00/08-code"
                 >
                   Code
+                </ListHeader>
+              </ListContent>
+            </ListItem>
+          </List>
+        </div>
+      </div>
+      <div
+        className="section"
+        key="Truffle"
+      >
+        <Logo
+          logo="truffle.svg"
+        />
+        <div
+          className="lessons"
+        >
+          <h2>
+            Truffle
+          </h2>
+          <List
+            divided={true}
+            relaxed={true}
+            selection={true}
+          >
+            <ListItem
+              key="0"
+            >
+              <ListIcon
+                color="red"
+                name="youtube"
+                size="large"
+                verticalAlign="middle"
+              />
+              <ListContent>
+                <ListHeader
+                  as="a"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-01/00-setup"
+                >
+                  Setup
                 </ListHeader>
               </ListContent>
             </ListItem>

@@ -8,77 +8,82 @@ exports[`it renders 1`] = `
     <Route
       component={[Function]}
       key="0"
-      path="/courses/multi-sig-wallet/00-intro"
+      path="/courses/multi-sig-wallet/chapter-00/00-intro"
     />
     <Route
       component={[Function]}
       key="1"
-      path="/courses/multi-sig-wallet/01-constructor-exercise"
+      path="/courses/multi-sig-wallet/chapter-00/01-constructor-exercise"
     />
     <Route
       component={[Function]}
       key="2"
-      path="/courses/multi-sig-wallet/01-constructor-solution"
+      path="/courses/multi-sig-wallet/chapter-00/01-constructor-solution"
     />
     <Route
       component={[Function]}
       key="3"
-      path="/courses/multi-sig-wallet/02-fallback-exercise"
+      path="/courses/multi-sig-wallet/chapter-00/02-fallback-exercise"
     />
     <Route
       component={[Function]}
       key="4"
-      path="/courses/multi-sig-wallet/02-fallback-solution"
+      path="/courses/multi-sig-wallet/chapter-00/02-fallback-solution"
     />
     <Route
       component={[Function]}
       key="5"
-      path="/courses/multi-sig-wallet/03-submit-transaction-exercise"
+      path="/courses/multi-sig-wallet/chapter-00/03-submit-transaction-exercise"
     />
     <Route
       component={[Function]}
       key="6"
-      path="/courses/multi-sig-wallet/03-submit-transaction-solution"
+      path="/courses/multi-sig-wallet/chapter-00/03-submit-transaction-solution"
     />
     <Route
       component={[Function]}
       key="7"
-      path="/courses/multi-sig-wallet/04-confirm-transaction-exercise"
+      path="/courses/multi-sig-wallet/chapter-00/04-confirm-transaction-exercise"
     />
     <Route
       component={[Function]}
       key="8"
-      path="/courses/multi-sig-wallet/04-confirm-transaction-solution"
+      path="/courses/multi-sig-wallet/chapter-00/04-confirm-transaction-solution"
     />
     <Route
       component={[Function]}
       key="9"
-      path="/courses/multi-sig-wallet/05-execute-transaction-exercise"
+      path="/courses/multi-sig-wallet/chapter-00/05-execute-transaction-exercise"
     />
     <Route
       component={[Function]}
       key="10"
-      path="/courses/multi-sig-wallet/05-execute-transaction-solution"
+      path="/courses/multi-sig-wallet/chapter-00/05-execute-transaction-solution"
     />
     <Route
       component={[Function]}
       key="11"
-      path="/courses/multi-sig-wallet/06-revoke-confirmation-exercise"
+      path="/courses/multi-sig-wallet/chapter-00/06-revoke-confirmation-exercise"
     />
     <Route
       component={[Function]}
       key="12"
-      path="/courses/multi-sig-wallet/06-revoke-confirmation-solution"
+      path="/courses/multi-sig-wallet/chapter-00/06-revoke-confirmation-solution"
     />
     <Route
       component={[Function]}
       key="13"
-      path="/courses/multi-sig-wallet/07-demo"
+      path="/courses/multi-sig-wallet/chapter-00/07-demo"
     />
     <Route
       component={[Function]}
       key="14"
-      path="/courses/multi-sig-wallet/08-code"
+      path="/courses/multi-sig-wallet/chapter-00/08-code"
+    />
+    <Route
+      component={[Function]}
+      key="15"
+      path="/courses/multi-sig-wallet/chapter-01/00-setup"
     />
     <Route
       component={[Function]}
