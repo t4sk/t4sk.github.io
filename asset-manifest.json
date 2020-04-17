@@ -1,30 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.2928d86c.chunk.css",
-    "main.js": "/static/js/main.5d19f62a.chunk.js",
-    "main.js.map": "/static/js/main.5d19f62a.chunk.js.map",
+    "main.css": "/static/css/main.2739d462.chunk.css",
+    "main.js": "/static/js/main.c6024fef.chunk.js",
+    "main.js.map": "/static/js/main.c6024fef.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.41af2481.js",
     "runtime-main.js.map": "/static/js/runtime-main.41af2481.js.map",
     "static/css/2.7d4733d3.chunk.css": "/static/css/2.7d4733d3.chunk.css",
-    "static/js/2.f181ff2d.chunk.js": "/static/js/2.f181ff2d.chunk.js",
-    "static/js/2.f181ff2d.chunk.js.map": "/static/js/2.f181ff2d.chunk.js.map",
+    "static/js/2.d6aa55b1.chunk.js": "/static/js/2.d6aa55b1.chunk.js",
+    "static/js/2.d6aa55b1.chunk.js.map": "/static/js/2.d6aa55b1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7a0036292297b4784118af6a4b05e577.js": "/precache-manifest.7a0036292297b4784118af6a4b05e577.js",
+    "precache-manifest.df8035d9a21843c36999108408d922b9.js": "/precache-manifest.df8035d9a21843c36999108408d922b9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.7d4733d3.chunk.css.map": "/static/css/2.7d4733d3.chunk.css.map",
-    "static/css/main.2928d86c.chunk.css.map": "/static/css/main.2928d86c.chunk.css.map",
-    "static/js/2.f181ff2d.chunk.js.LICENSE.txt": "/static/js/2.f181ff2d.chunk.js.LICENSE.txt",
+    "static/css/main.2739d462.chunk.css.map": "/static/css/main.2739d462.chunk.css.map",
+    "static/js/2.d6aa55b1.chunk.js.LICENSE.txt": "/static/js/2.d6aa55b1.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
     "static/media/creative-commons-logo.svg": "/static/media/creative-commons-logo.60ebfa35.svg",
     "static/media/logo.svg": "/static/media/logo.cae6ce4a.svg",
     "static/media/solidity-app.svg": "/static/media/solidity-app.0623e708.svg",
-    "static/media/solidity.svg": "/static/media/solidity.da793b47.svg"
+    "static/media/solidity.svg": "/static/media/solidity.da793b47.svg",
+    "static/media/truffle.svg": "/static/media/truffle.5fb37f44.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.41af2481.js",
     "static/css/2.7d4733d3.chunk.css",
-    "static/js/2.f181ff2d.chunk.js",
-    "static/css/main.2928d86c.chunk.css",
-    "static/js/main.5d19f62a.chunk.js"
+    "static/js/2.d6aa55b1.chunk.js",
+    "static/css/main.2739d462.chunk.css",
+    "static/js/main.c6024fef.chunk.js"
   ]
 }
