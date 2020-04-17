@@ -8,7 +8,7 @@ youTube:
 
 ### 1. Setup
 
-Create a folder `solidity-multi-sig-wallet`. We will create a [Truffle](https://www.trufflesuite.com/docs/truffle/overview) project inside here.
+Create a folder `solidity-multi-sig-wallet`. We will create a <a href="https://www.trufflesuite.com/docs/truffle/overview" alt="Truffle" target="__blank">Truffle</a> project inside here.
 
 ```shell
 mkdir solidity-multi-sig-wallet
@@ -43,7 +43,7 @@ Create a new file named `MultiSigWallet.sol` inside the folder `contracts`.
 
 Copy and paste contract that we wrote using Remix, into the new file `MultiSigWallet.sol`
 
-Code for the contract is [here](https://github.com/t4sk/solidity-multi-sig-wallet/blob/master/contracts/MultiSigWallet.sol).
+Code for the contract is <a alt="code" href="https://github.com/t4sk/solidity-multi-sig-wallet/blob/master/contracts/MultiSigWallet.sol" target="__blank">here</a>
 
 ### 3. Compile
 
