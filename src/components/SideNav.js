@@ -19,7 +19,7 @@ export function SideNav(props) {
       <div className={styles.sideNav}>
         <a className={styles.overviewLink} href={baseUrl}>
           <Icon name="chevron left" />
-          <div>Coarse Overview</div>
+          <div>Coarse</div>
         </a>
         <Divider />
         {chapters.map(({ header, lessons }) => (

@@ -7,23 +7,25 @@ exports[`it renders 1`] = `
   <div
     className="sideNav"
   >
+    <a
+      className="overviewLink"
+      href="http://localhost:3000"
+    >
+      <Icon
+        as="i"
+        name="chevron left"
+      />
+      <div>
+        Coarse
+      </div>
+    </a>
+    <Divider />
     <div
       key="Solidity Contract"
     >
-      <a
-        className="overviewLink"
-        href="http://localhost:3000"
+      <h2
+        className="header"
       >
-        <Icon
-          as="i"
-          name="chevron left"
-        />
-        <div>
-          Coarse Overview
-        </div>
-      </a>
-      <Divider />
-      <h2>
         Solidity Contract
       </h2>
       <List
@@ -96,20 +98,9 @@ exports[`it renders 1`] = `
     <div
       key="Truffle"
     >
-      <a
-        className="overviewLink"
-        href="http://localhost:3000"
+      <h2
+        className="header"
       >
-        <Icon
-          as="i"
-          name="chevron left"
-        />
-        <div>
-          Coarse Overview
-        </div>
-      </a>
-      <Divider />
-      <h2>
         Truffle
       </h2>
       <List
