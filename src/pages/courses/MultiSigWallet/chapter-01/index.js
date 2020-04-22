@@ -1,5 +1,6 @@
 import file_00_setup from "./00-setup.md.js"
 import file_01_testing from "./01-testing.md.js"
+import file_02_migration from "./02-migration.md.js"
 
 export default [
     {
@@ -23,5 +24,16 @@ export default [
           url: "https://www.youtube-nocookie.com/embed/XFQgY-lNNlE",
       },
       html: file_01_testing
+    },
+    {
+      icon: "youtube",
+      path: "02-migration",
+      header: "Migration",
+      description: "",
+      youTube: {
+          title: "Truffle Migration - Multi Sig Wallet",
+          url: "https://www.youtube-nocookie.com/embed/36k8XT2u6G4",
+      },
+      html: file_02_migration
     },
 ]
