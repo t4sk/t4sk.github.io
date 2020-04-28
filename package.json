@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
-    "build-md": "node scripts/build-md.js"
+    "build-md": "node scripts/build-md.js",
+    "serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,7 +36,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "yaml": "^1.8.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
@@ -46,7 +46,9 @@
     "gh-pages": "^2.2.0",
     "marked": "^0.8.2",
     "mustache": "^4.0.1",
-    "react-snap": "^1.23.0"
+    "react-snap": "^1.23.0",
+    "serve": "^11.3.0",
+    "yaml": "^1.8.3"
   },
   "jest": {
     "snapshotSerializers": [
