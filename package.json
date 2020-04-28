@@ -9,7 +9,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
+    "react-helmet": "^6.0.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "semantic-ui-css": "^2.4.1",
@@ -44,11 +44,11 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
     "gh-pages": "^2.2.0",
-    "marked": "^0.8.2",
+    "marked": "^1.0.0",
     "mustache": "^4.0.1",
     "react-snap": "^1.23.0",
     "serve": "^11.3.0",
-    "yaml": "^1.8.3"
+    "yaml": "^1.9.2"
   },
   "jest": {
     "snapshotSerializers": [
