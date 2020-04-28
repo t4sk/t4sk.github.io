@@ -5,6 +5,7 @@
 - [ ] update highlight.js to 10.0.0 (https://github.com/highlightjs/highlightjs-solidity)
 - [ ] mobile view
 - [ ] ? checkbox / progress store to local storage
+- [ ] donate / pay what you want
 
 # Memo
 
