@@ -3,6 +3,8 @@
 - [ ] Ethereum Smart Contract Engineer Roadmap 2020
 - [ ] ? Fix css on build (http://localhost:5000/courses/multi-sig-wallet)
 - [ ] update highlight.js to 10.0.0 (https://github.com/highlightjs/highlightjs-solidity)
+- [ ] mobile view
+- [ ] ? checkbox / progress store to local storage
 
 # Memo
 
