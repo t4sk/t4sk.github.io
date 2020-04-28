@@ -1,6 +1,7 @@
 import file_00_setup from "./00-setup.md.js"
 import file_01_testing from "./01-testing.md.js"
 import file_02_migration from "./02-migration.md.js"
+import file_03_metamask from "./03-metamask.md.js"
 
 export default [
     {
@@ -35,5 +36,16 @@ export default [
           url: "https://www.youtube-nocookie.com/embed/36k8XT2u6G4",
       },
       html: file_02_migration
+    },
+    {
+      icon: "youtube",
+      path: "03-metamask",
+      header: "Metamask",
+      description: "",
+      youTube: {
+          title: "Connect Truffle with Metamask - Multi Sig Wallet",
+          url: "https://www.youtube-nocookie.com/embed/jaTnIeWjAg0",
+      },
+      html: file_03_metamask
     },
 ]

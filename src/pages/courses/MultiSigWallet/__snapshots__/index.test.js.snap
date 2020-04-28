@@ -423,6 +423,24 @@ exports[`it renders 1`] = `
                 </ListHeader>
               </ListContent>
             </ListItem>
+            <ListItem
+              key="3"
+            >
+              <ListIcon
+                color="red"
+                name="youtube"
+                size="large"
+                verticalAlign="middle"
+              />
+              <ListContent>
+                <ListHeader
+                  as="a"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-01/03-metamask"
+                >
+                  Metamask
+                </ListHeader>
+              </ListContent>
+            </ListItem>
           </List>
         </div>
       </div>

@@ -97,6 +97,11 @@ exports[`it renders 1`] = `
     />
     <Route
       component={[Function]}
+      key="18"
+      path="/courses/multi-sig-wallet/chapter-01/03-metamask"
+    />
+    <Route
+      component={[Function]}
       path="/courses/multi-sig-wallet"
     />
     <Route
