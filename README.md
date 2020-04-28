@@ -1,6 +1,7 @@
 # TODO
 
 - [ ] Ethereum Smart Contract Engineer Roadmap 2020
+- [ ] ? Fix css on build (http://localhost:5000/courses/multi-sig-wallet)
 
 # Memo
 
