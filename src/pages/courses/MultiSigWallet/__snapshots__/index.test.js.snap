@@ -444,6 +444,63 @@ exports[`it renders 1`] = `
           </List>
         </div>
       </div>
+      <div
+        className="section"
+        key="React TypeScript"
+      >
+        <Logo
+          logo="react.svg"
+        />
+        <div
+          className="lessons"
+        >
+          <h2>
+            React TypeScript
+          </h2>
+          <List
+            divided={true}
+            relaxed={true}
+            selection={true}
+          >
+            <ListItem
+              key="0"
+            >
+              <ListIcon
+                color="red"
+                name="youtube"
+                size="large"
+                verticalAlign="middle"
+              />
+              <ListContent>
+                <ListHeader
+                  as="a"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-02/00-overview"
+                >
+                  Overview
+                </ListHeader>
+              </ListContent>
+            </ListItem>
+            <ListItem
+              key="1"
+            >
+              <ListIcon
+                color="red"
+                name="youtube"
+                size="large"
+                verticalAlign="middle"
+              />
+              <ListContent>
+                <ListHeader
+                  as="a"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-02/01-setup"
+                >
+                  Install and Setup React
+                </ListHeader>
+              </ListContent>
+            </ListItem>
+          </List>
+        </div>
+      </div>
     </div>
   </Container>
 </PageLayout>
