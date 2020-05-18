@@ -1,5 +1,6 @@
 import file_00_overview from "./00-overview.md.js"
 import file_01_setup from "./01-setup.md.js"
+import file_02_web3_context from "./02-web3-context.md.js"
 
 export default [
     {
@@ -21,8 +22,18 @@ export default [
       youTube: {
           title: "Multi Sig Wallet",
           url: "https://www.youtube-nocookie.com/embed/D-y2XK3YABc",
-          end: 291,
       },
       html: file_01_setup
+    },
+    {
+      icon: "youtube",
+      path: "02-web3-context",
+      header: "Web3 Context",
+      description: "",
+      youTube: {
+          title: "Multi Sig Wallet",
+          url: "https://www.youtube-nocookie.com/embed/7Gp_eJkPpmw",
+      },
+      html: file_02_web3_context
     },
 ]

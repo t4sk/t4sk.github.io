@@ -112,6 +112,11 @@ exports[`it renders 1`] = `
     />
     <Route
       component={[Function]}
+      key="21"
+      path="/courses/multi-sig-wallet/chapter-02/02-web3-context"
+    />
+    <Route
+      component={[Function]}
       path="/courses/multi-sig-wallet"
     />
     <Route

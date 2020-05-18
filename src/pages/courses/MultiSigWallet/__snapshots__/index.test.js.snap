@@ -498,6 +498,24 @@ exports[`it renders 1`] = `
                 </ListHeader>
               </ListContent>
             </ListItem>
+            <ListItem
+              key="2"
+            >
+              <ListIcon
+                color="red"
+                name="youtube"
+                size="large"
+                verticalAlign="middle"
+              />
+              <ListContent>
+                <ListHeader
+                  as="a"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-02/02-web3-context"
+                >
+                  Web3 Context
+                </ListHeader>
+              </ListContent>
+            </ListItem>
           </List>
         </div>
       </div>

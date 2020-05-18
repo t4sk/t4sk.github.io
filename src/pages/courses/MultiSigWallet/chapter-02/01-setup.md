@@ -4,7 +4,6 @@ header: Install and Setup React
 youTube:
   title: Multi Sig Wallet
   url: https://www.youtube-nocookie.com/embed/D-y2XK3YABc
-  end: 291
 ---
 
 # Install and Setup React
