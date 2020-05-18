@@ -10,4 +10,4 @@ youTube:
 
 <a href="https://multi-sig.netlify.app" target="__blank">Demo</a>
 
-<a href="https://github.com/t4sk/multi-sig-wallet" target="__blank">Code</a>
+<a href="https://github.com/t4sk/multi-sig-wallet" target="__blank">Code on GitHub</a>

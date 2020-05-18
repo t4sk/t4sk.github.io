@@ -1,6 +1,8 @@
 import file_00_overview from "./00-overview.md.js"
 import file_01_setup from "./01-setup.md.js"
 import file_02_web3_context from "./02-web3-context.md.js"
+import file_03_exercise_monitor_network from "./03-exercise-monitor-network.md.js"
+import file_08_code from "./08-code.md.js"
 
 export default [
     {
@@ -35,5 +37,19 @@ export default [
           url: "https://www.youtube-nocookie.com/embed/7Gp_eJkPpmw",
       },
       html: file_02_web3_context
+    },
+    {
+      icon: "code",
+      path: "03-exercise-monitor-network",
+      header: "Monitor Network",
+      description: "Exercise",
+      html: file_03_exercise_monitor_network
+    },
+    {
+      icon: "github",
+      path: "08-code",
+      header: "Code",
+      description: "",
+      html: file_08_code
     },
 ]

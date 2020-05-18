@@ -53,3 +53,9 @@ cp -r ../solidity-multi-sig-wallet/build ./src
 ```shell
 npm start
 ```
+
+### Checkout Code So Far (Optional)
+
+```shell
+git checkout 01-setup
+```
