@@ -1,7 +1,7 @@
-import React from "react"
 import PropTypes from "prop-types"
+import React from "react"
 import { withRouter } from "react-router-dom"
-import { List, Divider, Icon } from "semantic-ui-react"
+import { Divider, Icon, List } from "semantic-ui-react"
 import styles from "./SideNav.module.css"
 
 export function SideNav(props) {
@@ -13,6 +13,8 @@ export function SideNav(props) {
 
   // NOTE: using Link does not load highlight.js so he use anchor to navigate
   // TODO FIX - use react router, load syntax highlight, reset scroll by document.getElementById("root").scrollTo(0, 0)
+
+  // TODO - fix position side nav header
 
   return (
     <div className={styles.component}>
