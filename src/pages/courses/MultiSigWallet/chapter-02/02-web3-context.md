@@ -6,6 +6,8 @@ youTube:
   url: https://www.youtube-nocookie.com/embed/7Gp_eJkPpmw
 ---
 
+# Web3 Context
+
 ### Checkout Code So Far (Optional)
 
 ```shell

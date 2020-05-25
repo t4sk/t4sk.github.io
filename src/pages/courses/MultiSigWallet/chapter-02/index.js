@@ -2,6 +2,7 @@ import file_00_overview from "./00-overview.md.js"
 import file_01_setup from "./01-setup.md.js"
 import file_02_web3_context from "./02-web3-context.md.js"
 import file_03_exercise_monitor_network from "./03-exercise-monitor-network.md.js"
+import file_04_multi_sig_wallet_context from "./04-multi-sig-wallet-context.md.js"
 import file_08_code from "./08-code.md.js"
 
 export default [
@@ -44,6 +45,17 @@ export default [
       header: "Monitor Network",
       description: "Exercise",
       html: file_03_exercise_monitor_network
+    },
+    {
+      icon: "youtube",
+      path: "04-multi-sig-wallet-context",
+      header: "Multi Sig Wallet Context",
+      description: "",
+      youTube: {
+          title: "Multi Sig Wallet",
+          url: "https://www.youtube-nocookie.com/embed/RQAY2VLMI7w",
+      },
+      html: file_04_multi_sig_wallet_context
     },
     {
       icon: "github",
