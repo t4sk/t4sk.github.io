@@ -541,6 +541,45 @@ exports[`it renders 1`] = `
               key="4"
             >
               <ListIcon
+                color="red"
+                name="youtube"
+                size="large"
+                verticalAlign="middle"
+              />
+              <ListContent>
+                <ListHeader
+                  as="a"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-02/04-multi-sig-wallet-context"
+                >
+                  Multi Sig Wallet Context
+                </ListHeader>
+              </ListContent>
+            </ListItem>
+            <ListItem
+              key="5"
+            >
+              <ListIcon
+                color="black"
+                name="code"
+                size="large"
+                verticalAlign="middle"
+              />
+              <ListContent>
+                <ListHeader
+                  as="a"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-02/05-exercise-execute-tx"
+                >
+                  Execute Transaction
+                </ListHeader>
+                <ListDescription>
+                  Exercise
+                </ListDescription>
+              </ListContent>
+            </ListItem>
+            <ListItem
+              key="6"
+            >
+              <ListIcon
                 color="black"
                 name="github"
                 size="large"

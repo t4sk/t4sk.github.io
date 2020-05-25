@@ -123,6 +123,16 @@ exports[`it renders 1`] = `
     <Route
       component={[Function]}
       key="23"
+      path="/courses/multi-sig-wallet/chapter-02/04-multi-sig-wallet-context"
+    />
+    <Route
+      component={[Function]}
+      key="24"
+      path="/courses/multi-sig-wallet/chapter-02/05-exercise-execute-tx"
+    />
+    <Route
+      component={[Function]}
+      key="25"
       path="/courses/multi-sig-wallet/chapter-02/08-code"
     />
     <Route

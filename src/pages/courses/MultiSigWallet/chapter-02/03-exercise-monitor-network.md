@@ -9,7 +9,7 @@ description: Exercise
 ### 1. Checkout the exercise
 
 ```shell
-git checkout exercise-03-monitor-network
+git checkout 03-exercise-monitor-network
 ```
 
 ### 2. Exercise
