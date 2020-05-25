@@ -53,71 +53,34 @@ type Log = Deposit | SubmitTransaction | ConfirmTransaction | RevokeConfirmation
 
 #### `contexts/MultiSigWallet.tsx`
 
-Complete the `siwtch` statement when a log of type `ExecuteTransaction` is returned
+Complete the `switch` statement, inside `subscribe` function, when a log of type `ExecuteTransaction` is returned
 
 ```typescript
-useEffect(() => {
-  if (web3 && state.address) {
-    return subscribe(web3, state.address, (error, log) => {
-      if (error) {
-        console.error(error)
-      } else if (log) {
-        switch (log.event) {
-          ...
-          /*
-            Exercise
-            Create a case statement for "ExecuteTransaction"
-            Call updateTx with the following input
-            {
-              ...log.returnValues,
-              executed: true,
-              account,
-            }
-            */
-          ...
-        }
-      }
-    })
-  }
-}, [web3, state.address])
+switch (log.event) {
+  ...
+  /*
+    Exercise
+    Create a case statement for "ExecuteTransaction"
+    Call updateTx with the following input
+    {
+      ...log.returnValues,
+      executed: true,
+      account,
+    }
+    */
+  ...
+}
 ```
 
 Complete the `reducer`, flag transaction as executed.
 
 ```typescript
-function reducer(state: State = INITIAL_STATE, action: Action) {
-  switch (action.type) {
-    case UPDATE_TX: {
-      const { data } = action
-
-      const txIndex = parseInt(data.txIndex)
-
-      const transactions = state.transactions.map((tx) => {
-        if (tx.txIndex === txIndex) {
-          const updatedTx = {
-            ...tx,
-          }
-
-          if (data.executed) {
-            /*
-            Exercise
-            Complete the if statement
-            Set updatedTx.executed to true
-            */
-          }
-          ...
-
-          return updatedTx
-        }
-        return tx
-      })
-
-      return {
-        ...state,
-        transactions,
-      }
-    }
-  }
+if (data.executed) {
+  /*
+  Exercise
+  Complete the if statement
+  Set updatedTx.executed to true
+  */
 }
 ```
 
