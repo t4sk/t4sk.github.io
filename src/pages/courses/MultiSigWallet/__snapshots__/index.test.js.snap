@@ -597,6 +597,63 @@ exports[`it renders 1`] = `
           </List>
         </div>
       </div>
+      <div
+        className="section"
+        key="Deployment"
+      >
+        <Logo
+          logo="truffle.svg"
+        />
+        <div
+          className="lessons"
+        >
+          <h2>
+            Deployment
+          </h2>
+          <List
+            divided={true}
+            relaxed={true}
+            selection={true}
+          >
+            <ListItem
+              key="0"
+            >
+              <ListIcon
+                color="red"
+                name="youtube"
+                size="large"
+                verticalAlign="middle"
+              />
+              <ListContent>
+                <ListHeader
+                  as="a"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-03/00-deployment"
+                >
+                  Deploying to Ropsten
+                </ListHeader>
+              </ListContent>
+            </ListItem>
+            <ListItem
+              key="1"
+            >
+              <ListIcon
+                color="black"
+                name="github"
+                size="large"
+                verticalAlign="middle"
+              />
+              <ListContent>
+                <ListHeader
+                  as="a"
+                  href="localhost:3000/tutorials/solidity-multi-sig-wallet/chapter-03/01-code"
+                >
+                  Code
+                </ListHeader>
+              </ListContent>
+            </ListItem>
+          </List>
+        </div>
+      </div>
     </div>
   </Container>
 </PageLayout>
