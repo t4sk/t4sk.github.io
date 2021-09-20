@@ -11,10 +11,11 @@ const COURSES = [
     title: "Learn Solidity",
     logo: solidityLogo,
     path: "/courses/learn-solidity",
-    // TODO: remove onClick
-    onClick: e => {
+    onClick: (e) => {
       e.preventDefault()
-      alert("Coming soon...")
+      try {
+        window.location.href = "https://smartcontract.engineer"
+      } catch (error) {}
     },
   },
   {
@@ -22,14 +23,14 @@ const COURSES = [
     logo: solidityAppLogo,
     path: "/courses/multi-sig-wallet",
     // TODO: remove onClick
-    onClick: e => {},
+    onClick: (e) => {},
   },
 ]
 
 export function Courses(props) {
   return (
     <div className={styles.component}>
-      {COURSES.map(course => (
+      {COURSES.map((course) => (
         <div
           key={course.title}
           className={styles.card}
