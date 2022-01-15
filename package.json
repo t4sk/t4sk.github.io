@@ -44,7 +44,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
     "gh-pages": "^2.2.0",
-    "marked": "^1.1.0",
+    "marked": "^4.0.10",
     "mustache": "^4.0.1",
     "react-snap": "^1.23.0",
     "serve": "^11.3.1",
