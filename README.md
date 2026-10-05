@@ -12,12 +12,13 @@ npm run preview
 
 ## Deploy
 
-GitHub Pages serves `dist/` from the `main` branch root, so build and commit
-the output:
+`npm run build` outputs to `docs/`, which is committed and published by GitHub
+Pages. Set the publish source once in **Settings → Pages → Build and
+deployment → Source: Deploy from a branch, `main` / `/docs`**.
 
 ```sh
 npm run build
-git add dist
+git add docs
 git commit -m "build"
 git push
 ```

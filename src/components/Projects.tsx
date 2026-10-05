@@ -8,6 +8,11 @@ const projects = [
     href: "https://txgraph.org",
   },
   {
+    name: "Notes",
+    description: "Notes about DeFi, ZK, algorithms and more",
+    href: "https://github.com/t4sk/notes",
+  },
+  {
     name: "Hello Circom",
     description: "Circom examples",
     href: "https://github.com/t4sk/hello-circom",
