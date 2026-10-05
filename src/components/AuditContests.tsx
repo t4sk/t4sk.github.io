@@ -28,31 +28,29 @@ const contests = [
 
 export default function AuditContests() {
   return (
-    <Section title="Audit Contests">
-      <div className={styles.tableWrapper}>
-        <table className={styles.table}>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Project</th>
-              <th>Rank</th>
-              <th>Found</th>
-              <th>Payout</th>
+    <Section title="Audits">
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Project</th>
+            <th>Rank</th>
+            <th>Found</th>
+            <th>Payout</th>
+          </tr>
+        </thead>
+        <tbody>
+          {contests.map((c, i) => (
+            <tr key={i}>
+              <td>{c.date}</td>
+              <td>{c.project}</td>
+              <td>{c.rank}</td>
+              <td>{c.found}</td>
+              <td>{c.payout}</td>
             </tr>
-          </thead>
-          <tbody>
-            {contests.map((c, i) => (
-              <tr key={i}>
-                <td>{c.date}</td>
-                <td>{c.project}</td>
-                <td>{c.rank}</td>
-                <td>{c.found}</td>
-                <td>{c.payout}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+          ))}
+        </tbody>
+      </table>
     </Section>
   )
 }

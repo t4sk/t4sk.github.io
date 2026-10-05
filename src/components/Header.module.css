@@ -23,7 +23,6 @@
   min-width: 3.5rem;
   color: var(--text-color-1);
   font-size: 0.85rem;
-  text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 .link {
