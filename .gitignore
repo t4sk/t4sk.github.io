@@ -3,3 +3,4 @@ tmp
 tsconfig.app.tsbuildinfo
 tsconfig.node.tsbuildinfo
 package-lock.json
+dist
