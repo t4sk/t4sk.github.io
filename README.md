@@ -13,7 +13,9 @@ npm run preview
 ## Deploy
 
 `npm run build` outputs to `docs/`, which is committed and published by GitHub
-Pages. Set the publish source once in **Settings → Pages → Build and
+Pages.
+
+Set the publish source once in **Settings → Pages → Build and
 deployment → Source: Deploy from a branch, `main` / `/docs`**.
 
 ```sh
