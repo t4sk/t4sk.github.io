@@ -19,13 +19,13 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 :root {
-  --bg-color-0: #f5f3ef;
-  --bg-color-1: #fffdf8;
-  --bg-hover-color: #e7e2d8;
-  --text-color-0: #2b2a26;
-  --text-color-1: #5c5850;
+  --bg-color-0: #ffffff;
+  --bg-color-1: #fafafa;
+  --bg-hover-color: #f0f0f0;
+  --text-color-0: #1a1a1a;
+  --text-color-1: #6b6b6b;
   --link-color: #0b5cad;
-  --border-color: #c9c2b5;
+  --border-color: #e2e2e2;
 }
 ul {
   margin: 0;

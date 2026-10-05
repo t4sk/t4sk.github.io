@@ -3,9 +3,14 @@ import styles from "./Projects.module.css"
 
 const projects = [
   {
-    name: "txgraph",
+    name: "txgraph.org",
     description: "EVM transaction visualizer",
     href: "https://txgraph.org",
+  },
+  {
+    name: "Hello Circom",
+    description: "Circom examples",
+    href: "https://github.com/t4sk/hello-circom",
   },
 ]
 

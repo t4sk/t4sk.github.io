@@ -7,3 +7,25 @@
   font-weight: 600;
   letter-spacing: 0.02em;
 }
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+.label {
+  min-width: 3.5rem;
+  color: var(--text-color-1);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.link {
+  overflow-wrap: anywhere;
+}
